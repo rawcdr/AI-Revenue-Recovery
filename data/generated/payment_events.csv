@@ -1,0 +1,1250 @@
+event_id,entity_type,entity_id,customer_id,event_type,amount,currency,timestamp,metadata
+evt_cda93b414fb043fd,payment,pay_ada6cdeccab943a1,cust_0f09569fbcea48de,payment.created,2499,INR,2026-07-06T18:34:41.788527,{}
+evt_07fa004342f04587,payment,pay_ada6cdeccab943a1,cust_0f09569fbcea48de,payment.failed,2499,INR,2026-07-06T18:35:32.788527,"{""reason"": ""expired_card""}"
+evt_8fe382877989415d,checkout,chk_3f58aa2caf1a4eef,cust_952f30d066ab43cf,checkout.created,1499,INR,2026-07-10T03:28:49.788527,{}
+evt_212e8994cfc94fd3,checkout,chk_3f58aa2caf1a4eef,cust_952f30d066ab43cf,checkout.completed,1499,INR,2026-07-10T03:29:44.788527,{}
+evt_cd0722dda3bf4787,payment,pay_8b14f0240f244580,cust_949fec18d86e47cf,payment.created,999,INR,2026-07-11T06:09:40.788527,{}
+evt_3c54f3a5b0244c0c,payment,pay_8b14f0240f244580,cust_949fec18d86e47cf,payment.failed,999,INR,2026-07-11T06:10:39.788527,"{""reason"": ""insufficient_funds""}"
+evt_96a2e8f4e74b4680,checkout,chk_e346719d2336405c,cust_82559b82a8b240bb,checkout.created,19999,INR,2026-07-12T06:48:19.788527,{}
+evt_054bfeb684df4cec,checkout,chk_e346719d2336405c,cust_82559b82a8b240bb,checkout.completed,19999,INR,2026-07-12T06:49:17.788527,{}
+evt_c37412952fa44b88,payment,pay_3d4f30c6d380451e,cust_9439d2d3c2d04c83,payment.created,1499,INR,2026-07-12T09:26:07.788527,{}
+evt_4a5e9598123544a1,payment,pay_3d4f30c6d380451e,cust_9439d2d3c2d04c83,payment.authorized,1499,INR,2026-07-12T09:26:10.788527,{}
+evt_77ade38bd2b74bb6,payment,pay_3d4f30c6d380451e,cust_9439d2d3c2d04c83,payment.captured,1499,INR,2026-07-12T09:26:13.788527,{}
+evt_d187facecba34cda,subscription,sub_371a2cf10d874a4f,cust_826f3e6850d743de,subscription.created,1499,INR,2026-07-12T17:27:44.788527,"{""plan"": ""plan_pro""}"
+evt_797e58dac9a44a66,subscription,sub_17601c215a5642b1,cust_4fe4f79fd2d0458c,subscription.created,499,INR,2026-07-13T17:51:10.788527,"{""plan"": ""plan_basic""}"
+evt_78b9dbbc386a47d8,subscription,sub_ed393d209fb2420c,cust_952f30d066ab43cf,subscription.created,499,INR,2026-07-13T20:41:34.788527,"{""plan"": ""plan_basic""}"
+evt_d8c3dfd19ba44a9a,payment,pay_9c6813a3b3cd4f03,cust_b4d4044fa3c74933,payment.created,19999,INR,2026-07-14T12:29:13.788527,{}
+evt_7be1117c492744f2,payment,pay_9c6813a3b3cd4f03,cust_b4d4044fa3c74933,payment.failed,19999,INR,2026-07-14T12:29:54.788527,"{""reason"": ""invalid_payment_method""}"
+evt_8c770128c7584f16,payment,pay_9273439640244807,cust_f4fa33d4c771491c,payment.created,19999,INR,2026-07-14T16:29:47.788527,{}
+evt_fa0f1a78ce5943f6,payment,pay_9273439640244807,cust_f4fa33d4c771491c,payment.authorized,19999,INR,2026-07-14T16:29:55.788527,{}
+evt_b747d69660bc4658,payment,pay_9273439640244807,cust_f4fa33d4c771491c,payment.captured,19999,INR,2026-07-14T16:29:58.788527,{}
+evt_929e677be31f42e3,subscription,sub_27fba8d2dee04406,cust_2416493153d543d9,subscription.created,1499,INR,2026-07-15T05:54:23.788527,"{""plan"": ""plan_pro""}"
+evt_11bdf7dd9bdf41e1,payment,pay_770b03260ec249b6,cust_bb9a6cfd20b4420e,payment.created,499,INR,2026-07-15T11:25:51.788527,{}
+evt_feacc783afb84559,payment,pay_770b03260ec249b6,cust_bb9a6cfd20b4420e,payment.authorized,499,INR,2026-07-15T11:25:57.788527,{}
+evt_f9d339484a8b4ef9,payment,pay_770b03260ec249b6,cust_bb9a6cfd20b4420e,payment.captured,499,INR,2026-07-15T11:26:02.788527,{}
+evt_9fdc9f5cf88e4e76,payment,pay_9a07f698f9fd4e7d,cust_e49624db3c2b49ca,payment.created,999,INR,2026-07-15T11:59:40.788527,{}
+evt_b943e8846491459f,payment,pay_9a07f698f9fd4e7d,cust_e49624db3c2b49ca,payment.failed,999,INR,2026-07-15T12:00:14.788527,"{""reason"": ""network_error""}"
+evt_ed5f7c9eed184250,payment,pay_c245962453a042bc,cust_0425780fa78643aa,payment.created,19999,INR,2026-07-15T13:32:34.788527,{}
+evt_e25490ccb94d47f9,payment,pay_c245962453a042bc,cust_0425780fa78643aa,payment.authorized,19999,INR,2026-07-15T13:32:42.788527,{}
+evt_41f776dc45de48ef,payment,pay_c245962453a042bc,cust_0425780fa78643aa,payment.captured,19999,INR,2026-07-15T13:32:44.788527,{}
+evt_764f49fdde114a88,payment,pay_866dca4752c941e9,cust_128887ede58a42fd,payment.created,9999,INR,2026-07-15T13:48:22.788527,{}
+evt_a5039b23c09743ca,payment,pay_866dca4752c941e9,cust_128887ede58a42fd,payment.authorized,9999,INR,2026-07-15T13:48:29.788527,{}
+evt_7b80d222126143a3,payment,pay_866dca4752c941e9,cust_128887ede58a42fd,payment.captured,9999,INR,2026-07-15T13:48:31.788527,{}
+evt_3f674e4e8a9e4228,payment,pay_bad680293c2b4eab,cust_21822ad9691942ac,payment.created,4999,INR,2026-07-15T19:35:30.788527,{}
+evt_d265adb8357e4547,payment,pay_bad680293c2b4eab,cust_21822ad9691942ac,payment.failed,4999,INR,2026-07-15T19:35:46.788527,"{""reason"": ""expired_card""}"
+evt_9257ddc21f874a1a,payment,pay_f1fd826e8a764d26,cust_8426b2a6834e4e3b,payment.created,1499,INR,2026-07-17T10:20:06.788527,{}
+evt_a614f87f27704b53,payment,pay_f1fd826e8a764d26,cust_8426b2a6834e4e3b,payment.authorized,1499,INR,2026-07-17T10:20:09.788527,{}
+evt_b1a9a10efbfd48aa,payment,pay_f1fd826e8a764d26,cust_8426b2a6834e4e3b,payment.captured,1499,INR,2026-07-17T10:20:12.788527,{}
+evt_7176105c50154915,payment,pay_483417f51a97446f,cust_9439d2d3c2d04c83,payment.created,999,INR,2026-07-18T03:16:23.788527,{}
+evt_a2d49322b2d24cb7,payment,pay_483417f51a97446f,cust_9439d2d3c2d04c83,payment.authorized,999,INR,2026-07-18T03:16:29.788527,{}
+evt_dc211a5a0b7b45d7,payment,pay_483417f51a97446f,cust_9439d2d3c2d04c83,payment.captured,999,INR,2026-07-18T03:16:31.788527,{}
+evt_d3b66f72b05a475a,checkout,chk_4b28f98933cc4e93,cust_fa04fc20c4304c6f,checkout.created,499,INR,2026-07-18T10:28:31.788527,{}
+evt_56dbe86e38c140d8,checkout,chk_4b28f98933cc4e93,cust_fa04fc20c4304c6f,checkout.completed,499,INR,2026-07-18T10:30:10.788527,{}
+evt_a944a702b2444e28,payment,pay_fd52e2147f004c9a,cust_ea576ff1540448d8,payment.created,499,INR,2026-07-18T12:13:49.788527,{}
+evt_c5aa9f4ed1bf4234,payment,pay_fd52e2147f004c9a,cust_ea576ff1540448d8,payment.authorized,499,INR,2026-07-18T12:13:58.788527,{}
+evt_9733d0fbcc1b4a14,payment,pay_fd52e2147f004c9a,cust_ea576ff1540448d8,payment.captured,499,INR,2026-07-18T12:13:59.788527,{}
+evt_7669bfe33c3a456c,payment,pay_6266551cc8c84314,cust_54036b6ee90a4f2f,payment.created,4999,INR,2026-07-18T16:03:11.788527,{}
+evt_8cc94fdd1ac645a4,payment,pay_6266551cc8c84314,cust_54036b6ee90a4f2f,payment.authorized,4999,INR,2026-07-18T16:03:19.788527,{}
+evt_a16bf1516aef45f5,payment,pay_6266551cc8c84314,cust_54036b6ee90a4f2f,payment.captured,4999,INR,2026-07-18T16:03:24.788527,{}
+evt_c7770f64ad914e81,payment,pay_1ce6fa4b330b4b52,cust_bab775145d814dbb,payment.created,2499,INR,2026-07-18T20:56:05.788527,{}
+evt_615abb552ede4e0b,payment,pay_1ce6fa4b330b4b52,cust_bab775145d814dbb,payment.authorized,2499,INR,2026-07-18T20:56:12.788527,{}
+evt_0aee0678bece409f,payment,pay_1ce6fa4b330b4b52,cust_bab775145d814dbb,payment.captured,2499,INR,2026-07-18T20:56:17.788527,{}
+evt_2a8670057bb04e2e,subscription,sub_bb3b43017d6148fc,cust_d276bb31e5994b2d,subscription.created,4999,INR,2026-07-18T22:03:45.788527,"{""plan"": ""plan_business""}"
+evt_36dc30d022ce43c2,checkout,chk_04004a6a6b2b4702,cust_e38435b265ac4c12,checkout.created,4999,INR,2026-07-19T05:19:25.788527,{}
+evt_2a39626d85424ef5,checkout,chk_04004a6a6b2b4702,cust_e38435b265ac4c12,checkout.abandoned,4999,INR,2026-07-19T05:35:25.788527,{}
+evt_9074c40a35ad4981,checkout,chk_7d0add12e3584fc4,cust_0dff22823a3f4259,checkout.created,499,INR,2026-07-19T06:17:44.788527,{}
+evt_7649db6821d84922,checkout,chk_7d0add12e3584fc4,cust_0dff22823a3f4259,checkout.completed,499,INR,2026-07-19T06:18:42.788527,{}
+evt_b182049662174936,subscription,sub_27fba8d2dee04406,cust_2416493153d543d9,subscription.pending,1499,INR,2026-07-19T06:51:58.788527,"{""reason"": ""network_error""}"
+evt_58db9a49d284487f,payment,pay_37c2e21bcd8641af,cust_2de6ccca9a154c19,payment.created,2499,INR,2026-07-19T08:21:52.788527,{}
+evt_a275c5fe454d4233,payment,pay_37c2e21bcd8641af,cust_2de6ccca9a154c19,payment.failed,2499,INR,2026-07-19T08:22:47.788527,"{""reason"": ""card_declined""}"
+evt_dbe2896abe574c94,payment,pay_080b9f5393d84f97,cust_0425780fa78643aa,payment.created,4999,INR,2026-07-19T15:27:23.788527,{}
+evt_e50abb82a7a84423,payment,pay_080b9f5393d84f97,cust_0425780fa78643aa,payment.authorized,4999,INR,2026-07-19T15:27:28.788527,{}
+evt_6da4da8044114baf,payment,pay_080b9f5393d84f97,cust_0425780fa78643aa,payment.captured,4999,INR,2026-07-19T15:27:33.788527,{}
+evt_3731cf66ac754b18,payment,pay_2c277197a57e4a67,cust_4c6ee929a92f4cff,payment.created,2499,INR,2026-07-19T17:17:28.788527,{}
+evt_b994f10bf3024771,payment,pay_2c277197a57e4a67,cust_4c6ee929a92f4cff,payment.authorized,2499,INR,2026-07-19T17:17:32.788527,{}
+evt_6cdec961faa74e1e,payment,pay_2c277197a57e4a67,cust_4c6ee929a92f4cff,payment.captured,2499,INR,2026-07-19T17:17:36.788527,{}
+evt_043bb0aba96341a3,subscription,sub_9027fa737b1f420b,cust_8426b2a6834e4e3b,subscription.created,499,INR,2026-07-19T21:21:17.788527,"{""plan"": ""plan_basic""}"
+evt_55a6e9519baf4d6e,payment,pay_fc7d65bfa7724191,cust_c2f38919bf264097,payment.created,1499,INR,2026-07-20T02:37:13.788527,{}
+evt_c7621e2854bf40de,payment,pay_fc7d65bfa7724191,cust_c2f38919bf264097,payment.authorized,1499,INR,2026-07-20T02:37:22.788527,{}
+evt_23980d8644384832,payment,pay_fc7d65bfa7724191,cust_c2f38919bf264097,payment.captured,1499,INR,2026-07-20T02:37:24.788527,{}
+evt_8354078d51ce44cf,payment,pay_57b1afb672714ed4,cust_fa04fc20c4304c6f,payment.created,2499,INR,2026-07-20T12:37:32.788527,{}
+evt_e78b1e809b534988,payment,pay_57b1afb672714ed4,cust_fa04fc20c4304c6f,payment.authorized,2499,INR,2026-07-20T12:37:40.788527,{}
+evt_223e845036dd4a01,payment,pay_57b1afb672714ed4,cust_fa04fc20c4304c6f,payment.captured,2499,INR,2026-07-20T12:37:45.788527,{}
+evt_7538eda4122d46ed,payment,pay_444a854b433a42ce,cust_c2f38919bf264097,payment.created,999,INR,2026-07-20T16:38:08.788527,{}
+evt_2f87a1cbbb9c40a7,payment,pay_444a854b433a42ce,cust_c2f38919bf264097,payment.failed,999,INR,2026-07-20T16:38:34.788527,"{""reason"": ""insufficient_funds""}"
+evt_2c7c9dcf5fb14ae6,checkout,chk_9bb5f0a5ccc84667,cust_0dff22823a3f4259,checkout.created,2499,INR,2026-07-20T18:06:35.788527,{}
+evt_0db6b17f64c04963,checkout,chk_9bb5f0a5ccc84667,cust_0dff22823a3f4259,checkout.abandoned,2499,INR,2026-07-20T18:29:35.788527,{}
+evt_7df4fccc9c26409c,payment,pay_994d402f22bb4fac,cust_0dff22823a3f4259,payment.created,999,INR,2026-07-20T23:59:49.788527,{}
+evt_a7e46cc8f57c4a5a,payment,pay_994d402f22bb4fac,cust_0dff22823a3f4259,payment.authorized,999,INR,2026-07-20T23:59:58.788527,{}
+evt_d412a1b04ae443cd,payment,pay_994d402f22bb4fac,cust_0dff22823a3f4259,payment.captured,999,INR,2026-07-20T23:59:59.788527,{}
+evt_19296ccf23dd4304,payment,pay_04b6bca4bcb547fc,cust_d3dc77e430ac4d03,payment.created,2499,INR,2026-07-21T02:49:40.788527,{}
+evt_7d401b520dc44706,payment,pay_04b6bca4bcb547fc,cust_d3dc77e430ac4d03,payment.authorized,2499,INR,2026-07-21T02:49:45.788527,{}
+evt_3725b13e0c7c4829,payment,pay_04b6bca4bcb547fc,cust_d3dc77e430ac4d03,payment.captured,2499,INR,2026-07-21T02:49:49.788527,{}
+evt_39c393e7db1d4f48,checkout,chk_c4cc42d9e5494dfa,cust_e482a185263e4b66,checkout.created,499,INR,2026-07-21T05:20:49.788527,{}
+evt_c9bf9f40d2c74302,checkout,chk_c4cc42d9e5494dfa,cust_e482a185263e4b66,checkout.completed,499,INR,2026-07-21T05:22:01.788527,{}
+evt_a3abb23685d54f9d,payment,pay_a931140691174a7e,cust_d58a9c3e580e4c22,payment.created,999,INR,2026-07-21T05:25:13.788527,{}
+evt_b7f8bcf6641140f1,payment,pay_a931140691174a7e,cust_d58a9c3e580e4c22,payment.authorized,999,INR,2026-07-21T05:25:21.788527,{}
+evt_93515fe0a4e54ea0,payment,pay_a931140691174a7e,cust_d58a9c3e580e4c22,payment.captured,999,INR,2026-07-21T05:25:24.788527,{}
+evt_51037b1858a64939,payment,pay_bc2c9dbe43664d57,cust_43efba693da04c56,payment.created,999,INR,2026-07-21T10:09:35.788527,{}
+evt_bc72c949185848b3,payment,pay_bc2c9dbe43664d57,cust_43efba693da04c56,payment.failed,999,INR,2026-07-21T10:10:05.788527,"{""reason"": ""card_declined""}"
+evt_6412d574b26e4a00,payment,pay_cab115da01974da6,cust_ea576ff1540448d8,payment.created,999,INR,2026-07-21T14:39:20.788527,{}
+evt_5a7c0ab82d014605,payment,pay_cab115da01974da6,cust_ea576ff1540448d8,payment.failed,999,INR,2026-07-21T14:40:12.788527,"{""reason"": ""bank_timeout""}"
+evt_2fe0f66e640b41d2,subscription,sub_2469fd079df74cc1,cust_5f0d0617f7694a61,subscription.created,4999,INR,2026-07-22T06:23:53.788527,"{""plan"": ""plan_business""}"
+evt_1bde49badd0b4932,payment,pay_f072e2cd7d0d436c,cust_128887ede58a42fd,payment.created,9999,INR,2026-07-22T18:33:29.788527,{}
+evt_13d80b1feba14782,payment,pay_f072e2cd7d0d436c,cust_128887ede58a42fd,payment.authorized,9999,INR,2026-07-22T18:33:32.788527,{}
+evt_a985b17612f1497d,payment,pay_f072e2cd7d0d436c,cust_128887ede58a42fd,payment.captured,9999,INR,2026-07-22T18:33:36.788527,{}
+evt_63b901890ebf4fdf,payment,pay_d8ba1817775c4fd4,cust_bada2daed92440e9,payment.created,2499,INR,2026-07-22T21:40:55.788527,{}
+evt_ca203dbaa3634902,payment,pay_d8ba1817775c4fd4,cust_bada2daed92440e9,payment.authorized,2499,INR,2026-07-22T21:41:00.788527,{}
+evt_272685b9c57d48e8,payment,pay_d8ba1817775c4fd4,cust_bada2daed92440e9,payment.captured,2499,INR,2026-07-22T21:41:04.788527,{}
+evt_36a7157eb78c408a,payment,pay_0064908eb3814518,cust_d58a9c3e580e4c22,payment.created,499,INR,2026-07-23T00:53:31.788527,{}
+evt_964865a37fbf4356,payment,pay_0064908eb3814518,cust_d58a9c3e580e4c22,payment.authorized,499,INR,2026-07-23T00:53:35.788527,{}
+evt_259b23e94dc04704,payment,pay_0064908eb3814518,cust_d58a9c3e580e4c22,payment.captured,499,INR,2026-07-23T00:53:39.788527,{}
+evt_0ff034a6dd374e63,checkout,chk_b601aba69679406a,cust_3f2156764e704e5b,checkout.created,2499,INR,2026-07-23T03:25:25.788527,{}
+evt_06aa7be31e1c488a,checkout,chk_b601aba69679406a,cust_3f2156764e704e5b,checkout.abandoned,2499,INR,2026-07-23T03:35:25.788527,{}
+evt_7c238a9636af40a7,payment,pay_e99983e1c91845cb,cust_3fc0d32b4b1547f3,payment.created,9999,INR,2026-07-23T07:19:15.788527,{}
+evt_a579364f56d24d9a,payment,pay_e99983e1c91845cb,cust_3fc0d32b4b1547f3,payment.authorized,9999,INR,2026-07-23T07:19:22.788527,{}
+evt_bd02e3b188654a72,payment,pay_e99983e1c91845cb,cust_3fc0d32b4b1547f3,payment.captured,9999,INR,2026-07-23T07:19:24.788527,{}
+evt_e6517ab040b94e61,payment,pay_8fa86b7ec36d459c,cust_949fec18d86e47cf,payment.created,499,INR,2026-07-24T15:26:10.788527,{}
+evt_3e35e6cea53a4ede,payment,pay_8fa86b7ec36d459c,cust_949fec18d86e47cf,payment.authorized,499,INR,2026-07-24T15:26:12.788527,{}
+evt_e274a3e449e744b0,payment,pay_8fa86b7ec36d459c,cust_949fec18d86e47cf,payment.captured,499,INR,2026-07-24T15:26:14.788527,{}
+evt_c3865e34f15d4ef8,subscription,sub_5a90b2d3d31c4615,cust_0e03bed9d89645d0,subscription.created,4999,INR,2026-07-24T22:13:02.788527,"{""plan"": ""plan_business""}"
+evt_84c6e61a91b24494,checkout,chk_96bae432fce644d9,cust_3156f977586f4925,checkout.created,499,INR,2026-07-25T13:04:42.788527,{}
+evt_c944aac4d4d042df,checkout,chk_96bae432fce644d9,cust_3156f977586f4925,checkout.abandoned,499,INR,2026-07-25T13:29:42.788527,{}
+evt_1c2220172b064983,payment,pay_fab8bd585d484990,cust_0425780fa78643aa,payment.created,19999,INR,2026-07-25T17:35:06.788527,{}
+evt_34164e0b0b8c4227,payment,pay_fab8bd585d484990,cust_0425780fa78643aa,payment.authorized,19999,INR,2026-07-25T17:35:14.788527,{}
+evt_e92c230baf7c4f9b,payment,pay_fab8bd585d484990,cust_0425780fa78643aa,payment.captured,19999,INR,2026-07-25T17:35:18.788527,{}
+evt_84be7ab20c114c51,checkout,chk_ce27b932668a427d,cust_3d5adbdf1e624f5d,checkout.created,4999,INR,2026-07-25T17:45:06.788527,{}
+evt_43532132da1e46ab,checkout,chk_ce27b932668a427d,cust_3d5adbdf1e624f5d,checkout.abandoned,4999,INR,2026-07-25T18:15:06.788527,{}
+evt_3b6c8252c6524628,checkout,chk_c58353f0146b4ceb,cust_ea576ff1540448d8,checkout.created,1499,INR,2026-07-26T00:45:35.788527,{}
+evt_6027667eba1143a9,checkout,chk_c58353f0146b4ceb,cust_ea576ff1540448d8,checkout.completed,1499,INR,2026-07-26T00:47:17.788527,{}
+evt_87db88aa40624fb3,payment,pay_5b454af929df4f3f,cust_79c2a6caef3444a2,payment.created,999,INR,2026-07-26T01:05:18.788527,{}
+evt_dc58787a5537480d,payment,pay_5b454af929df4f3f,cust_79c2a6caef3444a2,payment.authorized,999,INR,2026-07-26T01:05:28.788527,{}
+evt_28a4d8544aa24279,payment,pay_5b454af929df4f3f,cust_79c2a6caef3444a2,payment.captured,999,INR,2026-07-26T01:05:30.788527,{}
+evt_d4610903a32949c9,payment,pay_f50c0979de9849e9,cust_36de0ceebe7141ae,payment.created,2499,INR,2026-07-26T08:05:09.788527,{}
+evt_db22ec691c4e4389,payment,pay_f50c0979de9849e9,cust_36de0ceebe7141ae,payment.authorized,2499,INR,2026-07-26T08:05:11.788527,{}
+evt_8074ea3773f5453a,payment,pay_f50c0979de9849e9,cust_36de0ceebe7141ae,payment.captured,2499,INR,2026-07-26T08:05:15.788527,{}
+evt_283c8d915bec4008,subscription,sub_f47e1833f6de452a,cust_d858520b91764b98,subscription.created,4999,INR,2026-07-26T08:21:38.788527,"{""plan"": ""plan_business""}"
+evt_e3cb49e951a04c05,payment,pay_b3ce7c691522425e,cust_cf371e95411c46aa,payment.created,2499,INR,2026-07-26T08:53:14.788527,{}
+evt_9141c3ff2870488f,payment,pay_b3ce7c691522425e,cust_cf371e95411c46aa,payment.authorized,2499,INR,2026-07-26T08:53:24.788527,{}
+evt_b670dd625e3a44a6,payment,pay_b3ce7c691522425e,cust_cf371e95411c46aa,payment.captured,2499,INR,2026-07-26T08:53:29.788527,{}
+evt_9b3e274d4cb845f3,payment,pay_e807da844a46481a,cust_387fbf70c22f42ab,payment.created,999,INR,2026-07-26T17:06:56.788527,{}
+evt_124387e09fb6446a,payment,pay_e807da844a46481a,cust_387fbf70c22f42ab,payment.authorized,999,INR,2026-07-26T17:07:02.788527,{}
+evt_4db93cc85cff42ef,payment,pay_e807da844a46481a,cust_387fbf70c22f42ab,payment.captured,999,INR,2026-07-26T17:07:03.788527,{}
+evt_4d66c291c0344714,payment,pay_63db7b638a3a425d,cust_621b40fa868d4c92,payment.created,2499,INR,2026-07-26T21:49:08.788527,{}
+evt_f40e62a8024b42fa,payment,pay_63db7b638a3a425d,cust_621b40fa868d4c92,payment.failed,2499,INR,2026-07-26T21:50:05.788527,"{""reason"": ""network_error""}"
+evt_ceec9e1ac5034e7c,payment,pay_12fc94c69bfa41b6,cust_bb9a6cfd20b4420e,payment.created,1499,INR,2026-07-26T22:20:59.788527,{}
+evt_d756201b20574035,payment,pay_12fc94c69bfa41b6,cust_bb9a6cfd20b4420e,payment.authorized,1499,INR,2026-07-26T22:21:08.788527,{}
+evt_204190eab5874f90,payment,pay_12fc94c69bfa41b6,cust_bb9a6cfd20b4420e,payment.captured,1499,INR,2026-07-26T22:21:11.788527,{}
+evt_cd5216b6952f433d,payment,pay_eaf83867f85d4964,cust_0e03bed9d89645d0,payment.created,1499,INR,2026-07-27T01:40:07.788527,{}
+evt_bc6cbd1f557b4afd,payment,pay_eaf83867f85d4964,cust_0e03bed9d89645d0,payment.failed,1499,INR,2026-07-27T01:40:27.788527,"{""reason"": ""card_declined""}"
+evt_111654c1a5974afa,checkout,chk_d6e6276d66ce4192,cust_f422dc20ecea46f0,checkout.created,19999,INR,2026-07-27T07:46:49.788527,{}
+evt_11355e2ff8d4407e,checkout,chk_d6e6276d66ce4192,cust_f422dc20ecea46f0,checkout.completed,19999,INR,2026-07-27T07:48:31.788527,{}
+evt_a90b715a124d4c29,subscription,sub_1e39ac11815b415f,cust_e033e6ddd76345b3,subscription.created,1499,INR,2026-07-27T17:07:27.788527,"{""plan"": ""plan_pro""}"
+evt_0785559a815b4f41,checkout,chk_6ea9361deda7476a,cust_f422dc20ecea46f0,checkout.created,4999,INR,2026-07-27T17:20:14.788527,{}
+evt_4efe66542a964c55,checkout,chk_6ea9361deda7476a,cust_f422dc20ecea46f0,checkout.completed,4999,INR,2026-07-27T17:22:12.788527,{}
+evt_d4f6f1d0c5d746de,payment,pay_be42b77e99ca4661,cust_ea576ff1540448d8,payment.created,2499,INR,2026-07-27T19:12:54.788527,{}
+evt_55e6fa9f9a014205,payment,pay_be42b77e99ca4661,cust_ea576ff1540448d8,payment.failed,2499,INR,2026-07-27T19:13:39.788527,"{""reason"": ""gateway_failure""}"
+evt_a03f04b701a249e4,payment,pay_2b1e535cdcfb41eb,cust_8562825a26ac4ed1,payment.created,9999,INR,2026-07-27T21:53:46.788527,{}
+evt_cc888267a62c484a,payment,pay_2b1e535cdcfb41eb,cust_8562825a26ac4ed1,payment.authorized,9999,INR,2026-07-27T21:53:55.788527,{}
+evt_ca8d24eeb5f743dc,payment,pay_2b1e535cdcfb41eb,cust_8562825a26ac4ed1,payment.captured,9999,INR,2026-07-27T21:54:00.788527,{}
+evt_048aa89f760b46cd,payment,pay_a928aaa4194c42c0,cust_751ead4ee8e6424d,payment.created,999,INR,2026-07-27T23:23:50.788527,{}
+evt_747584d1c86b47bd,payment,pay_a928aaa4194c42c0,cust_751ead4ee8e6424d,payment.authorized,999,INR,2026-07-27T23:23:57.788527,{}
+evt_bbe1865c2f7e4072,payment,pay_a928aaa4194c42c0,cust_751ead4ee8e6424d,payment.captured,999,INR,2026-07-27T23:24:00.788527,{}
+evt_abb4028fc7e240a3,subscription,sub_ed7a8517877e4fca,cust_4e214f61310847b8,subscription.created,4999,INR,2026-07-28T04:34:06.788527,"{""plan"": ""plan_business""}"
+evt_05ac9e7641c0479e,payment,pay_216c02ae35964432,cust_2673cf5c72eb4eea,payment.created,999,INR,2026-07-28T06:45:30.788527,{}
+evt_95ea7dbecb0b46c9,payment,pay_216c02ae35964432,cust_2673cf5c72eb4eea,payment.authorized,999,INR,2026-07-28T06:45:39.788527,{}
+evt_f4c9149bf8414cd4,payment,pay_216c02ae35964432,cust_2673cf5c72eb4eea,payment.captured,999,INR,2026-07-28T06:45:41.788527,{}
+evt_71ba2591ef0d4b19,subscription,sub_db48b74e3a6743c4,cust_d8b4a5646e3e44f3,subscription.created,499,INR,2026-07-28T07:28:49.788527,"{""plan"": ""plan_basic""}"
+evt_ab906fc93b6a482d,checkout,chk_cfb8a67009024bea,cust_bb9a6cfd20b4420e,checkout.created,499,INR,2026-07-28T09:56:05.788527,{}
+evt_6b03458d944f4f2e,checkout,chk_cfb8a67009024bea,cust_bb9a6cfd20b4420e,checkout.abandoned,499,INR,2026-07-28T10:08:05.788527,{}
+evt_8cf45c31bb764a75,subscription,sub_d4ae26e424a949d8,cust_f4fa33d4c771491c,subscription.created,499,INR,2026-07-28T10:32:13.788527,"{""plan"": ""plan_basic""}"
+evt_1f37d01854944bd8,payment,pay_959dc45abbd4469e,cust_387fbf70c22f42ab,payment.created,999,INR,2026-07-28T18:58:24.788527,{}
+evt_e0fdc8be51f6440b,payment,pay_959dc45abbd4469e,cust_387fbf70c22f42ab,payment.authorized,999,INR,2026-07-28T18:58:29.788527,{}
+evt_cffc897635a24852,payment,pay_959dc45abbd4469e,cust_387fbf70c22f42ab,payment.captured,999,INR,2026-07-28T18:58:32.788527,{}
+evt_d7f994e3e92c430b,checkout,chk_d0061cf1febd4b63,cust_68dd48ba801e4276,checkout.created,19999,INR,2026-07-29T02:22:46.788527,{}
+evt_9d9dfde384fe4047,checkout,chk_d0061cf1febd4b63,cust_68dd48ba801e4276,checkout.abandoned,19999,INR,2026-07-29T02:36:46.788527,{}
+evt_9008319b566c46ea,subscription,sub_44899a81de9f4418,cust_51e06e8e8ca8476a,subscription.created,4999,INR,2026-07-29T03:38:59.788527,"{""plan"": ""plan_business""}"
+evt_1d34512061d14357,payment,pay_082d1582d7f84e58,cust_51e06e8e8ca8476a,payment.created,2499,INR,2026-07-29T04:47:14.788527,{}
+evt_c637a214bd4841c1,payment,pay_082d1582d7f84e58,cust_51e06e8e8ca8476a,payment.authorized,2499,INR,2026-07-29T04:47:18.788527,{}
+evt_b29baa47104548cf,payment,pay_082d1582d7f84e58,cust_51e06e8e8ca8476a,payment.captured,2499,INR,2026-07-29T04:47:21.788527,{}
+evt_3c913181bab34f89,checkout,chk_c5e68d8752d24c1d,cust_e482a185263e4b66,checkout.created,19999,INR,2026-07-29T05:49:00.788527,{}
+evt_1f58fb6018dc49bc,checkout,chk_c5e68d8752d24c1d,cust_e482a185263e4b66,checkout.completed,19999,INR,2026-07-29T05:50:32.788527,{}
+evt_6f53b19bc2fb4961,checkout,chk_43469e71c1aa4745,cust_e9380b4930274338,checkout.created,4999,INR,2026-07-29T06:25:17.788527,{}
+evt_5a462bc83b1f4bcf,checkout,chk_43469e71c1aa4745,cust_e9380b4930274338,checkout.completed,4999,INR,2026-07-29T06:26:49.788527,{}
+evt_5d95f664f4df4104,payment,pay_5e03283c3ab942eb,cust_68dd48ba801e4276,payment.created,2499,INR,2026-07-29T13:43:57.788527,{}
+evt_1b9a17e1e9244972,payment,pay_5e03283c3ab942eb,cust_68dd48ba801e4276,payment.authorized,2499,INR,2026-07-29T13:44:06.788527,{}
+evt_19e4435f9ee84a93,payment,pay_5e03283c3ab942eb,cust_68dd48ba801e4276,payment.captured,2499,INR,2026-07-29T13:44:07.788527,{}
+evt_95aaa547a1804977,checkout,chk_6afcca26d6d043d5,cust_3f2156764e704e5b,checkout.created,19999,INR,2026-07-29T14:58:15.788527,{}
+evt_2977e9a0c2ec4d84,checkout,chk_6afcca26d6d043d5,cust_3f2156764e704e5b,checkout.abandoned,19999,INR,2026-07-29T15:10:15.788527,{}
+evt_dc2a1abf9a4b4589,payment,pay_6ee86929bf5849b1,cust_36de0ceebe7141ae,payment.created,999,INR,2026-07-29T15:10:24.788527,{}
+evt_3f5d03f2120844af,payment,pay_6ee86929bf5849b1,cust_36de0ceebe7141ae,payment.authorized,999,INR,2026-07-29T15:10:26.788527,{}
+evt_acea743ef47448e7,payment,pay_6ee86929bf5849b1,cust_36de0ceebe7141ae,payment.captured,999,INR,2026-07-29T15:10:28.788527,{}
+evt_32c557505c384c62,checkout,chk_6eeec2c3954840a8,cust_bdae09b0e0e448b0,checkout.created,9999,INR,2026-07-29T15:42:03.788527,{}
+evt_f666ede69a7046cb,checkout,chk_6eeec2c3954840a8,cust_bdae09b0e0e448b0,checkout.completed,9999,INR,2026-07-29T15:42:44.788527,{}
+evt_231a23184dd34ee4,payment,pay_960010faaa884c0e,cust_d858520b91764b98,payment.created,19999,INR,2026-07-29T16:20:07.788527,{}
+evt_2588d3297349453f,payment,pay_960010faaa884c0e,cust_d858520b91764b98,payment.authorized,19999,INR,2026-07-29T16:20:11.788527,{}
+evt_23f7ed6a97804388,payment,pay_960010faaa884c0e,cust_d858520b91764b98,payment.captured,19999,INR,2026-07-29T16:20:14.788527,{}
+evt_84fd76bfd2ca4c02,payment,pay_5baf10b444d8441c,cust_c5a7a49d0f944889,payment.created,9999,INR,2026-07-29T16:29:49.788527,{}
+evt_cc70cf58d94d4667,payment,pay_5baf10b444d8441c,cust_c5a7a49d0f944889,payment.authorized,9999,INR,2026-07-29T16:29:53.788527,{}
+evt_151932b30d9b4d64,payment,pay_5baf10b444d8441c,cust_c5a7a49d0f944889,payment.captured,9999,INR,2026-07-29T16:29:58.788527,{}
+evt_e46d31fb21714b9a,payment,pay_b570c1748aba46ff,cust_8d46cc1c22de4cd6,payment.created,2499,INR,2026-07-29T22:21:42.788527,{}
+evt_e5b6776967d548cd,payment,pay_b570c1748aba46ff,cust_8d46cc1c22de4cd6,payment.failed,2499,INR,2026-07-29T22:22:26.788527,"{""reason"": ""card_declined""}"
+evt_1c5e0dcdf8804bf8,subscription,sub_a3c15243a1214380,cust_0e03bed9d89645d0,subscription.created,1499,INR,2026-07-30T04:13:46.788527,"{""plan"": ""plan_pro""}"
+evt_1682ec17e2b14644,payment,pay_16d50f1b46f44610,cust_fa04fc20c4304c6f,payment.created,999,INR,2026-07-30T06:04:40.788527,{}
+evt_780ca759fb70477a,payment,pay_16d50f1b46f44610,cust_fa04fc20c4304c6f,payment.authorized,999,INR,2026-07-30T06:04:43.788527,{}
+evt_7fee0d94a1204131,payment,pay_16d50f1b46f44610,cust_fa04fc20c4304c6f,payment.captured,999,INR,2026-07-30T06:04:48.788527,{}
+evt_8a64272668954fc8,payment,pay_1a5545c2c16a4c2c,cust_952f30d066ab43cf,payment.created,1499,INR,2026-07-30T08:38:04.788527,{}
+evt_cc81f7d7b17647f3,payment,pay_1a5545c2c16a4c2c,cust_952f30d066ab43cf,payment.authorized,1499,INR,2026-07-30T08:38:06.788527,{}
+evt_dd4abdf2432f4d1b,payment,pay_1a5545c2c16a4c2c,cust_952f30d066ab43cf,payment.captured,1499,INR,2026-07-30T08:38:08.788527,{}
+evt_373806f63d9f417e,checkout,chk_93e6d050d8584d7d,cust_163f2a427d0948cc,checkout.created,999,INR,2026-07-30T11:23:52.788527,{}
+evt_d71f006a9ceb4cf3,checkout,chk_93e6d050d8584d7d,cust_163f2a427d0948cc,checkout.completed,999,INR,2026-07-30T11:25:51.788527,{}
+evt_23bfac3a15c14a02,checkout,chk_24022311425d4274,cust_7d96b4632bf64dee,checkout.created,1499,INR,2026-07-30T14:22:41.788527,{}
+evt_5b9a0fd717824d0d,checkout,chk_24022311425d4274,cust_7d96b4632bf64dee,checkout.completed,1499,INR,2026-07-30T14:23:49.788527,{}
+evt_20443d7f0e50455c,subscription,sub_1ce281d260d04039,cust_8562825a26ac4ed1,subscription.created,4999,INR,2026-07-30T15:34:04.788527,"{""plan"": ""plan_business""}"
+evt_67a08210fd074816,payment,pay_50180c4d944e4bab,cust_d276bb31e5994b2d,payment.created,4999,INR,2026-07-30T16:08:14.788527,{}
+evt_0270c8f44db24550,payment,pay_50180c4d944e4bab,cust_d276bb31e5994b2d,payment.authorized,4999,INR,2026-07-30T16:08:19.788527,{}
+evt_66d570749e04411b,payment,pay_50180c4d944e4bab,cust_d276bb31e5994b2d,payment.captured,4999,INR,2026-07-30T16:08:20.788527,{}
+evt_b1947527ef424c0f,subscription,sub_6994178899304e23,cust_87be90a2f9f24991,subscription.created,499,INR,2026-07-31T06:38:03.788527,"{""plan"": ""plan_basic""}"
+evt_223e21bad561445e,subscription,sub_dbc7bffb691d4359,cust_d58a9c3e580e4c22,subscription.created,499,INR,2026-07-31T07:06:39.788527,"{""plan"": ""plan_basic""}"
+evt_874409783e654fff,checkout,chk_01adfc79a8f54b32,cust_36de0ceebe7141ae,checkout.created,999,INR,2026-07-31T12:08:18.788527,{}
+evt_97e1773953844f3b,checkout,chk_01adfc79a8f54b32,cust_36de0ceebe7141ae,checkout.completed,999,INR,2026-07-31T12:09:59.788527,{}
+evt_8f0b7c0b15b64306,checkout,chk_45697d33a8084c56,cust_1fd68ddf9da241bb,checkout.created,9999,INR,2026-07-31T12:15:39.788527,{}
+evt_5a8b89e8c37c4f99,checkout,chk_45697d33a8084c56,cust_1fd68ddf9da241bb,checkout.completed,9999,INR,2026-07-31T12:16:46.788527,{}
+evt_34bc7ccf36ce4f0a,subscription,sub_0fbe25ed36f84b5b,cust_e0e0dd5c13ed4e86,subscription.created,499,INR,2026-07-31T13:01:50.788527,"{""plan"": ""plan_basic""}"
+evt_66cb485b207d47e7,payment,pay_6f36b90743fd467f,cust_e482a185263e4b66,payment.created,1499,INR,2026-07-31T15:25:24.788527,{}
+evt_3fcad398b99543aa,payment,pay_6f36b90743fd467f,cust_e482a185263e4b66,payment.failed,1499,INR,2026-07-31T15:26:17.788527,"{""reason"": ""card_declined""}"
+evt_831d0d68ad2d4242,subscription,sub_db8b1d33fc5f4dca,cust_8c792f3cf57b42b9,subscription.created,4999,INR,2026-08-01T01:00:11.788527,"{""plan"": ""plan_business""}"
+evt_a3a9ced964ab435e,checkout,chk_8c3efe26bbfc4961,cust_0985e6d73ae541f9,checkout.created,499,INR,2026-08-01T06:02:18.788527,{}
+evt_3c9acb19e25040f6,checkout,chk_8c3efe26bbfc4961,cust_0985e6d73ae541f9,checkout.completed,499,INR,2026-08-01T06:03:22.788527,{}
+evt_1ba16ba7e3744a20,payment,pay_abbc8a4220d0411a,cust_826f3e6850d743de,payment.created,1499,INR,2026-08-01T10:10:31.788527,{}
+evt_3ed922654bb146f3,payment,pay_abbc8a4220d0411a,cust_826f3e6850d743de,payment.authorized,1499,INR,2026-08-01T10:10:34.788527,{}
+evt_7b81db9777a842c5,payment,pay_abbc8a4220d0411a,cust_826f3e6850d743de,payment.captured,1499,INR,2026-08-01T10:10:35.788527,{}
+evt_4334e3264c634187,subscription,sub_347e133761ce4363,cust_e033e6ddd76345b3,subscription.created,499,INR,2026-08-01T15:37:32.788527,"{""plan"": ""plan_basic""}"
+evt_bace1d0adabe42e9,payment,pay_031f19ad7d104e33,cust_31b3b9475ad64150,payment.created,999,INR,2026-08-01T19:22:40.788527,{}
+evt_78f855cabbb049ea,payment,pay_031f19ad7d104e33,cust_31b3b9475ad64150,payment.authorized,999,INR,2026-08-01T19:22:47.788527,{}
+evt_f425aaf09a084242,payment,pay_031f19ad7d104e33,cust_31b3b9475ad64150,payment.captured,999,INR,2026-08-01T19:22:52.788527,{}
+evt_46aab3257e9649fb,payment,pay_5ed070c5beda4f78,cust_6537b2a991364bd3,payment.created,2499,INR,2026-08-02T01:18:27.788527,{}
+evt_7ce2551922d143f5,payment,pay_5ed070c5beda4f78,cust_6537b2a991364bd3,payment.authorized,2499,INR,2026-08-02T01:18:29.788527,{}
+evt_f7a22a10267a4227,payment,pay_5ed070c5beda4f78,cust_6537b2a991364bd3,payment.captured,2499,INR,2026-08-02T01:18:30.788527,{}
+evt_9deaaa36cc6b4e88,subscription,sub_192e84e8f9c744ea,cust_af99e9041ec444f5,subscription.created,4999,INR,2026-08-02T03:01:42.788527,"{""plan"": ""plan_business""}"
+evt_41f8fd75e20f45b8,subscription,sub_844f59cf82064b20,cust_3e86430a38564acc,subscription.created,4999,INR,2026-08-02T03:07:26.788527,"{""plan"": ""plan_business""}"
+evt_3b9cfffe3803416e,checkout,chk_324b4eee17d44f62,cust_2673cf5c72eb4eea,checkout.created,19999,INR,2026-08-02T03:21:52.788527,{}
+evt_b4abe99e64ec448c,checkout,chk_324b4eee17d44f62,cust_2673cf5c72eb4eea,checkout.completed,19999,INR,2026-08-02T03:23:51.788527,{}
+evt_d8f268ac905c4da1,subscription,sub_eb3ebdbdb185480e,cust_e1f063bc7ce1418e,subscription.created,4999,INR,2026-08-02T04:05:04.788527,"{""plan"": ""plan_business""}"
+evt_1f5ef8abf7fc4d9c,payment,pay_e0ccbf9ba1954a07,cust_fb7a8984133545b5,payment.created,999,INR,2026-08-02T08:25:33.788527,{}
+evt_d428ddddf2664e49,payment,pay_e0ccbf9ba1954a07,cust_fb7a8984133545b5,payment.failed,999,INR,2026-08-02T08:26:00.788527,"{""reason"": ""network_error""}"
+evt_f9919e3105774412,checkout,chk_73174595a1a7478a,cust_4fcee444813e4f00,checkout.created,4999,INR,2026-08-02T08:39:19.788527,{}
+evt_f56bd2522afc4965,checkout,chk_73174595a1a7478a,cust_4fcee444813e4f00,checkout.abandoned,4999,INR,2026-08-02T09:00:19.788527,{}
+evt_f2da663d79104ab5,subscription,sub_a9832bce3f8041c8,cust_3fc0d32b4b1547f3,subscription.created,1499,INR,2026-08-02T09:20:55.788527,"{""plan"": ""plan_pro""}"
+evt_e0c3f6d2d8a24d49,subscription,sub_509f2ddfb8124723,cust_d4679ce903064450,subscription.created,1499,INR,2026-08-02T10:36:38.788527,"{""plan"": ""plan_pro""}"
+evt_26a6c88861144190,subscription,sub_f7b9c636658b4b1b,cust_ad67e7949c084dfd,subscription.created,1499,INR,2026-08-02T12:59:28.788527,"{""plan"": ""plan_pro""}"
+evt_0de6f0af5cd04a03,checkout,chk_9c7f3b8824804d4c,cust_9e01e9cf05b74b45,checkout.created,4999,INR,2026-08-02T15:36:50.788527,{}
+evt_f3fe1433065d44da,checkout,chk_9c7f3b8824804d4c,cust_9e01e9cf05b74b45,checkout.completed,4999,INR,2026-08-02T15:37:31.788527,{}
+evt_5f2e4be38e0040c9,payment,pay_448cab8f2883412c,cust_21822ad9691942ac,payment.created,9999,INR,2026-08-02T18:43:33.788527,{}
+evt_bfd30fce2d504b3e,payment,pay_448cab8f2883412c,cust_21822ad9691942ac,payment.authorized,9999,INR,2026-08-02T18:43:43.788527,{}
+evt_226c8c21a2974139,payment,pay_448cab8f2883412c,cust_21822ad9691942ac,payment.captured,9999,INR,2026-08-02T18:43:46.788527,{}
+evt_a3a5d830a4de4293,payment,pay_bc1ef8d3cd0345e7,cust_4c6ee929a92f4cff,payment.created,1499,INR,2026-08-02T23:37:01.788527,{}
+evt_0bf66d238a534f25,payment,pay_bc1ef8d3cd0345e7,cust_4c6ee929a92f4cff,payment.authorized,1499,INR,2026-08-02T23:37:04.788527,{}
+evt_6682727273bb4c47,payment,pay_bc1ef8d3cd0345e7,cust_4c6ee929a92f4cff,payment.captured,1499,INR,2026-08-02T23:37:06.788527,{}
+evt_15fa9de599fb4b0c,checkout,chk_19f54e81626246c4,cust_4d5b67526ea94113,checkout.created,9999,INR,2026-08-03T00:28:31.788527,{}
+evt_88173cfb2f694c58,checkout,chk_19f54e81626246c4,cust_4d5b67526ea94113,checkout.completed,9999,INR,2026-08-03T00:29:24.788527,{}
+evt_84f9604275904668,subscription,sub_af592e4f015449be,cust_2f3315fc8a3c42a5,subscription.created,4999,INR,2026-08-03T03:44:41.788527,"{""plan"": ""plan_business""}"
+evt_c520d97fe5cc4fbf,subscription,sub_d4ae26e424a949d8,cust_f4fa33d4c771491c,subscription.pending,499,INR,2026-08-03T04:04:59.788527,"{""reason"": ""gateway_failure""}"
+evt_6ef4a7ad876a461c,payment,pay_5d4e9134165444cc,cust_41d0947faf7543d9,payment.created,19999,INR,2026-08-03T04:16:04.788527,{}
+evt_48ef148e7e0249a4,payment,pay_5d4e9134165444cc,cust_41d0947faf7543d9,payment.authorized,19999,INR,2026-08-03T04:16:14.788527,{}
+evt_cd8b92b815b742fd,payment,pay_5d4e9134165444cc,cust_41d0947faf7543d9,payment.captured,19999,INR,2026-08-03T04:16:19.788527,{}
+evt_2b57b3724ac74413,payment,pay_3566ea0f76a54cec,cust_7d43bc042e884b31,payment.created,999,INR,2026-08-03T07:40:11.788527,{}
+evt_9b58a9f2a56646e5,payment,pay_3566ea0f76a54cec,cust_7d43bc042e884b31,payment.authorized,999,INR,2026-08-03T07:40:20.788527,{}
+evt_b9a8974993ff4398,payment,pay_3566ea0f76a54cec,cust_7d43bc042e884b31,payment.captured,999,INR,2026-08-03T07:40:22.788527,{}
+evt_dabd171a18554698,checkout,chk_5560901dc19f4a04,cust_dfa0ee62fdc14137,checkout.created,2499,INR,2026-08-03T10:20:06.788527,{}
+evt_12cd2ccc11934143,checkout,chk_5560901dc19f4a04,cust_dfa0ee62fdc14137,checkout.completed,2499,INR,2026-08-03T10:21:18.788527,{}
+evt_a038277f5a684ca2,checkout,chk_9b644df4b0794c4a,cust_e3452a1e8a8b45e6,checkout.created,9999,INR,2026-08-03T10:54:42.788527,{}
+evt_750c206c21734a75,checkout,chk_9b644df4b0794c4a,cust_e3452a1e8a8b45e6,checkout.abandoned,9999,INR,2026-08-03T11:07:42.788527,{}
+evt_453a1384b36a4b92,payment,pay_7dce3a2386534be4,cust_3e86430a38564acc,payment.created,2499,INR,2026-08-03T20:37:06.788527,{}
+evt_4b42dbb7b10f4461,payment,pay_7dce3a2386534be4,cust_3e86430a38564acc,payment.authorized,2499,INR,2026-08-03T20:37:16.788527,{}
+evt_af94d71839d34e10,payment,pay_7dce3a2386534be4,cust_3e86430a38564acc,payment.captured,2499,INR,2026-08-03T20:37:17.788527,{}
+evt_9941bc6335084cc1,checkout,chk_e7b735f9a8774754,cust_9d2630da49044414,checkout.created,19999,INR,2026-08-03T23:04:56.788527,{}
+evt_ae5aee37b29c4feb,checkout,chk_e7b735f9a8774754,cust_9d2630da49044414,checkout.completed,19999,INR,2026-08-03T23:06:12.788527,{}
+evt_3c4fbf2ce7244683,checkout,chk_4054a7405b084bdc,cust_4fcee444813e4f00,checkout.created,499,INR,2026-08-03T23:57:29.788527,{}
+evt_a6d838df00d541c9,checkout,chk_4054a7405b084bdc,cust_4fcee444813e4f00,checkout.completed,499,INR,2026-08-03T23:58:45.788527,{}
+evt_7ae515b1157e4915,subscription,sub_02aedfdf3edc4fc4,cust_4fcee444813e4f00,subscription.created,4999,INR,2026-08-04T00:41:29.788527,"{""plan"": ""plan_business""}"
+evt_b53c543b17e849ca,payment,pay_b3a6e555715b4c1a,cust_dfa0ee62fdc14137,payment.created,999,INR,2026-08-04T00:45:11.788527,{}
+evt_1c27f9c726534a67,payment,pay_b3a6e555715b4c1a,cust_dfa0ee62fdc14137,payment.authorized,999,INR,2026-08-04T00:45:17.788527,{}
+evt_15f11a1cf8684393,payment,pay_b3a6e555715b4c1a,cust_dfa0ee62fdc14137,payment.captured,999,INR,2026-08-04T00:45:18.788527,{}
+evt_363c8ed2f1f44f70,payment,pay_cc2d2f8928ba4487,cust_826f3e6850d743de,payment.created,999,INR,2026-08-04T06:04:22.788527,{}
+evt_313a6d945e83451e,payment,pay_cc2d2f8928ba4487,cust_826f3e6850d743de,payment.authorized,999,INR,2026-08-04T06:04:25.788527,{}
+evt_759a99351397442e,payment,pay_cc2d2f8928ba4487,cust_826f3e6850d743de,payment.captured,999,INR,2026-08-04T06:04:29.788527,{}
+evt_3606f23aa1fa401f,payment,pay_b83119f161124a99,cust_e8aee4faf3904724,payment.created,2499,INR,2026-08-04T09:01:14.788527,{}
+evt_3d7a7b65195e4b04,payment,pay_b83119f161124a99,cust_e8aee4faf3904724,payment.authorized,2499,INR,2026-08-04T09:01:21.788527,{}
+evt_9c3e20ef73274dd0,payment,pay_b83119f161124a99,cust_e8aee4faf3904724,payment.captured,2499,INR,2026-08-04T09:01:23.788527,{}
+evt_7561a6f16846451c,checkout,chk_e2fff47d4a504d9b,cust_e7a49d9fe4654ddb,checkout.created,4999,INR,2026-08-04T09:28:21.788527,{}
+evt_56ed141433c74017,checkout,chk_e2fff47d4a504d9b,cust_e7a49d9fe4654ddb,checkout.completed,4999,INR,2026-08-04T09:29:57.788527,{}
+evt_f0119dd378084d61,subscription,sub_8f65965ce0d44092,cust_cff3af5eb2dc438a,subscription.created,1499,INR,2026-08-04T10:35:30.788527,"{""plan"": ""plan_pro""}"
+evt_a655c22903754f3f,payment,pay_4f188506eaf34a9a,cust_c5a7a49d0f944889,payment.created,19999,INR,2026-08-04T12:18:30.788527,{}
+evt_5aeeea327ca04243,payment,pay_4f188506eaf34a9a,cust_c5a7a49d0f944889,payment.authorized,19999,INR,2026-08-04T12:18:32.788527,{}
+evt_7d0a0e82787d46bb,payment,pay_4f188506eaf34a9a,cust_c5a7a49d0f944889,payment.captured,19999,INR,2026-08-04T12:18:33.788527,{}
+evt_227957cbe2d343bd,payment,pay_d0ae0f61f98d4a03,cust_751ead4ee8e6424d,payment.created,2499,INR,2026-08-04T16:59:44.788527,{}
+evt_de90649a82e34ef9,payment,pay_d0ae0f61f98d4a03,cust_751ead4ee8e6424d,payment.authorized,2499,INR,2026-08-04T16:59:51.788527,{}
+evt_d30839f944594343,payment,pay_d0ae0f61f98d4a03,cust_751ead4ee8e6424d,payment.captured,2499,INR,2026-08-04T16:59:56.788527,{}
+evt_39470077f40b4b78,checkout,chk_af2b55bf577e4b6c,cust_68b0cd2a60874b50,checkout.created,1499,INR,2026-08-04T19:53:04.788527,{}
+evt_e7066a771b1e41ed,checkout,chk_af2b55bf577e4b6c,cust_68b0cd2a60874b50,checkout.abandoned,1499,INR,2026-08-04T20:02:04.788527,{}
+evt_1f0ee3668df44f4a,subscription,sub_5c1dfa6425434aef,cust_bada2daed92440e9,subscription.created,1499,INR,2026-08-04T20:23:05.788527,"{""plan"": ""plan_pro""}"
+evt_4fd5c007ffde43a7,payment,pay_9d4951a86b3346fe,cust_fb7a8984133545b5,payment.created,999,INR,2026-08-04T21:56:36.788527,{}
+evt_8222924817354504,payment,pay_9d4951a86b3346fe,cust_fb7a8984133545b5,payment.failed,999,INR,2026-08-04T21:56:52.788527,"{""reason"": ""invalid_payment_method""}"
+evt_86f21218859249e1,checkout,chk_89aa98c1a57c483b,cust_8c792f3cf57b42b9,checkout.created,1499,INR,2026-08-05T00:04:59.788527,{}
+evt_1d209cbfd06e4040,checkout,chk_89aa98c1a57c483b,cust_8c792f3cf57b42b9,checkout.abandoned,1499,INR,2026-08-05T00:14:59.788527,{}
+evt_cbdf1212ea2a45a5,subscription,sub_e68cbd4aaadd4f86,cust_b60bd69212d54c0f,subscription.created,4999,INR,2026-08-05T01:24:11.788527,"{""plan"": ""plan_business""}"
+evt_ce89599dc50c4871,checkout,chk_a8b9bc4f9c84484a,cust_cf371e95411c46aa,checkout.created,4999,INR,2026-08-05T02:43:41.788527,{}
+evt_c632bb3a74414070,checkout,chk_a8b9bc4f9c84484a,cust_cf371e95411c46aa,checkout.abandoned,4999,INR,2026-08-05T02:58:41.788527,{}
+evt_cc5666f7ce494fb2,subscription,sub_55721ad7da8e4502,cust_180b1bd629c54988,subscription.created,499,INR,2026-08-05T04:19:28.788527,"{""plan"": ""plan_basic""}"
+evt_a4d8eb984cd141e2,payment,pay_d55d5b7bf3eb4fc9,cust_b4d4044fa3c74933,payment.created,4999,INR,2026-08-05T05:00:54.788527,{}
+evt_cac84e62cbe6406c,payment,pay_d55d5b7bf3eb4fc9,cust_b4d4044fa3c74933,payment.failed,4999,INR,2026-08-05T05:01:25.788527,"{""reason"": ""expired_card""}"
+evt_30da0943101846ff,payment,pay_0eb62f191b5244f4,cust_e8aee4faf3904724,payment.created,499,INR,2026-08-05T07:18:54.788527,{}
+evt_5cc57f22a70142e3,payment,pay_0eb62f191b5244f4,cust_e8aee4faf3904724,payment.authorized,499,INR,2026-08-05T07:18:57.788527,{}
+evt_12a0b3f635374cd3,payment,pay_0eb62f191b5244f4,cust_e8aee4faf3904724,payment.captured,499,INR,2026-08-05T07:18:59.788527,{}
+evt_012fc230244d4541,payment,pay_af7873caaa4d4367,cust_3b31c5d6b965456f,payment.created,9999,INR,2026-08-05T10:10:29.788527,{}
+evt_cf3036245a904ffa,payment,pay_af7873caaa4d4367,cust_3b31c5d6b965456f,payment.authorized,9999,INR,2026-08-05T10:10:33.788527,{}
+evt_d297e8632ebe4f6a,payment,pay_af7873caaa4d4367,cust_3b31c5d6b965456f,payment.captured,9999,INR,2026-08-05T10:10:37.788527,{}
+evt_41caf344e2f64824,subscription,sub_568b99cb81754958,cust_97fafd32383e419a,subscription.created,4999,INR,2026-08-05T14:08:58.788527,"{""plan"": ""plan_business""}"
+evt_8237eda1430c4235,checkout,chk_801776e2f8c74373,cust_ea576ff1540448d8,checkout.created,999,INR,2026-08-05T15:50:29.788527,{}
+evt_17632f03c7ac4c14,checkout,chk_801776e2f8c74373,cust_ea576ff1540448d8,checkout.completed,999,INR,2026-08-05T15:52:06.788527,{}
+evt_3e8a9f2d36aa45ac,checkout,chk_aa084c7abbb64e58,cust_3d5adbdf1e624f5d,checkout.created,499,INR,2026-08-05T16:39:26.788527,{}
+evt_cd56a3ef4367489e,checkout,chk_aa084c7abbb64e58,cust_3d5adbdf1e624f5d,checkout.abandoned,499,INR,2026-08-05T16:47:26.788527,{}
+evt_bd38dd525e324567,checkout,chk_166cee6d45554543,cust_7d43bc042e884b31,checkout.created,9999,INR,2026-08-05T17:46:26.788527,{}
+evt_c047ce2062244371,checkout,chk_166cee6d45554543,cust_7d43bc042e884b31,checkout.abandoned,9999,INR,2026-08-05T18:04:26.788527,{}
+evt_87f6a05906054879,payment,pay_f44521be673c428b,cust_e49624db3c2b49ca,payment.created,1499,INR,2026-08-05T18:42:19.788527,{}
+evt_3c65ff82918d40e4,payment,pay_f44521be673c428b,cust_e49624db3c2b49ca,payment.authorized,1499,INR,2026-08-05T18:42:22.788527,{}
+evt_f40fd78306204b2c,payment,pay_f44521be673c428b,cust_e49624db3c2b49ca,payment.captured,1499,INR,2026-08-05T18:42:23.788527,{}
+evt_26c9f1eddd9a4c3e,payment,pay_5f4a6c5425cc4f48,cust_5bccd3431704437c,payment.created,1499,INR,2026-08-05T20:34:59.788527,{}
+evt_6e17b6a324a547be,payment,pay_5f4a6c5425cc4f48,cust_5bccd3431704437c,payment.failed,1499,INR,2026-08-05T20:35:54.788527,"{""reason"": ""insufficient_funds""}"
+evt_5f5cea5e684c4125,payment,pay_12b1c23fccb7451e,cust_8562825a26ac4ed1,payment.created,4999,INR,2026-08-06T00:20:36.788527,{}
+evt_12d07c45e7e24cf4,payment,pay_12b1c23fccb7451e,cust_8562825a26ac4ed1,payment.authorized,4999,INR,2026-08-06T00:20:43.788527,{}
+evt_4b4ede954b6c41a3,payment,pay_12b1c23fccb7451e,cust_8562825a26ac4ed1,payment.captured,4999,INR,2026-08-06T00:20:45.788527,{}
+evt_b66808ee56794063,payment,pay_3c39209d49ba405d,cust_d8b4a5646e3e44f3,payment.created,2499,INR,2026-08-06T02:32:06.788527,{}
+evt_68f88012996848f8,payment,pay_3c39209d49ba405d,cust_d8b4a5646e3e44f3,payment.failed,2499,INR,2026-08-06T02:32:51.788527,"{""reason"": ""card_declined""}"
+evt_488a7d0fd5274572,checkout,chk_8aa7410f90d34224,cust_c90bac92129b4d26,checkout.created,499,INR,2026-08-06T03:37:53.788527,{}
+evt_6914a64bba3e432f,checkout,chk_8aa7410f90d34224,cust_c90bac92129b4d26,checkout.completed,499,INR,2026-08-06T03:39:00.788527,{}
+evt_09d5cada47924e92,checkout,chk_18331b7a3d304a93,cust_af99e9041ec444f5,checkout.created,999,INR,2026-08-06T04:59:54.788527,{}
+evt_193cece83d8f4334,checkout,chk_18331b7a3d304a93,cust_af99e9041ec444f5,checkout.completed,999,INR,2026-08-06T05:01:02.788527,{}
+evt_62eb630d734f4b04,payment,pay_6d3c40dac0b44210,cust_9869eceec96f4583,payment.created,999,INR,2026-08-06T07:18:07.788527,{}
+evt_eb53f53c91114cfa,payment,pay_6d3c40dac0b44210,cust_9869eceec96f4583,payment.authorized,999,INR,2026-08-06T07:18:11.788527,{}
+evt_4ea47bc65a8b4eb1,payment,pay_6d3c40dac0b44210,cust_9869eceec96f4583,payment.captured,999,INR,2026-08-06T07:18:13.788527,{}
+evt_d9f4fa5e4d1f4e25,checkout,chk_ef5defe7f00e4b60,cust_2d0bc3dc82554e21,checkout.created,2499,INR,2026-08-06T09:16:59.788527,{}
+evt_d183f0c78e574fe8,checkout,chk_ef5defe7f00e4b60,cust_2d0bc3dc82554e21,checkout.abandoned,2499,INR,2026-08-06T09:42:59.788527,{}
+evt_59305729ccab4c7e,subscription,sub_850243a21579425c,cust_8c792f3cf57b42b9,subscription.created,4999,INR,2026-08-06T10:27:58.788527,"{""plan"": ""plan_business""}"
+evt_5fab2617e2184ec7,payment,pay_8d82750fc6f64aca,cust_87be90a2f9f24991,payment.created,999,INR,2026-08-06T16:03:37.788527,{}
+evt_d31474a0d49b493c,payment,pay_8d82750fc6f64aca,cust_87be90a2f9f24991,payment.authorized,999,INR,2026-08-06T16:03:47.788527,{}
+evt_19ea512220db48ec,payment,pay_8d82750fc6f64aca,cust_87be90a2f9f24991,payment.captured,999,INR,2026-08-06T16:03:52.788527,{}
+evt_3cef210b15b9469a,subscription,sub_17f840ffc0954562,cust_0985e6d73ae541f9,subscription.created,4999,INR,2026-08-06T17:45:11.788527,"{""plan"": ""plan_business""}"
+evt_6726afaa44ce45c3,payment,pay_46be5b8a99c94d4c,cust_2de6ccca9a154c19,payment.created,1499,INR,2026-08-06T20:04:38.788527,{}
+evt_42fb4731ee814c40,payment,pay_46be5b8a99c94d4c,cust_2de6ccca9a154c19,payment.authorized,1499,INR,2026-08-06T20:04:45.788527,{}
+evt_fec1a95ffb42445c,payment,pay_46be5b8a99c94d4c,cust_2de6ccca9a154c19,payment.captured,1499,INR,2026-08-06T20:04:46.788527,{}
+evt_61f82f4c685e4b09,payment,pay_fc60fb02231946de,cust_6cb7c45b578e4994,payment.created,999,INR,2026-08-06T20:31:46.788527,{}
+evt_faa0cfe465174f03,payment,pay_fc60fb02231946de,cust_6cb7c45b578e4994,payment.authorized,999,INR,2026-08-06T20:31:53.788527,{}
+evt_24a4ad96459b44ff,payment,pay_fc60fb02231946de,cust_6cb7c45b578e4994,payment.captured,999,INR,2026-08-06T20:31:55.788527,{}
+evt_81766343a6394aa9,payment,pay_b261f4acce784b2b,cust_ca5aab22db5343d9,payment.created,2499,INR,2026-08-06T21:19:14.788527,{}
+evt_5d99e69a09d249a8,payment,pay_b261f4acce784b2b,cust_ca5aab22db5343d9,payment.authorized,2499,INR,2026-08-06T21:19:23.788527,{}
+evt_282060e9dbf84242,payment,pay_b261f4acce784b2b,cust_ca5aab22db5343d9,payment.captured,2499,INR,2026-08-06T21:19:28.788527,{}
+evt_fd380c53c300474b,payment,pay_398cde0fd98340b2,cust_68b0cd2a60874b50,payment.created,19999,INR,2026-08-06T22:10:08.788527,{}
+evt_3db4fe53f9d646b1,payment,pay_398cde0fd98340b2,cust_68b0cd2a60874b50,payment.authorized,19999,INR,2026-08-06T22:10:11.788527,{}
+evt_3cba95a046224322,payment,pay_398cde0fd98340b2,cust_68b0cd2a60874b50,payment.captured,19999,INR,2026-08-06T22:10:14.788527,{}
+evt_b13284c7c2a946c4,payment,pay_f9233c66c5eb4360,cust_63bfcdbc81f34a89,payment.created,999,INR,2026-08-06T23:51:00.788527,{}
+evt_559bb3e30b8e48c9,payment,pay_f9233c66c5eb4360,cust_63bfcdbc81f34a89,payment.authorized,999,INR,2026-08-06T23:51:04.788527,{}
+evt_4b0bd13ebaf14f65,payment,pay_f9233c66c5eb4360,cust_63bfcdbc81f34a89,payment.captured,999,INR,2026-08-06T23:51:08.788527,{}
+evt_b1728f3d69164b7e,checkout,chk_efd2bc7d52c74a22,cust_128887ede58a42fd,checkout.created,499,INR,2026-08-07T06:09:28.788527,{}
+evt_81dad2bac55c4c61,checkout,chk_efd2bc7d52c74a22,cust_128887ede58a42fd,checkout.completed,499,INR,2026-08-07T06:10:15.788527,{}
+evt_b2314768e67c4de1,subscription,sub_ab17ab58afc248af,cust_9869eceec96f4583,subscription.created,4999,INR,2026-08-07T06:32:56.788527,"{""plan"": ""plan_business""}"
+evt_13af7f6372314852,payment,pay_7fb00a49bd7f4953,cust_e36f4ff2aaeb4ed2,payment.created,2499,INR,2026-08-07T07:10:06.788527,{}
+evt_105f02de06e14e79,payment,pay_7fb00a49bd7f4953,cust_e36f4ff2aaeb4ed2,payment.failed,2499,INR,2026-08-07T07:10:40.788527,"{""reason"": ""account_closed""}"
+evt_b5e41ff297d54649,payment,pay_fb9693cba83c41b2,cust_ea712f4dcfe94f6a,payment.created,499,INR,2026-08-07T08:38:54.788527,{}
+evt_ea41147ea7da4b42,payment,pay_fb9693cba83c41b2,cust_ea712f4dcfe94f6a,payment.failed,499,INR,2026-08-07T08:39:39.788527,"{""reason"": ""insufficient_funds""}"
+evt_88d078d178c14d64,subscription,sub_b655cc9918e04ac7,cust_c90bac92129b4d26,subscription.created,4999,INR,2026-08-07T21:00:24.788527,"{""plan"": ""plan_business""}"
+evt_58347283e1c04a61,checkout,chk_a3ac504fffd541be,cust_51e06e8e8ca8476a,checkout.created,4999,INR,2026-08-07T22:03:01.788527,{}
+evt_7a431d4df1744634,checkout,chk_a3ac504fffd541be,cust_51e06e8e8ca8476a,checkout.abandoned,4999,INR,2026-08-07T22:31:01.788527,{}
+evt_10b68d9987ab452f,checkout,chk_d8b6e9dc28684798,cust_d858520b91764b98,checkout.created,9999,INR,2026-08-08T03:16:37.788527,{}
+evt_7ab851437b9b45ed,checkout,chk_d8b6e9dc28684798,cust_d858520b91764b98,checkout.completed,9999,INR,2026-08-08T03:18:34.788527,{}
+evt_6bdc9e656bdf4822,checkout,chk_025825a9c3484f71,cust_97fafd32383e419a,checkout.created,4999,INR,2026-08-08T03:23:38.788527,{}
+evt_4e15b624226941a5,checkout,chk_025825a9c3484f71,cust_97fafd32383e419a,checkout.completed,4999,INR,2026-08-08T03:24:57.788527,{}
+evt_2f8871b9253b4c6a,payment,pay_8883fef1da524974,cust_4a3f1bbdb33544c6,payment.created,1499,INR,2026-08-08T04:00:09.788527,{}
+evt_be2046ae1a4644f5,payment,pay_8883fef1da524974,cust_4a3f1bbdb33544c6,payment.authorized,1499,INR,2026-08-08T04:00:18.788527,{}
+evt_a074ea4657e4420c,payment,pay_8883fef1da524974,cust_4a3f1bbdb33544c6,payment.captured,1499,INR,2026-08-08T04:00:23.788527,{}
+evt_50643b8f32714c23,checkout,chk_234d811bf1d24507,cust_ea0115a30b1748f1,checkout.created,499,INR,2026-08-08T06:25:02.788527,{}
+evt_b4f1de95f9dd461f,checkout,chk_234d811bf1d24507,cust_ea0115a30b1748f1,checkout.abandoned,499,INR,2026-08-08T06:36:02.788527,{}
+evt_385c6edef52d4e85,checkout,chk_e2bdcb467dd64861,cust_68b0cd2a60874b50,checkout.created,2499,INR,2026-08-08T10:28:23.788527,{}
+evt_8b4dd4fba7074b57,checkout,chk_e2bdcb467dd64861,cust_68b0cd2a60874b50,checkout.abandoned,2499,INR,2026-08-08T10:55:23.788527,{}
+evt_0477089d208b4f5b,payment,pay_50e75686505141e4,cust_f4fa33d4c771491c,payment.created,4999,INR,2026-08-08T11:05:03.788527,{}
+evt_1a3ebdea94094819,payment,pay_50e75686505141e4,cust_f4fa33d4c771491c,payment.failed,4999,INR,2026-08-08T11:06:03.788527,"{""reason"": ""insufficient_funds""}"
+evt_6000fc852cac43e0,payment,pay_67c0f51282e7417d,cust_ea576ff1540448d8,payment.created,1499,INR,2026-08-08T11:40:18.788527,{}
+evt_a5169c8f41794921,payment,pay_67c0f51282e7417d,cust_ea576ff1540448d8,payment.authorized,1499,INR,2026-08-08T11:40:20.788527,{}
+evt_3db7b392589c4c4c,payment,pay_67c0f51282e7417d,cust_ea576ff1540448d8,payment.captured,1499,INR,2026-08-08T11:40:23.788527,{}
+evt_e99650e3b355415e,payment,pay_444afc56110447d7,cust_621b40fa868d4c92,payment.created,1499,INR,2026-08-08T12:47:06.788527,{}
+evt_194d1a8022184e63,payment,pay_444afc56110447d7,cust_621b40fa868d4c92,payment.authorized,1499,INR,2026-08-08T12:47:13.788527,{}
+evt_eb99b50f07a24037,payment,pay_444afc56110447d7,cust_621b40fa868d4c92,payment.captured,1499,INR,2026-08-08T12:47:14.788527,{}
+evt_87f3c6768e344f28,checkout,chk_c3a688e398094ef4,cust_e0e0dd5c13ed4e86,checkout.created,2499,INR,2026-08-08T20:25:25.788527,{}
+evt_279ff1aed9cb4509,checkout,chk_c3a688e398094ef4,cust_e0e0dd5c13ed4e86,checkout.abandoned,2499,INR,2026-08-08T20:38:25.788527,{}
+evt_a314f037699d4893,payment,pay_64726596190c40fc,cust_9439d2d3c2d04c83,payment.created,999,INR,2026-08-08T23:36:43.788527,{}
+evt_2900b24b594345d6,payment,pay_64726596190c40fc,cust_9439d2d3c2d04c83,payment.failed,999,INR,2026-08-08T23:37:05.788527,"{""reason"": ""bank_timeout""}"
+evt_6569bc1c87ac481c,subscription,sub_befd644b9c2641ff,cust_8d46cc1c22de4cd6,subscription.created,1499,INR,2026-08-09T00:40:46.788527,"{""plan"": ""plan_pro""}"
+evt_0a47d0c4ed584b19,subscription,sub_44899a81de9f4418,cust_51e06e8e8ca8476a,subscription.pending,4999,INR,2026-08-09T01:13:45.788527,"{""reason"": ""card_declined""}"
+evt_95ca57a1cf1d413d,payment,pay_6820acedf39940f7,cust_97afc4425b8845d4,payment.created,499,INR,2026-08-09T03:40:40.788527,{}
+evt_2fe82e20e9164b02,payment,pay_6820acedf39940f7,cust_97afc4425b8845d4,payment.failed,499,INR,2026-08-09T03:41:28.788527,"{""reason"": ""bank_timeout""}"
+evt_3064344c58cb403b,subscription,sub_6d9ed5b60c0840b9,cust_f4fa33d4c771491c,subscription.created,499,INR,2026-08-09T07:08:45.788527,"{""plan"": ""plan_basic""}"
+evt_01dcd47c81a446db,checkout,chk_483e4bbff3d9414a,cust_dedb88e4246f450a,checkout.created,999,INR,2026-08-09T10:12:37.788527,{}
+evt_76c2c3332ed946d6,payment,pay_e3de3f80be6747fb,cust_00180c8cc6e741c5,payment.created,499,INR,2026-08-09T10:19:52.788527,{}
+evt_b95f830834014365,payment,pay_e3de3f80be6747fb,cust_00180c8cc6e741c5,payment.failed,499,INR,2026-08-09T10:20:27.788527,"{""reason"": ""account_closed""}"
+evt_2704cd126dc94318,checkout,chk_483e4bbff3d9414a,cust_dedb88e4246f450a,checkout.abandoned,999,INR,2026-08-09T10:31:37.788527,{}
+evt_dabfd45a82054c27,subscription,sub_3af9ba8141c44bc3,cust_e7a49d9fe4654ddb,subscription.created,499,INR,2026-08-09T12:01:16.788527,"{""plan"": ""plan_basic""}"
+evt_24aa6da88bc84c0a,checkout,chk_9cfda366d0884011,cust_c5a7a49d0f944889,checkout.created,499,INR,2026-08-09T15:34:16.788527,{}
+evt_c25bb8e98ac246a7,checkout,chk_9cfda366d0884011,cust_c5a7a49d0f944889,checkout.completed,499,INR,2026-08-09T15:35:35.788527,{}
+evt_c5f767cda5d14cdc,subscription,sub_913def38ea0f4f3c,cust_8c792f3cf57b42b9,subscription.created,4999,INR,2026-08-09T19:37:43.788527,"{""plan"": ""plan_business""}"
+evt_350cee3e61f241a4,subscription,sub_ffe6281bef9e4ec9,cust_e1f063bc7ce1418e,subscription.created,4999,INR,2026-08-09T19:46:15.788527,"{""plan"": ""plan_business""}"
+evt_596de8abb625492a,checkout,chk_d5aa43528aa64ee4,cust_cff3af5eb2dc438a,checkout.created,999,INR,2026-08-09T22:05:05.788527,{}
+evt_093a32283bb94dfe,checkout,chk_d5aa43528aa64ee4,cust_cff3af5eb2dc438a,checkout.completed,999,INR,2026-08-09T22:05:55.788527,{}
+evt_82d2c758505a4324,checkout,chk_ca8ae634e1b447db,cust_21822ad9691942ac,checkout.created,1499,INR,2026-08-09T23:42:11.788527,{}
+evt_ae79ed271a994e3b,checkout,chk_ca8ae634e1b447db,cust_21822ad9691942ac,checkout.completed,1499,INR,2026-08-09T23:42:41.788527,{}
+evt_90d7a55c04dc434b,checkout,chk_5f311925e9584c57,cust_ea0115a30b1748f1,checkout.created,999,INR,2026-08-10T12:41:06.788527,{}
+evt_2d69d89470ef471c,checkout,chk_5f311925e9584c57,cust_ea0115a30b1748f1,checkout.completed,999,INR,2026-08-10T12:42:10.788527,{}
+evt_c28bb665334544ab,payment,pay_6efad8e001884ac9,cust_fb4e9a92aeb542ff,payment.created,999,INR,2026-08-10T13:06:13.788527,{}
+evt_226785c1b92f4108,payment,pay_6efad8e001884ac9,cust_fb4e9a92aeb542ff,payment.failed,999,INR,2026-08-10T13:07:02.788527,"{""reason"": ""gateway_failure""}"
+evt_45bf4256a5ba42b5,subscription,sub_9916df487a614027,cust_2022604ccef64b86,subscription.created,1499,INR,2026-08-10T14:31:04.788527,"{""plan"": ""plan_pro""}"
+evt_de9f32b207de4bdb,subscription,sub_b87f533b8378461f,cust_17d5cf7732f74583,subscription.created,499,INR,2026-08-10T16:06:08.788527,"{""plan"": ""plan_basic""}"
+evt_e7e33cbeb2c0422d,payment,pay_cccca55552a14527,cust_82559b82a8b240bb,payment.created,9999,INR,2026-08-10T17:39:51.788527,{}
+evt_c10b193d9c4543d6,payment,pay_cccca55552a14527,cust_82559b82a8b240bb,payment.failed,9999,INR,2026-08-10T17:40:33.788527,"{""reason"": ""bank_timeout""}"
+evt_8c470c5402c24f5d,checkout,chk_2ca4780238114029,cust_fb4e9a92aeb542ff,checkout.created,19999,INR,2026-08-10T18:33:08.788527,{}
+evt_a2b195d6b88745fe,payment,pay_b8468b19aa1a4c21,cust_ca5aab22db5343d9,payment.created,999,INR,2026-08-10T18:51:44.788527,{}
+evt_d5ea0af0d1e04ea2,payment,pay_b8468b19aa1a4c21,cust_ca5aab22db5343d9,payment.failed,999,INR,2026-08-10T18:52:38.788527,"{""reason"": ""expired_card""}"
+evt_40ffa869af0a41da,checkout,chk_2ca4780238114029,cust_fb4e9a92aeb542ff,checkout.abandoned,19999,INR,2026-08-10T18:55:08.788527,{}
+evt_2963426c9e424127,checkout,chk_13e50506570c432e,cust_6cb7c45b578e4994,checkout.created,2499,INR,2026-08-10T20:31:25.788527,{}
+evt_abb396510f764cb4,subscription,sub_e12e1a86bb4e4119,cust_bada2daed92440e9,subscription.created,1499,INR,2026-08-10T20:45:29.788527,"{""plan"": ""plan_pro""}"
+evt_00f8038c15ed43c0,checkout,chk_13e50506570c432e,cust_6cb7c45b578e4994,checkout.abandoned,2499,INR,2026-08-10T20:47:25.788527,{}
+evt_8eecfd0df7394b70,payment,pay_3be1403fb6c5441f,cust_5c7d96fbf609402b,payment.created,1499,INR,2026-08-11T00:03:19.788527,{}
+evt_e6188a7676684e76,payment,pay_3be1403fb6c5441f,cust_5c7d96fbf609402b,payment.authorized,1499,INR,2026-08-11T00:03:25.788527,{}
+evt_0eb181b311a04eb5,payment,pay_3be1403fb6c5441f,cust_5c7d96fbf609402b,payment.captured,1499,INR,2026-08-11T00:03:29.788527,{}
+evt_173cb02afe094a79,payment,pay_4e646dc8f55d4dd9,cust_dedb88e4246f450a,payment.created,4999,INR,2026-08-11T01:59:31.788527,{}
+evt_23b8966a84ee48ae,payment,pay_4e646dc8f55d4dd9,cust_dedb88e4246f450a,payment.authorized,4999,INR,2026-08-11T01:59:37.788527,{}
+evt_d3cf7ac2b15a4084,payment,pay_4e646dc8f55d4dd9,cust_dedb88e4246f450a,payment.captured,4999,INR,2026-08-11T01:59:41.788527,{}
+evt_f0426ce500444ac8,payment,pay_80105da22b7d4d6e,cust_3af15789a9c1437e,payment.created,1499,INR,2026-08-11T02:42:23.788527,{}
+evt_56adebab7fbe4292,payment,pay_80105da22b7d4d6e,cust_3af15789a9c1437e,payment.authorized,1499,INR,2026-08-11T02:42:32.788527,{}
+evt_8d2bc7b25c0644fd,payment,pay_80105da22b7d4d6e,cust_3af15789a9c1437e,payment.captured,1499,INR,2026-08-11T02:42:34.788527,{}
+evt_7dbd8cc706e545b4,checkout,chk_0751116aa3134e28,cust_d58a9c3e580e4c22,checkout.created,9999,INR,2026-08-11T06:39:03.788527,{}
+evt_e22270025d6d4221,checkout,chk_0751116aa3134e28,cust_d58a9c3e580e4c22,checkout.abandoned,9999,INR,2026-08-11T06:55:03.788527,{}
+evt_b6ef2f7ba0404518,payment,pay_e8e8807427774dee,cust_d601a43a51a642cf,payment.created,19999,INR,2026-08-11T09:04:46.788527,{}
+evt_48cfc91283654703,payment,pay_e8e8807427774dee,cust_d601a43a51a642cf,payment.failed,19999,INR,2026-08-11T09:04:59.788527,"{""reason"": ""customer_dispute""}"
+evt_f9958ec3156c44ef,subscription,sub_0f2417ee94bd491d,cust_b4d4044fa3c74933,subscription.created,499,INR,2026-08-11T10:26:42.788527,"{""plan"": ""plan_basic""}"
+evt_3f197186f1394e1d,checkout,chk_1513aee308a84f80,cust_cff3af5eb2dc438a,checkout.created,9999,INR,2026-08-11T11:06:51.788527,{}
+evt_7af3505087684944,checkout,chk_1513aee308a84f80,cust_cff3af5eb2dc438a,checkout.completed,9999,INR,2026-08-11T11:08:11.788527,{}
+evt_77f12b2d1351447f,payment,pay_3a5c1139cb044d4d,cust_8426b2a6834e4e3b,payment.created,499,INR,2026-08-11T11:26:28.788527,{}
+evt_6c122d4483734a71,payment,pay_3a5c1139cb044d4d,cust_8426b2a6834e4e3b,payment.authorized,499,INR,2026-08-11T11:26:36.788527,{}
+evt_f91469408bff4fe0,payment,pay_3a5c1139cb044d4d,cust_8426b2a6834e4e3b,payment.captured,499,INR,2026-08-11T11:26:40.788527,{}
+evt_989044a608fe45cc,checkout,chk_eac26277df7949d9,cust_180b1bd629c54988,checkout.created,1499,INR,2026-08-11T17:57:56.788527,{}
+evt_e92da74fe18a4a9c,checkout,chk_eac26277df7949d9,cust_180b1bd629c54988,checkout.completed,1499,INR,2026-08-11T17:59:31.788527,{}
+evt_cbf1269885a045e9,payment,pay_7dcfc3c89dcd46cd,cust_783cfaccb48b428f,payment.created,2499,INR,2026-08-11T18:27:43.788527,{}
+evt_0d1bdf03b30c46aa,payment,pay_7dcfc3c89dcd46cd,cust_783cfaccb48b428f,payment.failed,2499,INR,2026-08-11T18:28:39.788527,"{""reason"": ""invalid_payment_method""}"
+evt_d3f4c5e4af9847f0,payment,pay_0404917b6b334360,cust_8c792f3cf57b42b9,payment.created,19999,INR,2026-08-11T18:51:52.788527,{}
+evt_092e6071b8ed4800,payment,pay_0404917b6b334360,cust_8c792f3cf57b42b9,payment.failed,19999,INR,2026-08-11T18:52:11.788527,"{""reason"": ""network_error""}"
+evt_a95108bef45843bf,payment,pay_dc7c4066706942ea,cust_0decee9389ad40e6,payment.created,4999,INR,2026-08-11T19:16:06.788527,{}
+evt_8b9e5b52031446b1,payment,pay_dc7c4066706942ea,cust_0decee9389ad40e6,payment.authorized,4999,INR,2026-08-11T19:16:13.788527,{}
+evt_481c0f4195094a2c,payment,pay_dc7c4066706942ea,cust_0decee9389ad40e6,payment.captured,4999,INR,2026-08-11T19:16:14.788527,{}
+evt_51843f9dc22b46d5,payment,pay_a71d763d7753499b,cust_783cfaccb48b428f,payment.created,499,INR,2026-08-11T19:27:33.788527,{}
+evt_15460f65f3bb4925,payment,pay_a71d763d7753499b,cust_783cfaccb48b428f,payment.failed,499,INR,2026-08-11T19:28:27.788527,"{""reason"": ""bank_timeout""}"
+evt_c42d2b32dfe5458a,payment,pay_c407d96f61214f34,cust_4a3f1bbdb33544c6,payment.created,499,INR,2026-08-11T21:22:19.788527,{}
+evt_7d9da11a2b474f28,payment,pay_c407d96f61214f34,cust_4a3f1bbdb33544c6,payment.failed,499,INR,2026-08-11T21:23:09.788527,"{""reason"": ""suspected_fraud""}"
+evt_9ffdaa3a93994c2f,subscription,sub_9d90b757ac0d4bcb,cust_fa04fc20c4304c6f,subscription.created,1499,INR,2026-08-11T21:32:32.788527,"{""plan"": ""plan_pro""}"
+evt_ee1376655fdd4b0c,checkout,chk_a64d1852d6034b7f,cust_d2c42d5b7ed84845,checkout.created,499,INR,2026-08-11T23:56:14.788527,{}
+evt_da46758870c74f62,checkout,chk_a64d1852d6034b7f,cust_d2c42d5b7ed84845,checkout.abandoned,499,INR,2026-08-12T00:13:14.788527,{}
+evt_24f36affbadf4f24,payment,pay_b7ca5622749a45c0,cust_87be90a2f9f24991,payment.created,1499,INR,2026-08-12T03:03:19.788527,{}
+evt_986cde3477d24b24,payment,pay_b7ca5622749a45c0,cust_87be90a2f9f24991,payment.authorized,1499,INR,2026-08-12T03:03:27.788527,{}
+evt_4cca01014d4f49c4,payment,pay_b7ca5622749a45c0,cust_87be90a2f9f24991,payment.captured,1499,INR,2026-08-12T03:03:32.788527,{}
+evt_22dbb3bee18b47cb,payment,pay_d1cdde3a806d4f52,cust_5c7d96fbf609402b,payment.created,2499,INR,2026-08-12T06:51:40.788527,{}
+evt_b432cfad986b42a8,payment,pay_d1cdde3a806d4f52,cust_5c7d96fbf609402b,payment.authorized,2499,INR,2026-08-12T06:51:42.788527,{}
+evt_f05bf515965d48e1,payment,pay_d1cdde3a806d4f52,cust_5c7d96fbf609402b,payment.captured,2499,INR,2026-08-12T06:51:47.788527,{}
+evt_c734d6febdb74179,checkout,chk_ef63b9affb564c62,cust_3436a29073f646a0,checkout.created,19999,INR,2026-08-12T07:37:31.788527,{}
+evt_00356088915b402a,checkout,chk_ef63b9affb564c62,cust_3436a29073f646a0,checkout.completed,19999,INR,2026-08-12T07:39:28.788527,{}
+evt_05fa3e4ed90b48f8,payment,pay_22c2a1629f804a52,cust_2d27e3977a0a4974,payment.created,999,INR,2026-08-12T08:23:07.788527,{}
+evt_1ad62895893240a2,payment,pay_22c2a1629f804a52,cust_2d27e3977a0a4974,payment.authorized,999,INR,2026-08-12T08:23:14.788527,{}
+evt_c27a1e34213448a1,payment,pay_22c2a1629f804a52,cust_2d27e3977a0a4974,payment.captured,999,INR,2026-08-12T08:23:15.788527,{}
+evt_cfddbb72c7a34721,payment,pay_38d0425e4f5e4d85,cust_fb4e9a92aeb542ff,payment.created,1499,INR,2026-08-12T10:44:48.788527,{}
+evt_3ecefa3aef09451b,payment,pay_38d0425e4f5e4d85,cust_fb4e9a92aeb542ff,payment.failed,1499,INR,2026-08-12T10:45:23.788527,"{""reason"": ""card_declined""}"
+evt_918e915fad624a50,subscription,sub_4fde57e0468b4c2b,cust_34b982c2e8264313,subscription.created,499,INR,2026-08-12T13:45:01.788527,"{""plan"": ""plan_basic""}"
+evt_61649c9c200f46e8,payment,pay_079d207c3b644dd2,cust_0e03bed9d89645d0,payment.created,2499,INR,2026-08-12T15:33:20.788527,{}
+evt_6cdb296a178a4925,payment,pay_079d207c3b644dd2,cust_0e03bed9d89645d0,payment.authorized,2499,INR,2026-08-12T15:33:23.788527,{}
+evt_ed2d87eea27644f9,payment,pay_079d207c3b644dd2,cust_0e03bed9d89645d0,payment.captured,2499,INR,2026-08-12T15:33:24.788527,{}
+evt_f6509f44e54e4aef,payment,pay_a7e224b181af4e7c,cust_82559b82a8b240bb,payment.created,4999,INR,2026-08-12T16:18:25.788527,{}
+evt_8e8f84c1614e4ead,payment,pay_a7e224b181af4e7c,cust_82559b82a8b240bb,payment.failed,4999,INR,2026-08-12T16:18:57.788527,"{""reason"": ""insufficient_funds""}"
+evt_70d9d9f329754da3,checkout,chk_c6b22a95ed174843,cust_6537b2a991364bd3,checkout.created,4999,INR,2026-08-12T17:36:54.788527,{}
+evt_7cc95601f0f649be,checkout,chk_c6b22a95ed174843,cust_6537b2a991364bd3,checkout.abandoned,4999,INR,2026-08-12T18:03:54.788527,{}
+evt_69b63edddd0e4c2b,subscription,sub_6b9434f12c8c480d,cust_2d27e3977a0a4974,subscription.created,1499,INR,2026-08-12T22:31:31.788527,"{""plan"": ""plan_pro""}"
+evt_27c7a8aaff69480a,payment,pay_fe59e6178b1f494c,cust_441b3f6e01e34c1a,payment.created,499,INR,2026-08-13T00:37:37.788527,{}
+evt_09c5e09594134da9,payment,pay_fe59e6178b1f494c,cust_441b3f6e01e34c1a,payment.authorized,499,INR,2026-08-13T00:37:46.788527,{}
+evt_d599bfccc6174c75,payment,pay_fe59e6178b1f494c,cust_441b3f6e01e34c1a,payment.captured,499,INR,2026-08-13T00:37:48.788527,{}
+evt_b32755c40d2348eb,payment,pay_226ebd7c6e224e7f,cust_0decee9389ad40e6,payment.created,9999,INR,2026-08-13T01:59:13.788527,{}
+evt_ecf3befeb97f43d7,payment,pay_226ebd7c6e224e7f,cust_0decee9389ad40e6,payment.failed,9999,INR,2026-08-13T01:59:44.788527,"{""reason"": ""account_closed""}"
+evt_0df0507debf9431a,payment,pay_e63d2f3dbeef4102,cust_783cfaccb48b428f,payment.created,2499,INR,2026-08-13T02:45:52.788527,{}
+evt_68f0481bf6d242ef,payment,pay_e63d2f3dbeef4102,cust_783cfaccb48b428f,payment.authorized,2499,INR,2026-08-13T02:46:00.788527,{}
+evt_8bf13471545b4dbd,payment,pay_e63d2f3dbeef4102,cust_783cfaccb48b428f,payment.captured,2499,INR,2026-08-13T02:46:01.788527,{}
+evt_9da6ab7768d14732,subscription,sub_b8125330699e440b,cust_cf371e95411c46aa,subscription.created,1499,INR,2026-08-13T02:57:29.788527,"{""plan"": ""plan_pro""}"
+evt_0f1f561eb1b6462c,payment,pay_11578021db73444f,cust_0425780fa78643aa,payment.created,9999,INR,2026-08-13T05:39:23.788527,{}
+evt_4b124084c21c4498,payment,pay_11578021db73444f,cust_0425780fa78643aa,payment.failed,9999,INR,2026-08-13T05:40:05.788527,"{""reason"": ""insufficient_funds""}"
+evt_c56a920ac3164f26,subscription,sub_323f8f004a9846b5,cust_83f6a4d4c15d4ed1,subscription.created,1499,INR,2026-08-13T09:05:55.788527,"{""plan"": ""plan_pro""}"
+evt_edc5eadcb6224a30,subscription,sub_5740ae8e01c64a14,cust_8da17a1e673b4190,subscription.created,4999,INR,2026-08-13T09:18:17.788527,"{""plan"": ""plan_business""}"
+evt_9cb3d4c919734151,checkout,chk_b53932ca67804e41,cust_e7a49d9fe4654ddb,checkout.created,9999,INR,2026-08-13T12:04:58.788527,{}
+evt_3477dbe1826a4d64,checkout,chk_b53932ca67804e41,cust_e7a49d9fe4654ddb,checkout.completed,9999,INR,2026-08-13T12:06:28.788527,{}
+evt_c5b6f2368e044be4,checkout,chk_ad04e564ed7e4b68,cust_f75d32bf52ec4cf5,checkout.created,19999,INR,2026-08-13T12:07:28.788527,{}
+evt_e21cf99cdf2c4241,checkout,chk_ad04e564ed7e4b68,cust_f75d32bf52ec4cf5,checkout.completed,19999,INR,2026-08-13T12:09:05.788527,{}
+evt_8df66508362b4eff,payment,pay_b4caa193053640c1,cust_2673cf5c72eb4eea,payment.created,2499,INR,2026-08-13T13:12:08.788527,{}
+evt_c518585464b7493a,payment,pay_b4caa193053640c1,cust_2673cf5c72eb4eea,payment.authorized,2499,INR,2026-08-13T13:12:18.788527,{}
+evt_a67d4f9a474b41b8,payment,pay_b4caa193053640c1,cust_2673cf5c72eb4eea,payment.captured,2499,INR,2026-08-13T13:12:22.788527,{}
+evt_a955253d4f0e4535,checkout,chk_6a41e72548714f4d,cust_97afc4425b8845d4,checkout.created,4999,INR,2026-08-13T16:32:53.788527,{}
+evt_21d29e3e1e12412a,checkout,chk_6a41e72548714f4d,cust_97afc4425b8845d4,checkout.completed,4999,INR,2026-08-13T16:34:26.788527,{}
+evt_f453cb0c1d324d4a,subscription,sub_630b82d0c27040c3,cust_ea0115a30b1748f1,subscription.created,4999,INR,2026-08-13T16:50:08.788527,"{""plan"": ""plan_business""}"
+evt_c2e100120e824af8,checkout,chk_b3eb828205644412,cust_17d5cf7732f74583,checkout.created,2499,INR,2026-08-13T17:18:31.788527,{}
+evt_d72a7d153ff14d3f,checkout,chk_b3eb828205644412,cust_17d5cf7732f74583,checkout.completed,2499,INR,2026-08-13T17:19:29.788527,{}
+evt_a297399019274061,payment,pay_3a581667f5f247d2,cust_9d2630da49044414,payment.created,1499,INR,2026-08-13T18:02:08.788527,{}
+evt_fd33ea2ec40041d2,payment,pay_3a581667f5f247d2,cust_9d2630da49044414,payment.authorized,1499,INR,2026-08-13T18:02:15.788527,{}
+evt_4a2fdb7a31184686,payment,pay_3a581667f5f247d2,cust_9d2630da49044414,payment.captured,1499,INR,2026-08-13T18:02:19.788527,{}
+evt_f5ccb92dca254161,subscription,sub_690c91168e2044c4,cust_4889ef6ccd83460e,subscription.created,4999,INR,2026-08-13T19:41:07.788527,"{""plan"": ""plan_business""}"
+evt_0c5cbc67289b4983,checkout,chk_ecad5149947642cd,cust_f81c174802634e2b,checkout.created,999,INR,2026-08-13T22:43:40.788527,{}
+evt_c52b7b8ed8f8470a,checkout,chk_ecad5149947642cd,cust_f81c174802634e2b,checkout.completed,999,INR,2026-08-13T22:44:35.788527,{}
+evt_da3c10a1ab214757,subscription,sub_06700ae44d1f4bff,cust_441b3f6e01e34c1a,subscription.created,1499,INR,2026-08-13T23:07:18.788527,"{""plan"": ""plan_pro""}"
+evt_0f47892b876b4cfb,payment,pay_dc662cd337d349a5,cust_ea0115a30b1748f1,payment.created,1499,INR,2026-08-14T02:51:03.788527,{}
+evt_01e39bbc9a4c41e2,payment,pay_dc662cd337d349a5,cust_ea0115a30b1748f1,payment.authorized,1499,INR,2026-08-14T02:51:06.788527,{}
+evt_16cefd50c3514e0b,payment,pay_dc662cd337d349a5,cust_ea0115a30b1748f1,payment.captured,1499,INR,2026-08-14T02:51:08.788527,{}
+evt_55675749ba084688,checkout,chk_bd6ea83b9fe84070,cust_50ef51410b964f89,checkout.created,9999,INR,2026-08-14T03:41:08.788527,{}
+evt_6e459c398fef448b,subscription,sub_850243a21579425c,cust_8c792f3cf57b42b9,subscription.pending,4999,INR,2026-08-14T03:41:18.788527,"{""reason"": ""insufficient_funds""}"
+evt_720545446c094ac6,checkout,chk_bd6ea83b9fe84070,cust_50ef51410b964f89,checkout.completed,9999,INR,2026-08-14T03:41:46.788527,{}
+evt_ebd69d9c2b664ff7,payment,pay_7be7ed336153409b,cust_4d5b67526ea94113,payment.created,9999,INR,2026-08-14T06:42:34.788527,{}
+evt_21cf3dd222264d29,payment,pay_7be7ed336153409b,cust_4d5b67526ea94113,payment.failed,9999,INR,2026-08-14T06:43:34.788527,"{""reason"": ""card_declined""}"
+evt_3e0747248d984b67,checkout,chk_34270cf625164d63,cust_9d2630da49044414,checkout.created,9999,INR,2026-08-14T15:41:23.788527,{}
+evt_beaeed6ef7594494,payment,pay_398f65d3e64d4169,cust_e3452a1e8a8b45e6,payment.created,19999,INR,2026-08-14T15:51:01.788527,{}
+evt_9787d1ab76d44437,payment,pay_398f65d3e64d4169,cust_e3452a1e8a8b45e6,payment.authorized,19999,INR,2026-08-14T15:51:07.788527,{}
+evt_f3bb753afe9148e9,payment,pay_398f65d3e64d4169,cust_e3452a1e8a8b45e6,payment.captured,19999,INR,2026-08-14T15:51:11.788527,{}
+evt_8357de2a59e74f85,payment,pay_e4ee95d2c4484ee7,cust_31d470848d504be8,payment.created,1499,INR,2026-08-14T15:55:34.788527,{}
+evt_6af6e50a230443f7,payment,pay_e4ee95d2c4484ee7,cust_31d470848d504be8,payment.authorized,1499,INR,2026-08-14T15:55:42.788527,{}
+evt_06eb055f92b94f81,payment,pay_e4ee95d2c4484ee7,cust_31d470848d504be8,payment.captured,1499,INR,2026-08-14T15:55:47.788527,{}
+evt_41f250b59ad946c3,checkout,chk_34270cf625164d63,cust_9d2630da49044414,checkout.abandoned,9999,INR,2026-08-14T15:57:23.788527,{}
+evt_aa1eb1ccd73345ec,checkout,chk_5c8de79d50f14cb1,cust_5ec3d53243c54805,checkout.created,1499,INR,2026-08-14T17:09:52.788527,{}
+evt_f85521c681de479d,checkout,chk_5c8de79d50f14cb1,cust_5ec3d53243c54805,checkout.abandoned,1499,INR,2026-08-14T17:18:52.788527,{}
+evt_d647a44cde954dc8,payment,pay_430a97c628674659,cust_19c91de04f09402a,payment.created,2499,INR,2026-08-14T20:12:02.788527,{}
+evt_6cfdc9e783e5418c,payment,pay_430a97c628674659,cust_19c91de04f09402a,payment.authorized,2499,INR,2026-08-14T20:12:08.788527,{}
+evt_fe24677c87104f16,payment,pay_430a97c628674659,cust_19c91de04f09402a,payment.captured,2499,INR,2026-08-14T20:12:12.788527,{}
+evt_00022bbd60e94e05,subscription,sub_a07104b38f7a425c,cust_e7a49d9fe4654ddb,subscription.created,1499,INR,2026-08-14T20:53:35.788527,"{""plan"": ""plan_pro""}"
+evt_a8c33801da064e15,checkout,chk_326a53236eeb44e6,cust_2d27e3977a0a4974,checkout.created,19999,INR,2026-08-15T00:35:05.788527,{}
+evt_8891d99941054c5e,checkout,chk_326a53236eeb44e6,cust_2d27e3977a0a4974,checkout.completed,19999,INR,2026-08-15T00:36:51.788527,{}
+evt_261146ed7bac458f,subscription,sub_65fdf69812cf4310,cust_f81c174802634e2b,subscription.created,1499,INR,2026-08-15T01:59:10.788527,"{""plan"": ""plan_pro""}"
+evt_dc24554671724456,checkout,chk_e685cff04326459a,cust_0decee9389ad40e6,checkout.created,4999,INR,2026-08-15T04:16:32.788527,{}
+evt_1c37ebb1b2424b0e,checkout,chk_e685cff04326459a,cust_0decee9389ad40e6,checkout.completed,4999,INR,2026-08-15T04:17:14.788527,{}
+evt_1e0fad7776d44083,payment,pay_f3ea495e22714a25,cust_bab775145d814dbb,payment.created,499,INR,2026-08-15T06:44:41.788527,{}
+evt_d96ad2c2f02645e2,payment,pay_f3ea495e22714a25,cust_bab775145d814dbb,payment.failed,499,INR,2026-08-15T06:45:05.788527,"{""reason"": ""invalid_payment_method""}"
+evt_9b5499e7f917404b,subscription,sub_c0f63ebe1d2b4cf4,cust_7d96b4632bf64dee,subscription.created,499,INR,2026-08-15T10:45:40.788527,"{""plan"": ""plan_basic""}"
+evt_6758bca6187b4341,checkout,chk_5b8a3da83bc34c2a,cust_f81c174802634e2b,checkout.created,1499,INR,2026-08-15T14:27:27.788527,{}
+evt_fbf71b9c7a3e4c33,checkout,chk_5b8a3da83bc34c2a,cust_f81c174802634e2b,checkout.completed,1499,INR,2026-08-15T14:28:54.788527,{}
+evt_68b20425380d492f,subscription,sub_15a14a7ba5d24b95,cust_ea3eede4f0be4e60,subscription.created,4999,INR,2026-08-15T15:16:47.788527,"{""plan"": ""plan_business""}"
+evt_9dbe668affe44053,payment,pay_83862f2a8e1e4bd8,cust_441b3f6e01e34c1a,payment.created,1499,INR,2026-08-15T18:56:35.788527,{}
+evt_fb94c5d19c42466b,payment,pay_83862f2a8e1e4bd8,cust_441b3f6e01e34c1a,payment.failed,1499,INR,2026-08-15T18:57:05.788527,"{""reason"": ""network_error""}"
+evt_bcb44f0053394cb0,payment,pay_3295f62d502a40f4,cust_02976cbb3fc24540,payment.created,999,INR,2026-08-15T19:10:41.788527,{}
+evt_a127a4fd83714257,payment,pay_3295f62d502a40f4,cust_02976cbb3fc24540,payment.authorized,999,INR,2026-08-15T19:10:48.788527,{}
+evt_85f3474f288b4e42,payment,pay_3295f62d502a40f4,cust_02976cbb3fc24540,payment.captured,999,INR,2026-08-15T19:10:53.788527,{}
+evt_5bc281e77a244bd3,checkout,chk_986ee418f0b5460f,cust_c2f38919bf264097,checkout.created,4999,INR,2026-08-15T19:38:39.788527,{}
+evt_3f2ac5e024e24e74,checkout,chk_986ee418f0b5460f,cust_c2f38919bf264097,checkout.completed,4999,INR,2026-08-15T19:39:33.788527,{}
+evt_c3160f626c944e5f,payment,pay_1d9ed4740df54db4,cust_128887ede58a42fd,payment.created,4999,INR,2026-08-15T21:13:22.788527,{}
+evt_be9d9718bb0f492d,payment,pay_1d9ed4740df54db4,cust_128887ede58a42fd,payment.authorized,4999,INR,2026-08-15T21:13:25.788527,{}
+evt_2bd9c7fceb20434d,payment,pay_1d9ed4740df54db4,cust_128887ede58a42fd,payment.captured,4999,INR,2026-08-15T21:13:27.788527,{}
+evt_cd40d2b83dfe4e9a,subscription,sub_7e796eba891a408c,cust_31d470848d504be8,subscription.created,4999,INR,2026-08-15T21:32:06.788527,"{""plan"": ""plan_business""}"
+evt_64b8fe156f7b4f50,checkout,chk_93c81067051e44f9,cust_0ce77c4e65be4bae,checkout.created,4999,INR,2026-08-15T22:04:06.788527,{}
+evt_c96462fbeff149a3,payment,pay_c42983311c474ec2,cust_ea712f4dcfe94f6a,payment.created,499,INR,2026-08-15T22:13:28.788527,{}
+evt_0e3cffe2aa9f41a2,payment,pay_c42983311c474ec2,cust_ea712f4dcfe94f6a,payment.authorized,499,INR,2026-08-15T22:13:33.788527,{}
+evt_7ebef626f70d4884,payment,pay_c42983311c474ec2,cust_ea712f4dcfe94f6a,payment.captured,499,INR,2026-08-15T22:13:37.788527,{}
+evt_9155529a4b074524,checkout,chk_93c81067051e44f9,cust_0ce77c4e65be4bae,checkout.abandoned,4999,INR,2026-08-15T22:14:06.788527,{}
+evt_7a171ea2f4ac4c97,checkout,chk_84954492ff954c00,cust_f93c546713c44edb,checkout.created,499,INR,2026-08-16T00:23:35.788527,{}
+evt_17e18498e8dc40ec,payment,pay_4333676ab08b44c4,cust_4d5b67526ea94113,payment.created,4999,INR,2026-08-16T00:34:40.788527,{}
+evt_f33495cc8c364d98,payment,pay_4333676ab08b44c4,cust_4d5b67526ea94113,payment.authorized,4999,INR,2026-08-16T00:34:44.788527,{}
+evt_31a5312798fd4b81,payment,pay_4333676ab08b44c4,cust_4d5b67526ea94113,payment.captured,4999,INR,2026-08-16T00:34:49.788527,{}
+evt_27ac8845a46048d3,checkout,chk_84954492ff954c00,cust_f93c546713c44edb,checkout.abandoned,499,INR,2026-08-16T00:50:35.788527,{}
+evt_4bcb8ca718964039,payment,pay_ae9e2c63cb8a47a4,cust_ea576ff1540448d8,payment.created,1499,INR,2026-08-16T01:17:14.788527,{}
+evt_71295a6a5caf441d,payment,pay_ae9e2c63cb8a47a4,cust_ea576ff1540448d8,payment.failed,1499,INR,2026-08-16T01:18:06.788527,"{""reason"": ""insufficient_funds""}"
+evt_7b4bca59abd34bd3,checkout,chk_2d5b9fb6cc734299,cust_e7a49d9fe4654ddb,checkout.created,2499,INR,2026-08-16T01:51:01.788527,{}
+evt_6f0ee9c0523c41ba,checkout,chk_2d5b9fb6cc734299,cust_e7a49d9fe4654ddb,checkout.completed,2499,INR,2026-08-16T01:52:15.788527,{}
+evt_ca920ff63bb0409c,subscription,sub_c9f9e91e0f5b492d,cust_1fd68ddf9da241bb,subscription.created,1499,INR,2026-08-16T04:29:50.788527,"{""plan"": ""plan_pro""}"
+evt_1256c04648c44077,checkout,chk_ef2cc78dbbc647e3,cust_8c792f3cf57b42b9,checkout.created,2499,INR,2026-08-16T04:44:08.788527,{}
+evt_c0f78fb6141842af,checkout,chk_ef2cc78dbbc647e3,cust_8c792f3cf57b42b9,checkout.completed,2499,INR,2026-08-16T04:45:27.788527,{}
+evt_ed255b5367274fd0,payment,pay_fc0131e6cd2041d3,cust_3156f977586f4925,payment.created,1499,INR,2026-08-16T06:40:32.788527,{}
+evt_1850c4b1d6754605,payment,pay_fc0131e6cd2041d3,cust_3156f977586f4925,payment.authorized,1499,INR,2026-08-16T06:40:40.788527,{}
+evt_a591a4eaa4594e61,payment,pay_fc0131e6cd2041d3,cust_3156f977586f4925,payment.captured,1499,INR,2026-08-16T06:40:41.788527,{}
+evt_3a0a53713ac7463f,payment,pay_7d4fd34c6cae4600,cust_fb7a8984133545b5,payment.created,2499,INR,2026-08-16T07:14:52.788527,{}
+evt_0be8a2a7aa28457d,payment,pay_7d4fd34c6cae4600,cust_fb7a8984133545b5,payment.authorized,2499,INR,2026-08-16T07:14:57.788527,{}
+evt_148f78c2335146fb,payment,pay_7d4fd34c6cae4600,cust_fb7a8984133545b5,payment.captured,2499,INR,2026-08-16T07:15:01.788527,{}
+evt_37ea17735e4b491c,payment,pay_d302202a6faa4ffa,cust_87be90a2f9f24991,payment.created,499,INR,2026-08-16T13:32:24.788527,{}
+evt_a64d73b2dbae46f3,payment,pay_d302202a6faa4ffa,cust_87be90a2f9f24991,payment.authorized,499,INR,2026-08-16T13:32:32.788527,{}
+evt_acd0454eafa7400f,payment,pay_d302202a6faa4ffa,cust_87be90a2f9f24991,payment.captured,499,INR,2026-08-16T13:32:37.788527,{}
+evt_8b31b48eddff451b,subscription,sub_ceff95ba8bd943ea,cust_e3452a1e8a8b45e6,subscription.created,4999,INR,2026-08-16T14:26:54.788527,"{""plan"": ""plan_business""}"
+evt_bd88e186e1f545ef,payment,pay_12865bf9802f4289,cust_af5996552ee245bc,payment.created,499,INR,2026-08-16T17:24:08.788527,{}
+evt_ec94d6fe453b4c89,payment,pay_12865bf9802f4289,cust_af5996552ee245bc,payment.authorized,499,INR,2026-08-16T17:24:14.788527,{}
+evt_a2fb95545af343a4,payment,pay_12865bf9802f4289,cust_af5996552ee245bc,payment.captured,499,INR,2026-08-16T17:24:15.788527,{}
+evt_aba898afd1294a43,subscription,sub_75629f21f3b74b5c,cust_af5996552ee245bc,subscription.created,4999,INR,2026-08-16T17:29:24.788527,"{""plan"": ""plan_business""}"
+evt_83b0494ef6da4939,payment,pay_33c21727c71f49ea,cust_2d27e3977a0a4974,payment.created,2499,INR,2026-08-16T19:43:03.788527,{}
+evt_cfcdfce8680d4970,payment,pay_33c21727c71f49ea,cust_2d27e3977a0a4974,payment.failed,2499,INR,2026-08-16T19:44:03.788527,"{""reason"": ""insufficient_funds""}"
+evt_2d09a6ffdebc469b,subscription,sub_ffe6281bef9e4ec9,cust_e1f063bc7ce1418e,subscription.pending,4999,INR,2026-08-16T21:41:04.788527,"{""reason"": ""bank_timeout""}"
+evt_6a51ae658bd249b1,payment,pay_77f9579e49694700,cust_ca5aab22db5343d9,payment.created,2499,INR,2026-08-16T21:43:06.788527,{}
+evt_9508408356ba4484,payment,pay_77f9579e49694700,cust_ca5aab22db5343d9,payment.authorized,2499,INR,2026-08-16T21:43:11.788527,{}
+evt_39c016c63ecc4710,payment,pay_77f9579e49694700,cust_ca5aab22db5343d9,payment.captured,2499,INR,2026-08-16T21:43:16.788527,{}
+evt_64dd3a2e83e4400e,payment,pay_f171c3ba302547d5,cust_e3452a1e8a8b45e6,payment.created,9999,INR,2026-08-17T02:42:24.788527,{}
+evt_4bdad3ed52ce4a92,payment,pay_f171c3ba302547d5,cust_e3452a1e8a8b45e6,payment.authorized,9999,INR,2026-08-17T02:42:29.788527,{}
+evt_4f183a8028c24f17,payment,pay_f171c3ba302547d5,cust_e3452a1e8a8b45e6,payment.captured,9999,INR,2026-08-17T02:42:34.788527,{}
+evt_6119e5b715e34617,payment,pay_532f0856d3874452,cust_9869eceec96f4583,payment.created,499,INR,2026-08-17T02:56:25.788527,{}
+evt_7896ada0c9d04089,payment,pay_532f0856d3874452,cust_9869eceec96f4583,payment.authorized,499,INR,2026-08-17T02:56:27.788527,{}
+evt_0b8512a4806c4671,payment,pay_532f0856d3874452,cust_9869eceec96f4583,payment.captured,499,INR,2026-08-17T02:56:31.788527,{}
+evt_023a2fa47bc947dd,subscription,sub_850243a21579425c,cust_8c792f3cf57b42b9,subscription.halted,4999,INR,2026-08-17T03:41:18.788527,{}
+evt_768fd3aa38664caf,payment,pay_cc6471d243a04cac,cust_7d96b4632bf64dee,payment.created,2499,INR,2026-08-17T04:25:34.788527,{}
+evt_5944c44b3a3c42fd,payment,pay_cc6471d243a04cac,cust_7d96b4632bf64dee,payment.authorized,2499,INR,2026-08-17T04:25:42.788527,{}
+evt_8a2cfaf7a0b244f6,payment,pay_cc6471d243a04cac,cust_7d96b4632bf64dee,payment.captured,2499,INR,2026-08-17T04:25:46.788527,{}
+evt_9110ca6a8cbe48f4,payment,pay_c323adffee374faf,cust_44f813952f2d440d,payment.created,999,INR,2026-08-17T06:02:24.788527,{}
+evt_62aeb993539c4ed0,payment,pay_c323adffee374faf,cust_44f813952f2d440d,payment.failed,999,INR,2026-08-17T06:03:24.788527,"{""reason"": ""insufficient_funds""}"
+evt_7fd2eb708ae84695,payment,pay_a530965c2c1d4cc3,cust_441b3f6e01e34c1a,payment.created,1499,INR,2026-08-17T06:11:56.788527,{}
+evt_e5d22e625818494d,payment,pay_a530965c2c1d4cc3,cust_441b3f6e01e34c1a,payment.authorized,1499,INR,2026-08-17T06:12:01.788527,{}
+evt_4f1eb4841f0247a0,payment,pay_a530965c2c1d4cc3,cust_441b3f6e01e34c1a,payment.captured,1499,INR,2026-08-17T06:12:03.788527,{}
+evt_94ad3526b85347ff,subscription,sub_4b156de2d28d468c,cust_ea3eede4f0be4e60,subscription.created,1499,INR,2026-08-17T07:58:54.788527,"{""plan"": ""plan_pro""}"
+evt_cb8693b8ab964aba,subscription,sub_7b20d42603ea4ac0,cust_cc243c590f6e44bc,subscription.created,1499,INR,2026-08-17T08:45:03.788527,"{""plan"": ""plan_pro""}"
+evt_0bd3037cdf2a4568,subscription,sub_8f1200a6d735496f,cust_ad67e7949c084dfd,subscription.created,1499,INR,2026-08-17T08:59:12.788527,"{""plan"": ""plan_pro""}"
+evt_8b47c0e0e7f54dec,payment,pay_5269a428a4454125,cust_4c6ee929a92f4cff,payment.created,999,INR,2026-08-17T09:33:53.788527,{}
+evt_031a80ae5bb34d1a,payment,pay_5269a428a4454125,cust_4c6ee929a92f4cff,payment.failed,999,INR,2026-08-17T09:34:06.788527,"{""reason"": ""card_declined""}"
+evt_1afa15a4c1c24339,checkout,chk_e40f9a58c17e4ee9,cust_1a840cb83d274b59,checkout.created,1499,INR,2026-08-17T10:29:43.788527,{}
+evt_24083b5f38b04d75,checkout,chk_e40f9a58c17e4ee9,cust_1a840cb83d274b59,checkout.abandoned,1499,INR,2026-08-17T10:56:43.788527,{}
+evt_0bef1c1dc6f045a3,payment,pay_3a0bfffb6c944771,cust_8ab27c13c1794b4a,payment.created,1499,INR,2026-08-17T13:17:21.788527,{}
+evt_2301c452b2844ba3,payment,pay_3a0bfffb6c944771,cust_8ab27c13c1794b4a,payment.authorized,1499,INR,2026-08-17T13:17:31.788527,{}
+evt_195245ca2f0547da,payment,pay_3a0bfffb6c944771,cust_8ab27c13c1794b4a,payment.captured,1499,INR,2026-08-17T13:17:35.788527,{}
+evt_f362d67f0db14778,payment,pay_2894b4c578d64d8e,cust_d8b4a5646e3e44f3,payment.created,1499,INR,2026-08-17T14:23:10.788527,{}
+evt_a8fd25dd5bd0432a,payment,pay_2894b4c578d64d8e,cust_d8b4a5646e3e44f3,payment.authorized,1499,INR,2026-08-17T14:23:13.788527,{}
+evt_5b9346bfadb74366,payment,pay_2894b4c578d64d8e,cust_d8b4a5646e3e44f3,payment.captured,1499,INR,2026-08-17T14:23:17.788527,{}
+evt_ac1d21d7d4604de6,subscription,sub_d1dcae34cc2741ea,cust_68b0cd2a60874b50,subscription.created,1499,INR,2026-08-17T15:26:05.788527,"{""plan"": ""plan_pro""}"
+evt_c349dcbc0a5d4ec0,payment,pay_5691ba4fa9204490,cust_0985e6d73ae541f9,payment.created,999,INR,2026-08-17T15:26:11.788527,{}
+evt_a18688873ea242e3,payment,pay_5691ba4fa9204490,cust_0985e6d73ae541f9,payment.authorized,999,INR,2026-08-17T15:26:19.788527,{}
+evt_72705e82d71444ab,payment,pay_5691ba4fa9204490,cust_0985e6d73ae541f9,payment.captured,999,INR,2026-08-17T15:26:23.788527,{}
+evt_03bd422819e5459d,payment,pay_dea177790c5d4474,cust_5c7d96fbf609402b,payment.created,499,INR,2026-08-17T16:44:01.788527,{}
+evt_a1a8c00e13e74dad,payment,pay_dea177790c5d4474,cust_5c7d96fbf609402b,payment.authorized,499,INR,2026-08-17T16:44:10.788527,{}
+evt_933b34eba5584e33,payment,pay_dea177790c5d4474,cust_5c7d96fbf609402b,payment.captured,499,INR,2026-08-17T16:44:11.788527,{}
+evt_3cee9a64ad99493e,subscription,sub_15a14a7ba5d24b95,cust_ea3eede4f0be4e60,subscription.pending,4999,INR,2026-08-17T16:44:21.788527,"{""reason"": ""insufficient_funds""}"
+evt_cd29c7ddfc884cc9,subscription,sub_1dc30fac5e0146b9,cust_ad90e9f7d19d4c44,subscription.created,4999,INR,2026-08-17T17:35:41.788527,"{""plan"": ""plan_business""}"
+evt_a466421916534d6e,subscription,sub_a3c15243a1214380,cust_0e03bed9d89645d0,subscription.pending,1499,INR,2026-08-17T18:07:55.788527,"{""reason"": ""invalid_payment_method""}"
+evt_c64be36c336045d9,payment,pay_ae6bb153765141d7,cust_6f29981eaa6c4c8b,payment.created,19999,INR,2026-08-17T18:42:24.788527,{}
+evt_a83d73d1d73a41a3,payment,pay_ae6bb153765141d7,cust_6f29981eaa6c4c8b,payment.failed,19999,INR,2026-08-17T18:42:47.788527,"{""reason"": ""card_declined""}"
+evt_3dc842a9ecbc43e3,subscription,sub_5a90b2d3d31c4615,cust_0e03bed9d89645d0,subscription.pending,4999,INR,2026-08-17T19:28:21.788527,"{""reason"": ""card_declined""}"
+evt_eb7de5b495da4e28,payment,pay_7526f891539a4d25,cust_17d5cf7732f74583,payment.created,19999,INR,2026-08-18T01:00:17.788527,{}
+evt_6d00a6863e1b4e14,payment,pay_7526f891539a4d25,cust_17d5cf7732f74583,payment.authorized,19999,INR,2026-08-18T01:00:21.788527,{}
+evt_6c65cbff96464108,payment,pay_7526f891539a4d25,cust_17d5cf7732f74583,payment.captured,19999,INR,2026-08-18T01:00:25.788527,{}
+evt_d375d8877d434531,subscription,sub_b6d30799587f4632,cust_f93c546713c44edb,subscription.created,1499,INR,2026-08-18T02:56:07.788527,"{""plan"": ""plan_pro""}"
+evt_b93eadb1203c4f62,subscription,sub_1c19a71e076c4a05,cust_783d980f78b2438c,subscription.created,1499,INR,2026-08-18T07:20:00.788527,"{""plan"": ""plan_pro""}"
+evt_74f60e6a8e094e0e,checkout,chk_2ca1c8d755df48e9,cust_9d0a1ba460b44a76,checkout.created,499,INR,2026-08-18T07:34:19.788527,{}
+evt_a031d614dc7441a4,checkout,chk_2ca1c8d755df48e9,cust_9d0a1ba460b44a76,checkout.abandoned,499,INR,2026-08-18T07:55:19.788527,{}
+evt_d816ca115fef44f4,payment,pay_46297cf065b84700,cust_8ab27c13c1794b4a,payment.created,999,INR,2026-08-18T08:55:33.788527,{}
+evt_09f5a3958c1b4d5e,payment,pay_46297cf065b84700,cust_8ab27c13c1794b4a,payment.authorized,999,INR,2026-08-18T08:55:39.788527,{}
+evt_88510eb212dd4797,payment,pay_46297cf065b84700,cust_8ab27c13c1794b4a,payment.captured,999,INR,2026-08-18T08:55:41.788527,{}
+evt_c47fb0341cc9418e,payment,pay_ab99b348e30b4f4b,cust_59faf58c22924d8a,payment.created,999,INR,2026-08-18T12:09:31.788527,{}
+evt_f909319bbaa84699,payment,pay_ab99b348e30b4f4b,cust_59faf58c22924d8a,payment.authorized,999,INR,2026-08-18T12:09:41.788527,{}
+evt_9d2eab5f2e66445e,payment,pay_ab99b348e30b4f4b,cust_59faf58c22924d8a,payment.captured,999,INR,2026-08-18T12:09:42.788527,{}
+evt_aff683aad2db449c,payment,pay_57993493109049e6,cust_ca5aab22db5343d9,payment.created,999,INR,2026-08-18T12:41:35.788527,{}
+evt_f79a19c1be82484d,payment,pay_57993493109049e6,cust_ca5aab22db5343d9,payment.authorized,999,INR,2026-08-18T12:41:45.788527,{}
+evt_cfc9f0bae69646d5,payment,pay_57993493109049e6,cust_ca5aab22db5343d9,payment.captured,999,INR,2026-08-18T12:41:48.788527,{}
+evt_a76cb75a108f40f1,subscription,sub_6042ca0fd07f4fa9,cust_59faf58c22924d8a,subscription.created,499,INR,2026-08-18T13:03:14.788527,"{""plan"": ""plan_basic""}"
+evt_56ca1a6732654ac3,payment,pay_84b53e24809d470f,cust_6537b2a991364bd3,payment.created,999,INR,2026-08-18T13:07:54.788527,{}
+evt_15498bc0ad8546ae,payment,pay_84b53e24809d470f,cust_6537b2a991364bd3,payment.authorized,999,INR,2026-08-18T13:07:57.788527,{}
+evt_a98cc4f1a31c4c9e,payment,pay_84b53e24809d470f,cust_6537b2a991364bd3,payment.captured,999,INR,2026-08-18T13:08:01.788527,{}
+evt_f2bac468e3c94861,subscription,sub_beea745e402e43ae,cust_394605899d5d4db7,subscription.created,4999,INR,2026-08-18T15:12:52.788527,"{""plan"": ""plan_business""}"
+evt_b5819d8349ec4cef,payment,pay_84e0ebbb6167423c,cust_02976cbb3fc24540,payment.created,499,INR,2026-08-18T15:40:48.788527,{}
+evt_afb7420bd01b4407,payment,pay_84e0ebbb6167423c,cust_02976cbb3fc24540,payment.authorized,499,INR,2026-08-18T15:40:58.788527,{}
+evt_89897342777848ff,payment,pay_84e0ebbb6167423c,cust_02976cbb3fc24540,payment.captured,499,INR,2026-08-18T15:41:01.788527,{}
+evt_eaf0e149594b45f8,checkout,chk_b15d51ce10b84acf,cust_5bccd3431704437c,checkout.created,1499,INR,2026-08-18T16:38:51.788527,{}
+evt_f969e7c4f22c47f0,checkout,chk_b15d51ce10b84acf,cust_5bccd3431704437c,checkout.abandoned,1499,INR,2026-08-18T16:58:51.788527,{}
+evt_5ccc3142f6fa41cb,subscription,sub_511e739d883b4f30,cust_4889ef6ccd83460e,subscription.created,4999,INR,2026-08-18T18:16:38.788527,"{""plan"": ""plan_business""}"
+evt_537d964655fe4bcc,payment,pay_663bf85dc6fd4476,cust_ea712f4dcfe94f6a,payment.created,499,INR,2026-08-18T18:31:47.788527,{}
+evt_d8b7ff57d2e9414d,payment,pay_663bf85dc6fd4476,cust_ea712f4dcfe94f6a,payment.authorized,499,INR,2026-08-18T18:31:54.788527,{}
+evt_8365b576d2b747ba,payment,pay_663bf85dc6fd4476,cust_ea712f4dcfe94f6a,payment.captured,499,INR,2026-08-18T18:31:55.788527,{}
+evt_be3e1479c0b44406,checkout,chk_8ef5f9f8b01c4137,cust_e3452a1e8a8b45e6,checkout.created,4999,INR,2026-08-18T20:52:52.788527,{}
+evt_391886a9b0f9447b,checkout,chk_8ef5f9f8b01c4137,cust_e3452a1e8a8b45e6,checkout.completed,4999,INR,2026-08-18T20:54:52.788527,{}
+evt_3e930ffdd5324d57,payment,pay_180cc9952da24773,cust_826f3e6850d743de,payment.created,1499,INR,2026-08-18T22:09:15.788527,{}
+evt_9ae1472802544549,payment,pay_180cc9952da24773,cust_826f3e6850d743de,payment.authorized,1499,INR,2026-08-18T22:09:17.788527,{}
+evt_0bd66cd715654daa,payment,pay_180cc9952da24773,cust_826f3e6850d743de,payment.captured,1499,INR,2026-08-18T22:09:19.788527,{}
+evt_b2758b7018c644e5,checkout,chk_8ec70b44d6d24531,cust_50ef51410b964f89,checkout.created,2499,INR,2026-08-18T22:48:53.788527,{}
+evt_2ed066dcdd724ad2,checkout,chk_0d7fdaadf4ef4a4e,cust_f123cf018da540ce,checkout.created,1499,INR,2026-08-18T22:51:33.788527,{}
+evt_fcb4d7d695144925,checkout,chk_8ec70b44d6d24531,cust_50ef51410b964f89,checkout.abandoned,2499,INR,2026-08-18T22:54:53.788527,{}
+evt_2f8abd04ef384670,checkout,chk_0d7fdaadf4ef4a4e,cust_f123cf018da540ce,checkout.abandoned,1499,INR,2026-08-18T23:10:33.788527,{}
+evt_f1073baf6f154a5a,checkout,chk_0bfc187228bf486c,cust_4fcee444813e4f00,checkout.created,9999,INR,2026-08-19T00:13:16.788527,{}
+evt_c7328a7a253446ff,checkout,chk_0bfc187228bf486c,cust_4fcee444813e4f00,checkout.abandoned,9999,INR,2026-08-19T00:22:16.788527,{}
+evt_22b88343035148a5,payment,pay_293a928acfd2494a,cust_2d0bc3dc82554e21,payment.created,499,INR,2026-08-19T00:22:42.788527,{}
+evt_b0bfaf8ad6c7461c,payment,pay_293a928acfd2494a,cust_2d0bc3dc82554e21,payment.authorized,499,INR,2026-08-19T00:22:46.788527,{}
+evt_123c766e0dfd4c35,payment,pay_293a928acfd2494a,cust_2d0bc3dc82554e21,payment.captured,499,INR,2026-08-19T00:22:51.788527,{}
+evt_472dcbdb0a3640f3,payment,pay_cdbb30a15a064125,cust_8f6fbc99d10a4e7a,payment.created,999,INR,2026-08-19T02:21:21.788527,{}
+evt_70baf026814a441b,payment,pay_cdbb30a15a064125,cust_8f6fbc99d10a4e7a,payment.authorized,999,INR,2026-08-19T02:21:23.788527,{}
+evt_a68e3f4c539a40aa,payment,pay_cdbb30a15a064125,cust_8f6fbc99d10a4e7a,payment.captured,999,INR,2026-08-19T02:21:26.788527,{}
+evt_5cc0b8006c5f4e4b,checkout,chk_4c7475e19cbe44dc,cust_6b895fdba5f3413c,checkout.created,2499,INR,2026-08-19T02:48:23.788527,{}
+evt_bba0a14a95244d9c,checkout,chk_4c7475e19cbe44dc,cust_6b895fdba5f3413c,checkout.completed,2499,INR,2026-08-19T02:49:14.788527,{}
+evt_343706a7aa8c4514,checkout,chk_b32d5f705bbe474b,cust_595c59e965814558,checkout.created,1499,INR,2026-08-19T05:43:41.788527,{}
+evt_c373942677c34a52,checkout,chk_b32d5f705bbe474b,cust_595c59e965814558,checkout.completed,1499,INR,2026-08-19T05:44:50.788527,{}
+evt_4d1427d9b9474023,checkout,chk_57d122c74ddc4365,cust_3436a29073f646a0,checkout.created,9999,INR,2026-08-19T05:47:48.788527,{}
+evt_1af23c3aa8314d5b,checkout,chk_57d122c74ddc4365,cust_3436a29073f646a0,checkout.abandoned,9999,INR,2026-08-19T06:17:48.788527,{}
+evt_c9d6ea56a7204a0a,payment,pay_69956044a025409b,cust_9869eceec96f4583,payment.created,1499,INR,2026-08-19T07:23:51.788527,{}
+evt_136612b8e0ba4209,payment,pay_69956044a025409b,cust_9869eceec96f4583,payment.authorized,1499,INR,2026-08-19T07:24:01.788527,{}
+evt_e2b43e763f7141a8,payment,pay_69956044a025409b,cust_9869eceec96f4583,payment.captured,1499,INR,2026-08-19T07:24:02.788527,{}
+evt_9a1eb666b4444d90,checkout,chk_297223988ed94a00,cust_33f6d655132e42eb,checkout.created,2499,INR,2026-08-19T08:18:11.788527,{}
+evt_07a485d9a0ec4a0e,checkout,chk_297223988ed94a00,cust_33f6d655132e42eb,checkout.abandoned,2499,INR,2026-08-19T08:35:11.788527,{}
+evt_050f91df534d4e53,checkout,chk_e62397436d5b4368,cust_51e06e8e8ca8476a,checkout.created,4999,INR,2026-08-19T11:22:36.788527,{}
+evt_0eab138a57f84404,checkout,chk_e62397436d5b4368,cust_51e06e8e8ca8476a,checkout.completed,4999,INR,2026-08-19T11:23:50.788527,{}
+evt_d2f8fa693877407a,payment,pay_4b2c4851910b42ef,cust_94a154527a1f408c,payment.created,4999,INR,2026-08-19T12:25:07.788527,{}
+evt_2a0c96a0f4df4bf6,payment,pay_4b2c4851910b42ef,cust_94a154527a1f408c,payment.authorized,4999,INR,2026-08-19T12:25:15.788527,{}
+evt_5121868ce6ee4a7c,payment,pay_4b2c4851910b42ef,cust_94a154527a1f408c,payment.captured,4999,INR,2026-08-19T12:25:17.788527,{}
+evt_7e82223a6b1b4f03,payment,pay_30a89a0f303b404b,cust_7d96b4632bf64dee,payment.created,999,INR,2026-08-19T12:35:30.788527,{}
+evt_4e9a8d1b889644ec,payment,pay_30a89a0f303b404b,cust_7d96b4632bf64dee,payment.failed,999,INR,2026-08-19T12:36:06.788527,"{""reason"": ""gateway_failure""}"
+evt_1aef6c7ee4be4830,subscription,sub_7e796eba891a408c,cust_31d470848d504be8,subscription.pending,4999,INR,2026-08-19T13:14:47.788527,"{""reason"": ""network_error""}"
+evt_66ff4c7f491245ed,payment,pay_c8b6208b710e4274,cust_b0e11c2c6045489a,payment.created,499,INR,2026-08-19T15:08:14.788527,{}
+evt_7338d9675d544b55,payment,pay_c8b6208b710e4274,cust_b0e11c2c6045489a,payment.failed,499,INR,2026-08-19T15:08:38.788527,"{""reason"": ""gateway_failure""}"
+evt_c56497a2084f40d6,payment,pay_325e680bcd594dfe,cust_0decee9389ad40e6,payment.created,4999,INR,2026-08-19T16:08:25.788527,{}
+evt_f532235b085046a3,payment,pay_325e680bcd594dfe,cust_0decee9389ad40e6,payment.authorized,4999,INR,2026-08-19T16:08:29.788527,{}
+evt_f9ad8e87fd1146b0,payment,pay_325e680bcd594dfe,cust_0decee9389ad40e6,payment.captured,4999,INR,2026-08-19T16:08:32.788527,{}
+evt_c4aa19506c7a49ec,subscription,sub_5f5197ebc3784224,cust_595c59e965814558,subscription.created,499,INR,2026-08-19T16:31:31.788527,"{""plan"": ""plan_basic""}"
+evt_517f08231e394fdb,payment,pay_e16271c75705499f,cust_4fcee444813e4f00,payment.created,2499,INR,2026-08-19T20:12:42.788527,{}
+evt_e32433f267a64a75,payment,pay_e16271c75705499f,cust_4fcee444813e4f00,payment.authorized,2499,INR,2026-08-19T20:12:46.788527,{}
+evt_337d5175c12f4d2f,payment,pay_e16271c75705499f,cust_4fcee444813e4f00,payment.captured,2499,INR,2026-08-19T20:12:50.788527,{}
+evt_c88411941fc4478e,payment,pay_2acadbe651b24faa,cust_fb7a8984133545b5,payment.created,999,INR,2026-08-19T20:34:37.788527,{}
+evt_877b85ed5328449a,payment,pay_2acadbe651b24faa,cust_fb7a8984133545b5,payment.authorized,999,INR,2026-08-19T20:34:44.788527,{}
+evt_0df4f937387c4215,payment,pay_2acadbe651b24faa,cust_fb7a8984133545b5,payment.captured,999,INR,2026-08-19T20:34:45.788527,{}
+evt_12ff7bc32330408f,subscription,sub_ffe6281bef9e4ec9,cust_e1f063bc7ce1418e,subscription.halted,4999,INR,2026-08-19T21:41:04.788527,{}
+evt_4e09ef124b30469c,checkout,chk_a4d94c5950d74b9c,cust_394605899d5d4db7,checkout.created,1499,INR,2026-08-20T00:23:46.788527,{}
+evt_d24685a926cb477a,checkout,chk_a4d94c5950d74b9c,cust_394605899d5d4db7,checkout.completed,1499,INR,2026-08-20T00:24:39.788527,{}
+evt_b1cf2aa4be5f48e7,subscription,sub_42daa5ebe0464db5,cust_2e9148932561447e,subscription.created,1499,INR,2026-08-20T01:30:08.788527,"{""plan"": ""plan_pro""}"
+evt_3e33f72d16e74a15,checkout,chk_737f80eaf2d64c8c,cust_f81c174802634e2b,checkout.created,9999,INR,2026-08-20T04:46:57.788527,{}
+evt_9fe31b254be643d4,checkout,chk_737f80eaf2d64c8c,cust_f81c174802634e2b,checkout.abandoned,9999,INR,2026-08-20T05:04:57.788527,{}
+evt_7bca76a8d38e4ef2,payment,pay_72274810c7db4991,cust_8d46cc1c22de4cd6,payment.created,2499,INR,2026-08-20T05:15:52.788527,{}
+evt_42a260101f744f77,payment,pay_72274810c7db4991,cust_8d46cc1c22de4cd6,payment.authorized,2499,INR,2026-08-20T05:15:58.788527,{}
+evt_150f3d6a046f470d,payment,pay_72274810c7db4991,cust_8d46cc1c22de4cd6,payment.captured,2499,INR,2026-08-20T05:16:01.788527,{}
+evt_6e2080d96c2d4dd3,payment,pay_cd948c8653494e48,cust_d858520b91764b98,payment.created,4999,INR,2026-08-20T05:35:54.788527,{}
+evt_6e36f66495294129,payment,pay_cd948c8653494e48,cust_d858520b91764b98,payment.failed,4999,INR,2026-08-20T05:36:49.788527,"{""reason"": ""card_declined""}"
+evt_4aa10f07670d4a01,checkout,chk_dd170cf4c1ff4830,cust_c5a7a49d0f944889,checkout.created,4999,INR,2026-08-20T06:05:04.788527,{}
+evt_f90dabb560124da1,checkout,chk_dd170cf4c1ff4830,cust_c5a7a49d0f944889,checkout.completed,4999,INR,2026-08-20T06:06:51.788527,{}
+evt_0bfa507c41e745a2,payment,pay_83d4e4e41e9c428c,cust_4a3f1bbdb33544c6,payment.created,999,INR,2026-08-20T06:51:43.788527,{}
+evt_f7e095f3f523472d,payment,pay_83d4e4e41e9c428c,cust_4a3f1bbdb33544c6,payment.authorized,999,INR,2026-08-20T06:51:53.788527,{}
+evt_f3ceac9699284978,payment,pay_83d4e4e41e9c428c,cust_4a3f1bbdb33544c6,payment.captured,999,INR,2026-08-20T06:51:55.788527,{}
+evt_610ff7d07fa64e52,checkout,chk_629c5d0f2a864679,cust_b27bf293d1fd476f,checkout.created,2499,INR,2026-08-20T07:31:39.788527,{}
+evt_88033902a8e14db0,checkout,chk_629c5d0f2a864679,cust_b27bf293d1fd476f,checkout.completed,2499,INR,2026-08-20T07:32:13.788527,{}
+evt_df12ad4fac3c481a,payment,pay_de488a5afcf4490f,cust_8ab27c13c1794b4a,payment.created,499,INR,2026-08-20T07:43:28.788527,{}
+evt_50a2c250a6cf4313,payment,pay_de488a5afcf4490f,cust_8ab27c13c1794b4a,payment.authorized,499,INR,2026-08-20T07:43:30.788527,{}
+evt_927c952391984620,payment,pay_de488a5afcf4490f,cust_8ab27c13c1794b4a,payment.captured,499,INR,2026-08-20T07:43:33.788527,{}
+evt_8ba16273e3ae4522,payment,pay_ceb0ddc45a854ad8,cust_2673cf5c72eb4eea,payment.created,2499,INR,2026-08-20T09:05:45.788527,{}
+evt_b4af00f506dc494f,payment,pay_ceb0ddc45a854ad8,cust_2673cf5c72eb4eea,payment.failed,2499,INR,2026-08-20T09:06:40.788527,"{""reason"": ""customer_dispute""}"
+evt_a0b8e7574d55489f,payment,pay_a3c2dfad6f5c499d,cust_783cfaccb48b428f,payment.created,499,INR,2026-08-20T10:40:30.788527,{}
+evt_906bb34d37694f1d,payment,pay_a3c2dfad6f5c499d,cust_783cfaccb48b428f,payment.authorized,499,INR,2026-08-20T10:40:38.788527,{}
+evt_b4059b25f1e14e44,payment,pay_a3c2dfad6f5c499d,cust_783cfaccb48b428f,payment.captured,499,INR,2026-08-20T10:40:42.788527,{}
+evt_70fe2dc1578d456b,payment,pay_0b9dc48d5d1f4bd9,cust_1fd68ddf9da241bb,payment.created,499,INR,2026-08-20T12:31:47.788527,{}
+evt_68909e2354334293,payment,pay_0b9dc48d5d1f4bd9,cust_1fd68ddf9da241bb,payment.authorized,499,INR,2026-08-20T12:31:52.788527,{}
+evt_38e08a97b4b947d1,payment,pay_0b9dc48d5d1f4bd9,cust_1fd68ddf9da241bb,payment.captured,499,INR,2026-08-20T12:31:56.788527,{}
+evt_44752b72493149d8,payment,pay_cf612e6e367d4e01,cust_0ce77c4e65be4bae,payment.created,9999,INR,2026-08-20T13:14:53.788527,{}
+evt_f0d4fc3afc304c24,payment,pay_cf612e6e367d4e01,cust_0ce77c4e65be4bae,payment.authorized,9999,INR,2026-08-20T13:14:57.788527,{}
+evt_2e0f899cc31a47e9,payment,pay_cf612e6e367d4e01,cust_0ce77c4e65be4bae,payment.captured,9999,INR,2026-08-20T13:14:58.788527,{}
+evt_9396a574477c4f46,subscription,sub_ef64e3e5a419458d,cust_17d5cf7732f74583,subscription.created,4999,INR,2026-08-20T14:30:51.788527,"{""plan"": ""plan_business""}"
+evt_764f54655ad54d95,payment,pay_e95859ebc4da4784,cust_3436a29073f646a0,payment.created,499,INR,2026-08-20T16:29:39.788527,{}
+evt_6a2024bb625f4c0e,payment,pay_e95859ebc4da4784,cust_3436a29073f646a0,payment.authorized,499,INR,2026-08-20T16:29:48.788527,{}
+evt_6b1c9fe561814939,payment,pay_e95859ebc4da4784,cust_3436a29073f646a0,payment.captured,499,INR,2026-08-20T16:29:49.788527,{}
+evt_6b89340632be45fa,subscription,sub_beea745e402e43ae,cust_394605899d5d4db7,subscription.pending,4999,INR,2026-08-20T16:35:10.788527,"{""reason"": ""card_declined""}"
+evt_eb6db69f2494439f,subscription,sub_15a14a7ba5d24b95,cust_ea3eede4f0be4e60,subscription.halted,4999,INR,2026-08-20T16:44:21.788527,{}
+evt_78770fe3cf96432e,subscription,sub_a3c15243a1214380,cust_0e03bed9d89645d0,subscription.halted,1499,INR,2026-08-20T18:07:55.788527,{}
+evt_e92f685c9c7545b6,subscription,sub_5a90b2d3d31c4615,cust_0e03bed9d89645d0,subscription.halted,4999,INR,2026-08-20T19:28:21.788527,{}
+evt_58d78605657d4237,payment,pay_2d403e6111724cf0,cust_8da17a1e673b4190,payment.created,499,INR,2026-08-20T20:10:56.788527,{}
+evt_023c6f409be54125,payment,pay_2d403e6111724cf0,cust_8da17a1e673b4190,payment.failed,499,INR,2026-08-20T20:11:14.788527,"{""reason"": ""expired_card""}"
+evt_a1a82070e68f4324,payment,pay_8ecdb519330543b7,cust_36a8af9bcfc0495b,payment.created,2499,INR,2026-08-20T20:22:16.788527,{}
+evt_63d4fc95fd51497c,payment,pay_8ecdb519330543b7,cust_36a8af9bcfc0495b,payment.failed,2499,INR,2026-08-20T20:23:13.788527,"{""reason"": ""gateway_failure""}"
+evt_4915dd9ca6a74a51,payment,pay_8af9cb520b71465c,cust_163f2a427d0948cc,payment.created,999,INR,2026-08-20T20:32:22.788527,{}
+evt_206dd21741974544,payment,pay_8af9cb520b71465c,cust_163f2a427d0948cc,payment.failed,999,INR,2026-08-20T20:33:12.788527,"{""reason"": ""bank_timeout""}"
+evt_2e75fdb25ea74ecd,subscription,sub_f5b3a955ce854699,cust_2673cf5c72eb4eea,subscription.created,4999,INR,2026-08-20T20:46:33.788527,"{""plan"": ""plan_business""}"
+evt_dd468a943f0747c0,payment,pay_1941f292a0ef412d,cust_36a8af9bcfc0495b,payment.created,2499,INR,2026-08-20T21:30:44.788527,{}
+evt_211a8b03e765447b,payment,pay_1941f292a0ef412d,cust_36a8af9bcfc0495b,payment.authorized,2499,INR,2026-08-20T21:30:51.788527,{}
+evt_dbb72759ca814040,payment,pay_1941f292a0ef412d,cust_36a8af9bcfc0495b,payment.captured,2499,INR,2026-08-20T21:30:54.788527,{}
+evt_4a1426c2094f4bb6,subscription,sub_5870ab38636147ef,cust_af5996552ee245bc,subscription.created,1499,INR,2026-08-21T00:36:38.788527,"{""plan"": ""plan_pro""}"
+evt_10b779ca4c3e4593,subscription,sub_ebbc5d1617a64167,cust_fec8a5bbb1334527,subscription.created,499,INR,2026-08-21T02:23:33.788527,"{""plan"": ""plan_basic""}"
+evt_a82d886eed054ee1,subscription,sub_2469fd079df74cc1,cust_5f0d0617f7694a61,subscription.pending,4999,INR,2026-08-21T06:23:53.788527,"{""reason"": ""insufficient_funds""}"
+evt_acec7059daef42da,payment,pay_0fe7ad1fc9564b71,cust_9e01e9cf05b74b45,payment.created,1499,INR,2026-08-21T06:54:14.788527,{}
+evt_84b32032412f4d68,payment,pay_0fe7ad1fc9564b71,cust_9e01e9cf05b74b45,payment.authorized,1499,INR,2026-08-21T06:54:16.788527,{}
+evt_b0112eb4370e4a59,payment,pay_0fe7ad1fc9564b71,cust_9e01e9cf05b74b45,payment.captured,1499,INR,2026-08-21T06:54:19.788527,{}
+evt_474ddfcfdcfb4b44,subscription,sub_93d4bd8db28f4943,cust_a57d798bed6a4db9,subscription.created,1499,INR,2026-08-21T07:35:39.788527,"{""plan"": ""plan_pro""}"
+evt_20b2b4e5410943a6,checkout,chk_336aea84d3034071,cust_1a840cb83d274b59,checkout.created,999,INR,2026-08-21T08:33:58.788527,{}
+evt_fdc75c471b3a45ae,checkout,chk_336aea84d3034071,cust_1a840cb83d274b59,checkout.completed,999,INR,2026-08-21T08:34:52.788527,{}
+evt_5735061385574298,subscription,sub_291f353a6a4747c5,cust_cc243c590f6e44bc,subscription.created,499,INR,2026-08-21T10:30:05.788527,"{""plan"": ""plan_basic""}"
+evt_ac2ce1e831594a16,payment,pay_beb623751f434365,cust_0f09569fbcea48de,payment.created,499,INR,2026-08-21T11:26:33.788527,{}
+evt_ead4ba12180848ad,payment,pay_beb623751f434365,cust_0f09569fbcea48de,payment.failed,499,INR,2026-08-21T11:27:08.788527,"{""reason"": ""gateway_failure""}"
+evt_8a9d69aca8aa4c28,payment,pay_0e65f490e0c54e4e,cust_4e214f61310847b8,payment.created,499,INR,2026-08-21T11:28:31.788527,{}
+evt_282b8f56de134b62,payment,pay_0e65f490e0c54e4e,cust_4e214f61310847b8,payment.failed,499,INR,2026-08-21T11:28:56.788527,"{""reason"": ""network_error""}"
+evt_89dc6116bcad4a46,subscription,sub_7d44eb1d2c61491c,cust_180b1bd629c54988,subscription.created,499,INR,2026-08-21T11:59:02.788527,"{""plan"": ""plan_basic""}"
+evt_90d302d4613344e9,subscription,sub_9d90b757ac0d4bcb,cust_fa04fc20c4304c6f,subscription.pending,1499,INR,2026-08-21T13:13:43.788527,"{""reason"": ""network_error""}"
+evt_94791cc4edc54463,payment,pay_cee9033901f24688,cust_2416493153d543d9,payment.created,19999,INR,2026-08-21T16:28:20.788527,{}
+evt_d641a1ab2b3e4400,payment,pay_cee9033901f24688,cust_2416493153d543d9,payment.authorized,19999,INR,2026-08-21T16:28:30.788527,{}
+evt_52d2e5b8f79b425e,payment,pay_cee9033901f24688,cust_2416493153d543d9,payment.captured,19999,INR,2026-08-21T16:28:35.788527,{}
+evt_403d25c244af46c0,subscription,sub_6e56e1cef70b415f,cust_648d41a9227e4e6f,subscription.created,499,INR,2026-08-21T16:59:36.788527,"{""plan"": ""plan_basic""}"
+evt_08e17db90e034517,subscription,sub_04bc4358eecf42fd,cust_bdae09b0e0e448b0,subscription.created,1499,INR,2026-08-21T17:42:20.788527,"{""plan"": ""plan_pro""}"
+evt_ba9609f1ca5b426a,checkout,chk_93f1710db1414b57,cust_1e5888323b8046b4,checkout.created,2499,INR,2026-08-21T18:17:47.788527,{}
+evt_aae29b9c585e4766,checkout,chk_93f1710db1414b57,cust_1e5888323b8046b4,checkout.abandoned,2499,INR,2026-08-21T18:36:47.788527,{}
+evt_f48502dce24d4484,payment,pay_1d7269a2ec014cff,cust_e8aee4faf3904724,payment.created,499,INR,2026-08-21T19:09:00.788527,{}
+evt_722b02164a604526,payment,pay_1d7269a2ec014cff,cust_e8aee4faf3904724,payment.failed,499,INR,2026-08-21T19:09:17.788527,"{""reason"": ""gateway_failure""}"
+evt_da4e8b89f9394592,subscription,sub_714eab75aa3c4465,cust_4a98abc09c464fbc,subscription.created,4999,INR,2026-08-21T20:13:33.788527,"{""plan"": ""plan_business""}"
+evt_b9f15c58f24d4196,subscription,sub_9916df487a614027,cust_2022604ccef64b86,subscription.pending,1499,INR,2026-08-21T20:46:29.788527,"{""reason"": ""expired_card""}"
+evt_2078e5213e334905,payment,pay_ac561f1062cf4f82,cust_8da17a1e673b4190,payment.created,499,INR,2026-08-21T21:52:11.788527,{}
+evt_09cedcf54f0341af,payment,pay_ac561f1062cf4f82,cust_8da17a1e673b4190,payment.authorized,499,INR,2026-08-21T21:52:21.788527,{}
+evt_d04c2047c21b41a9,payment,pay_ac561f1062cf4f82,cust_8da17a1e673b4190,payment.captured,499,INR,2026-08-21T21:52:25.788527,{}
+evt_2c17a5ff1c044365,subscription,sub_aec372b2cb06439b,cust_1710a94bf83644ed,subscription.created,1499,INR,2026-08-21T23:05:08.788527,"{""plan"": ""plan_pro""}"
+evt_14abb5efaece4935,subscription,sub_c5c2e914f2b0425a,cust_d29ae75ab38a4062,subscription.created,4999,INR,2026-08-22T02:58:03.788527,"{""plan"": ""plan_business""}"
+evt_7df2f0aea5b147a6,subscription,sub_e43bef5754484871,cust_d06f46d540b54ac3,subscription.created,4999,INR,2026-08-22T05:07:01.788527,"{""plan"": ""plan_business""}"
+evt_52d150a6b2954b7a,payment,pay_398cb82f003e4fd6,cust_0decee9389ad40e6,payment.created,4999,INR,2026-08-22T06:07:24.788527,{}
+evt_8e13f01e78614c78,payment,pay_398cb82f003e4fd6,cust_0decee9389ad40e6,payment.authorized,4999,INR,2026-08-22T06:07:30.788527,{}
+evt_adf2c483cf66411d,payment,pay_398cb82f003e4fd6,cust_0decee9389ad40e6,payment.captured,4999,INR,2026-08-22T06:07:33.788527,{}
+evt_52b4ab54f3f84a50,subscription,sub_9f04a76ce3e84f99,cust_e21b04e4e9654e21,subscription.created,4999,INR,2026-08-22T07:43:24.788527,"{""plan"": ""plan_business""}"
+evt_507832cfaaee40ab,payment,pay_56b3a3ad079b4728,cust_9d0a1ba460b44a76,payment.created,499,INR,2026-08-22T09:59:42.788527,{}
+evt_0baa16a7add54ff4,payment,pay_56b3a3ad079b4728,cust_9d0a1ba460b44a76,payment.authorized,499,INR,2026-08-22T09:59:45.788527,{}
+evt_b32f821a9b614bfc,payment,pay_56b3a3ad079b4728,cust_9d0a1ba460b44a76,payment.captured,499,INR,2026-08-22T09:59:47.788527,{}
+evt_aaa246498b7b4458,subscription,sub_dde22383dcbf40e5,cust_2673cf5c72eb4eea,subscription.created,1499,INR,2026-08-22T10:45:12.788527,"{""plan"": ""plan_pro""}"
+evt_ccd1f8bcb31647dc,payment,pay_d56e4f9951f64e6b,cust_8ab27c13c1794b4a,payment.created,2499,INR,2026-08-22T11:28:30.788527,{}
+evt_1f4134e4d1354c41,payment,pay_d56e4f9951f64e6b,cust_8ab27c13c1794b4a,payment.authorized,2499,INR,2026-08-22T11:28:40.788527,{}
+evt_3d05bcaa777649db,payment,pay_d56e4f9951f64e6b,cust_8ab27c13c1794b4a,payment.captured,2499,INR,2026-08-22T11:28:43.788527,{}
+evt_41fc2a2eae3b4e5d,payment,pay_e7d7671868c4427e,cust_51e06e8e8ca8476a,payment.created,2499,INR,2026-08-22T12:23:59.788527,{}
+evt_9627f95b37934195,payment,pay_e7d7671868c4427e,cust_51e06e8e8ca8476a,payment.authorized,2499,INR,2026-08-22T12:24:04.788527,{}
+evt_2685a8c813c648ea,payment,pay_e7d7671868c4427e,cust_51e06e8e8ca8476a,payment.captured,2499,INR,2026-08-22T12:24:05.788527,{}
+evt_8c4d4a3c7c3d4bf8,subscription,sub_7e796eba891a408c,cust_31d470848d504be8,subscription.halted,4999,INR,2026-08-22T13:14:47.788527,{}
+evt_e90b29a0d31544c2,subscription,sub_2a67f95f7bb940e9,cust_41d0947faf7543d9,subscription.created,1499,INR,2026-08-22T13:27:58.788527,"{""plan"": ""plan_pro""}"
+evt_5016a98792724481,checkout,chk_e5ceeb83807f4065,cust_394605899d5d4db7,checkout.created,999,INR,2026-08-22T15:45:43.788527,{}
+evt_b86dc9e09bc446c2,checkout,chk_e5ceeb83807f4065,cust_394605899d5d4db7,checkout.completed,999,INR,2026-08-22T15:47:39.788527,{}
+evt_6c51abe4771a49da,subscription,sub_543f867d72ec4a8b,cust_af99e9041ec444f5,subscription.created,1499,INR,2026-08-22T16:50:06.788527,"{""plan"": ""plan_pro""}"
+evt_3325c2744cfa4677,checkout,chk_c7604dd06f0b4f03,cust_9a8b95596e58437d,checkout.created,499,INR,2026-08-22T20:05:24.788527,{}
+evt_b53daf4f56e24d9d,payment,pay_e50ab38cb1fa408d,cust_e8aee4faf3904724,payment.created,2499,INR,2026-08-22T20:05:29.788527,{}
+evt_bcf05f77f3c54fce,payment,pay_e50ab38cb1fa408d,cust_e8aee4faf3904724,payment.authorized,2499,INR,2026-08-22T20:05:38.788527,{}
+evt_ef58bbd887644c15,payment,pay_e50ab38cb1fa408d,cust_e8aee4faf3904724,payment.captured,2499,INR,2026-08-22T20:05:39.788527,{}
+evt_aab4ad0762db435b,checkout,chk_c7604dd06f0b4f03,cust_9a8b95596e58437d,checkout.completed,499,INR,2026-08-22T20:06:27.788527,{}
+evt_ccfb2f7f7ab54d59,payment,pay_a6bd29c1a33440d0,cust_2e9148932561447e,payment.created,1499,INR,2026-08-22T22:04:38.788527,{}
+evt_2a2cee1b48b64c89,payment,pay_a6bd29c1a33440d0,cust_2e9148932561447e,payment.authorized,1499,INR,2026-08-22T22:04:44.788527,{}
+evt_4a56dfdd9a11494a,payment,pay_a6bd29c1a33440d0,cust_2e9148932561447e,payment.captured,1499,INR,2026-08-22T22:04:48.788527,{}
+evt_1b1d575c87744847,subscription,sub_5c1dfa6425434aef,cust_bada2daed92440e9,subscription.pending,1499,INR,2026-08-22T22:44:16.788527,"{""reason"": ""expired_card""}"
+evt_3fdb9ccdf65b4dad,payment,pay_26c7f667c57a4ccd,cust_a57d798bed6a4db9,payment.created,499,INR,2026-08-23T00:02:51.788527,{}
+evt_91c103674da34ad4,payment,pay_26c7f667c57a4ccd,cust_a57d798bed6a4db9,payment.authorized,499,INR,2026-08-23T00:02:55.788527,{}
+evt_1fdf9944ed6a4939,payment,pay_26c7f667c57a4ccd,cust_a57d798bed6a4db9,payment.captured,499,INR,2026-08-23T00:03:00.788527,{}
+evt_07dff6e1bf104d0e,payment,pay_218f441d228d40db,cust_d29ae75ab38a4062,payment.created,1499,INR,2026-08-23T00:55:14.788527,{}
+evt_80366536b2e04d37,payment,pay_218f441d228d40db,cust_d29ae75ab38a4062,payment.authorized,1499,INR,2026-08-23T00:55:23.788527,{}
+evt_1a2387bb3fa942d7,payment,pay_218f441d228d40db,cust_d29ae75ab38a4062,payment.captured,1499,INR,2026-08-23T00:55:28.788527,{}
+evt_c4de95af56d047b8,payment,pay_0be66418d4c54851,cust_648d41a9227e4e6f,payment.created,999,INR,2026-08-23T01:05:38.788527,{}
+evt_1f9d570288ff400a,payment,pay_0be66418d4c54851,cust_648d41a9227e4e6f,payment.authorized,999,INR,2026-08-23T01:05:44.788527,{}
+evt_10ee1d5e10e04ce9,payment,pay_0be66418d4c54851,cust_648d41a9227e4e6f,payment.captured,999,INR,2026-08-23T01:05:49.788527,{}
+evt_48ac7696bfd743ce,checkout,chk_fe6ebc55fdef415d,cust_33f6d655132e42eb,checkout.created,19999,INR,2026-08-23T03:09:21.788527,{}
+evt_0391fe9a77804070,checkout,chk_fe6ebc55fdef415d,cust_33f6d655132e42eb,checkout.completed,19999,INR,2026-08-23T03:11:03.788527,{}
+evt_cdef6a7eb9c0492f,subscription,sub_dde22383dcbf40e5,cust_2673cf5c72eb4eea,subscription.pending,1499,INR,2026-08-23T03:37:11.788527,"{""reason"": ""insufficient_funds""}"
+evt_e0df7e37d64141ad,payment,pay_7b7bad4a334b42e1,cust_d2c42d5b7ed84845,payment.created,9999,INR,2026-08-23T07:32:38.788527,{}
+evt_368f539bc60c41aa,payment,pay_7b7bad4a334b42e1,cust_d2c42d5b7ed84845,payment.authorized,9999,INR,2026-08-23T07:32:48.788527,{}
+evt_ab5212d8279c4c4c,payment,pay_7b7bad4a334b42e1,cust_d2c42d5b7ed84845,payment.captured,9999,INR,2026-08-23T07:32:51.788527,{}
+evt_3747bc0299e64751,payment,pay_47529f1fe8e34380,cust_f75d32bf52ec4cf5,payment.created,2499,INR,2026-08-23T09:35:39.788527,{}
+evt_895d937db98c409e,payment,pay_47529f1fe8e34380,cust_f75d32bf52ec4cf5,payment.authorized,2499,INR,2026-08-23T09:35:44.788527,{}
+evt_7630a004a9504198,payment,pay_47529f1fe8e34380,cust_f75d32bf52ec4cf5,payment.captured,2499,INR,2026-08-23T09:35:49.788527,{}
+evt_7b55d48cab4e41c8,payment,pay_b424876fbaf2426f,cust_23b5d1b750d64aeb,payment.created,499,INR,2026-08-23T11:38:26.788527,{}
+evt_f5ba501a45da442a,payment,pay_b424876fbaf2426f,cust_23b5d1b750d64aeb,payment.failed,499,INR,2026-08-23T11:38:45.788527,"{""reason"": ""account_closed""}"
+evt_f37244c349e341df,payment,pay_32961a1a053748bd,cust_8426b2a6834e4e3b,payment.created,2499,INR,2026-08-23T13:03:32.788527,{}
+evt_81e8385b83484b6c,payment,pay_32961a1a053748bd,cust_8426b2a6834e4e3b,payment.authorized,2499,INR,2026-08-23T13:03:39.788527,{}
+evt_aca756ee83b846a4,payment,pay_32961a1a053748bd,cust_8426b2a6834e4e3b,payment.captured,2499,INR,2026-08-23T13:03:44.788527,{}
+evt_c2b97c3314c14072,payment,pay_6f6d90598a93429f,cust_6b6dc9d70ad64495,payment.created,499,INR,2026-08-23T14:52:58.788527,{}
+evt_ce70da2e18184ede,payment,pay_6f6d90598a93429f,cust_6b6dc9d70ad64495,payment.authorized,499,INR,2026-08-23T14:53:01.788527,{}
+evt_79ca5bc509974214,payment,pay_6f6d90598a93429f,cust_6b6dc9d70ad64495,payment.captured,499,INR,2026-08-23T14:53:02.788527,{}
+evt_284541345f4c4b69,payment,pay_511b7055ae864cb6,cust_33f6d655132e42eb,payment.created,4999,INR,2026-08-23T17:41:59.788527,{}
+evt_37c8d9c29a1e4a9a,payment,pay_511b7055ae864cb6,cust_33f6d655132e42eb,payment.authorized,4999,INR,2026-08-23T17:42:02.788527,{}
+evt_54eba0cdfc624e46,payment,pay_511b7055ae864cb6,cust_33f6d655132e42eb,payment.captured,4999,INR,2026-08-23T17:42:07.788527,{}
+evt_87f5ecb85f4c4939,payment,pay_db511284a7304284,cust_b4d4044fa3c74933,payment.created,19999,INR,2026-08-23T19:10:41.788527,{}
+evt_c140425a94964750,payment,pay_db511284a7304284,cust_b4d4044fa3c74933,payment.failed,19999,INR,2026-08-23T19:11:10.788527,"{""reason"": ""insufficient_funds""}"
+evt_96ec041c86444f49,payment,pay_0eab01dba2aa448d,cust_826f3e6850d743de,payment.created,999,INR,2026-08-23T20:16:46.788527,{}
+evt_fbce343faecf4cc8,payment,pay_0eab01dba2aa448d,cust_826f3e6850d743de,payment.authorized,999,INR,2026-08-23T20:16:56.788527,{}
+evt_47f5877255bb4e02,payment,pay_0eab01dba2aa448d,cust_826f3e6850d743de,payment.captured,999,INR,2026-08-23T20:16:58.788527,{}
+evt_94dc00d8b0bb4998,checkout,chk_7ac3b8fc482e4a4c,cust_59faf58c22924d8a,checkout.created,1499,INR,2026-08-24T01:37:59.788527,{}
+evt_38392b74c748423e,checkout,chk_7ac3b8fc482e4a4c,cust_59faf58c22924d8a,checkout.abandoned,1499,INR,2026-08-24T01:43:59.788527,{}
+evt_a16f7e96ca824822,payment,pay_075959a0e41044fa,cust_f422dc20ecea46f0,payment.created,2499,INR,2026-08-24T04:21:47.788527,{}
+evt_a1ec1733492842c9,payment,pay_075959a0e41044fa,cust_f422dc20ecea46f0,payment.failed,2499,INR,2026-08-24T04:22:22.788527,"{""reason"": ""insufficient_funds""}"
+evt_580f97a551c74f03,checkout,chk_e299cf6dd3e74dd2,cust_1710a94bf83644ed,checkout.created,999,INR,2026-08-24T04:46:33.788527,{}
+evt_48464243fc534851,checkout,chk_e299cf6dd3e74dd2,cust_1710a94bf83644ed,checkout.completed,999,INR,2026-08-24T04:47:33.788527,{}
+evt_b45b1bde324f4248,payment,pay_4306a3889f7b46a1,cust_ca5aab22db5343d9,payment.created,999,INR,2026-08-24T06:17:03.788527,{}
+evt_c4285e5b54504c04,payment,pay_4306a3889f7b46a1,cust_ca5aab22db5343d9,payment.authorized,999,INR,2026-08-24T06:17:11.788527,{}
+evt_47194b7db38c4d3b,payment,pay_4306a3889f7b46a1,cust_ca5aab22db5343d9,payment.captured,999,INR,2026-08-24T06:17:12.788527,{}
+evt_62d0839b031842b9,payment,pay_edca0dca7c5f4685,cust_bab775145d814dbb,payment.created,2499,INR,2026-08-24T09:29:40.788527,{}
+evt_62a2ab4325b140f0,payment,pay_edca0dca7c5f4685,cust_bab775145d814dbb,payment.authorized,2499,INR,2026-08-24T09:29:44.788527,{}
+evt_e70a4d235c6b45e4,payment,pay_edca0dca7c5f4685,cust_bab775145d814dbb,payment.captured,2499,INR,2026-08-24T09:29:48.788527,{}
+evt_674a6ac0a2704034,checkout,chk_61547c97d4204612,cust_2e9148932561447e,checkout.created,9999,INR,2026-08-24T10:16:54.788527,{}
+evt_3f779f16c0d64e83,checkout,chk_61547c97d4204612,cust_2e9148932561447e,checkout.completed,9999,INR,2026-08-24T10:18:27.788527,{}
+evt_550daff1680245eb,payment,pay_4d8d94e1d4674ba3,cust_7b5f31478d904437,payment.created,2499,INR,2026-08-24T12:23:22.788527,{}
+evt_1e5518e3b45048fc,payment,pay_4d8d94e1d4674ba3,cust_7b5f31478d904437,payment.authorized,2499,INR,2026-08-24T12:23:24.788527,{}
+evt_9c37b35dedfc49ec,payment,pay_4d8d94e1d4674ba3,cust_7b5f31478d904437,payment.captured,2499,INR,2026-08-24T12:23:29.788527,{}
+evt_7be09ecd25b648ee,checkout,chk_766e7a016f674309,cust_c9edfc47f4094f36,checkout.created,2499,INR,2026-08-24T12:44:25.788527,{}
+evt_711bae03d4bf4208,checkout,chk_766e7a016f674309,cust_c9edfc47f4094f36,checkout.abandoned,2499,INR,2026-08-24T13:07:25.788527,{}
+evt_6a20c8b3b987466e,subscription,sub_9d90b757ac0d4bcb,cust_fa04fc20c4304c6f,subscription.halted,1499,INR,2026-08-24T13:13:43.788527,{}
+evt_fad00961351c4135,checkout,chk_97ae22d2981b4d3b,cust_e21b04e4e9654e21,checkout.created,19999,INR,2026-08-24T14:54:13.788527,{}
+evt_00e090b280ec46bc,checkout,chk_97ae22d2981b4d3b,cust_e21b04e4e9654e21,checkout.abandoned,19999,INR,2026-08-24T15:00:13.788527,{}
+evt_e260c6a7da8b47f3,checkout,chk_693b970d2d4e4837,cust_af99e9041ec444f5,checkout.created,499,INR,2026-08-24T15:51:55.788527,{}
+evt_d3f039a84eb64bbb,checkout,chk_693b970d2d4e4837,cust_af99e9041ec444f5,checkout.completed,499,INR,2026-08-24T15:53:39.788527,{}
+evt_d29ace58897f479f,checkout,chk_91ea1cd809684caa,cust_bab775145d814dbb,checkout.created,19999,INR,2026-08-24T17:21:23.788527,{}
+evt_2d441a47451f47dd,checkout,chk_91ea1cd809684caa,cust_bab775145d814dbb,checkout.completed,19999,INR,2026-08-24T17:22:27.788527,{}
+evt_0b6dd535a40849f1,payment,pay_15401edc50434540,cust_2673cf5c72eb4eea,payment.created,1499,INR,2026-08-24T17:39:45.788527,{}
+evt_357cf8db0c3341d5,payment,pay_15401edc50434540,cust_2673cf5c72eb4eea,payment.failed,1499,INR,2026-08-24T17:40:44.788527,"{""reason"": ""insufficient_funds""}"
+evt_d848ebc383014f80,payment,pay_18ba258c1a6d4a2d,cust_128887ede58a42fd,payment.created,4999,INR,2026-08-24T19:27:29.788527,{}
+evt_2c130f730a724e2b,payment,pay_18ba258c1a6d4a2d,cust_128887ede58a42fd,payment.failed,4999,INR,2026-08-24T19:28:13.788527,"{""reason"": ""expired_card""}"
+evt_e3b8a50244634b81,checkout,chk_9d47221736394cd3,cust_ea3eede4f0be4e60,checkout.created,4999,INR,2026-08-24T21:22:23.788527,{}
+evt_b54f32a2a4464eba,checkout,chk_9d47221736394cd3,cust_ea3eede4f0be4e60,checkout.abandoned,4999,INR,2026-08-24T21:43:23.788527,{}
+evt_9e5265413fb04b25,payment,pay_1b9024aa4eb84666,cust_996d47dc3a1a4c1a,payment.created,499,INR,2026-08-25T00:06:42.788527,{}
+evt_b9bd544a87834adc,payment,pay_1b9024aa4eb84666,cust_996d47dc3a1a4c1a,payment.authorized,499,INR,2026-08-25T00:06:48.788527,{}
+evt_dc61a9e58ed9473a,payment,pay_1b9024aa4eb84666,cust_996d47dc3a1a4c1a,payment.captured,499,INR,2026-08-25T00:06:52.788527,{}
+evt_3be9b762720e4c30,payment,pay_ea2e50dbe6a84125,cust_c5a7a49d0f944889,payment.created,9999,INR,2026-08-25T02:05:31.788527,{}
+evt_bf4d0991722446c0,payment,pay_ea2e50dbe6a84125,cust_c5a7a49d0f944889,payment.authorized,9999,INR,2026-08-25T02:05:39.788527,{}
+evt_81540938ec4b4429,payment,pay_ea2e50dbe6a84125,cust_c5a7a49d0f944889,payment.captured,9999,INR,2026-08-25T02:05:42.788527,{}
+evt_42420872a36d4a40,payment,pay_e27dd1db38724b7a,cust_d29ae75ab38a4062,payment.created,499,INR,2026-08-25T04:01:14.788527,{}
+evt_5cd5afd1b5074965,payment,pay_e27dd1db38724b7a,cust_d29ae75ab38a4062,payment.authorized,499,INR,2026-08-25T04:01:17.788527,{}
+evt_2ed24bf649674cde,payment,pay_e27dd1db38724b7a,cust_d29ae75ab38a4062,payment.captured,499,INR,2026-08-25T04:01:18.788527,{}
+evt_0e08804181484546,checkout,chk_9efe608362464261,cust_4a98abc09c464fbc,checkout.created,19999,INR,2026-08-25T04:29:17.788527,{}
+evt_38db7de9b002453f,checkout,chk_9efe608362464261,cust_4a98abc09c464fbc,checkout.abandoned,19999,INR,2026-08-25T04:49:17.788527,{}
+evt_68f8ea0d021340ed,checkout,chk_6d9c5ae9e50c4f84,cust_783cfaccb48b428f,checkout.created,1499,INR,2026-08-25T05:23:46.788527,{}
+evt_71b8a290d58b4146,checkout,chk_6d9c5ae9e50c4f84,cust_783cfaccb48b428f,checkout.completed,1499,INR,2026-08-25T05:25:15.788527,{}
+evt_fa67fb7f8aed4be1,checkout,chk_4b76f827bd414606,cust_595c59e965814558,checkout.created,999,INR,2026-08-25T07:33:15.788527,{}
+evt_3a2decc1520a4aa8,checkout,chk_4b76f827bd414606,cust_595c59e965814558,checkout.completed,999,INR,2026-08-25T07:35:01.788527,{}
+evt_463afb92e23a49e0,subscription,sub_f47e1833f6de452a,cust_d858520b91764b98,subscription.pending,4999,INR,2026-08-25T08:21:38.788527,"{""reason"": ""expired_card""}"
+evt_d94c98815eba48cf,payment,pay_cbdc23ff94654910,cust_ca5aab22db5343d9,payment.created,1499,INR,2026-08-25T09:39:35.788527,{}
+evt_2f80863bc8044894,payment,pay_cbdc23ff94654910,cust_ca5aab22db5343d9,payment.authorized,1499,INR,2026-08-25T09:39:40.788527,{}
+evt_339a4386dd2a4084,payment,pay_cbdc23ff94654910,cust_ca5aab22db5343d9,payment.captured,1499,INR,2026-08-25T09:39:45.788527,{}
+evt_65e6076eb9ae4108,payment,pay_7bc8d3a5ef4c42cc,cust_d29ae75ab38a4062,payment.created,999,INR,2026-08-25T10:15:39.788527,{}
+evt_77dfb9709b6842b3,payment,pay_7bc8d3a5ef4c42cc,cust_d29ae75ab38a4062,payment.authorized,999,INR,2026-08-25T10:15:48.788527,{}
+evt_eb777b2bd33e4942,payment,pay_7bc8d3a5ef4c42cc,cust_d29ae75ab38a4062,payment.captured,999,INR,2026-08-25T10:15:49.788527,{}
+evt_e65e57dda26546db,payment,pay_e187f28494d24bf9,cust_23b5d1b750d64aeb,payment.created,1499,INR,2026-08-25T11:44:16.788527,{}
+evt_f4ed5848e0294922,payment,pay_e187f28494d24bf9,cust_23b5d1b750d64aeb,payment.failed,1499,INR,2026-08-25T11:44:38.788527,"{""reason"": ""network_error""}"
+evt_c3016fdb74444926,payment,pay_806f9866a57843ca,cust_4d5b67526ea94113,payment.created,4999,INR,2026-08-25T13:37:02.788527,{}
+evt_c959074f43444ccb,payment,pay_806f9866a57843ca,cust_4d5b67526ea94113,payment.authorized,4999,INR,2026-08-25T13:37:06.788527,{}
+evt_edf46a875e9f450d,payment,pay_806f9866a57843ca,cust_4d5b67526ea94113,payment.captured,4999,INR,2026-08-25T13:37:10.788527,{}
+evt_2ae35da05d014fec,checkout,chk_3f9c6e38aff844b7,cust_aedd6d2905524db1,checkout.created,2499,INR,2026-08-25T13:46:59.788527,{}
+evt_c9aab554303c4acf,checkout,chk_3f9c6e38aff844b7,cust_aedd6d2905524db1,checkout.completed,2499,INR,2026-08-25T13:48:40.788527,{}
+evt_398dc331a4b54bfd,payment,pay_d8cc1925c7fb4b9f,cust_220d7011457a486b,payment.created,2499,INR,2026-08-25T14:25:03.788527,{}
+evt_1377babdeb014ac6,payment,pay_d8cc1925c7fb4b9f,cust_220d7011457a486b,payment.failed,2499,INR,2026-08-25T14:25:53.788527,"{""reason"": ""insufficient_funds""}"
+evt_42b25832eea148ff,payment,pay_7d0df7d03e3f4f35,cust_783cfaccb48b428f,payment.created,1499,INR,2026-08-25T15:05:51.788527,{}
+evt_ad3a9e2fff1b4320,payment,pay_7d0df7d03e3f4f35,cust_783cfaccb48b428f,payment.authorized,1499,INR,2026-08-25T15:06:00.788527,{}
+evt_cc89a908c8684839,payment,pay_7d0df7d03e3f4f35,cust_783cfaccb48b428f,payment.captured,1499,INR,2026-08-25T15:06:05.788527,{}
+evt_c335fedf385048c0,subscription,sub_347e133761ce4363,cust_e033e6ddd76345b3,subscription.pending,499,INR,2026-08-25T16:42:27.788527,"{""reason"": ""expired_card""}"
+evt_5bce1cd065434b61,payment,pay_6367e0ae66cb4162,cust_83f6a4d4c15d4ed1,payment.created,19999,INR,2026-08-25T17:09:59.788527,{}
+evt_a656966098de4584,payment,pay_6367e0ae66cb4162,cust_83f6a4d4c15d4ed1,payment.authorized,19999,INR,2026-08-25T17:10:07.788527,{}
+evt_0fa7ab4048754de5,payment,pay_6367e0ae66cb4162,cust_83f6a4d4c15d4ed1,payment.captured,19999,INR,2026-08-25T17:10:12.788527,{}
+evt_40a13e7ac72b4d0c,payment,pay_f574f4d1876f4ac1,cust_783cfaccb48b428f,payment.created,999,INR,2026-08-25T19:34:04.788527,{}
+evt_11631a10fd8f44e7,payment,pay_f574f4d1876f4ac1,cust_783cfaccb48b428f,payment.authorized,999,INR,2026-08-25T19:34:07.788527,{}
+evt_7da5c3072ae04f45,payment,pay_f574f4d1876f4ac1,cust_783cfaccb48b428f,payment.captured,999,INR,2026-08-25T19:34:12.788527,{}
+evt_b675360d7543481b,checkout,chk_1b8aede83c364435,cust_ea3eede4f0be4e60,checkout.created,4999,INR,2026-08-25T22:23:55.788527,{}
+evt_5c5f24c0172342ea,checkout,chk_1b8aede83c364435,cust_ea3eede4f0be4e60,checkout.completed,4999,INR,2026-08-25T22:25:25.788527,{}
+evt_2f5ddc2438b14392,payment,pay_3ac8a89e3fd74fcb,cust_2e9148932561447e,payment.created,2499,INR,2026-08-25T23:35:01.788527,{}
+evt_b4cc1dee497e4cf9,payment,pay_3ac8a89e3fd74fcb,cust_2e9148932561447e,payment.failed,2499,INR,2026-08-25T23:35:26.788527,"{""reason"": ""card_declined""}"
+evt_72977dccc57d460a,payment,pay_25cf746e51a047e4,cust_23b5d1b750d64aeb,payment.created,2499,INR,2026-08-26T05:18:50.788527,{}
+evt_37c8c1a3965843c0,payment,pay_25cf746e51a047e4,cust_23b5d1b750d64aeb,payment.failed,2499,INR,2026-08-26T05:19:39.788527,"{""reason"": ""card_declined""}"
+evt_b8fee4a8bbd344c7,payment,pay_5cd36ba8ebd443ed,cust_ed680780abce4c8b,payment.created,999,INR,2026-08-26T06:07:57.788527,{}
+evt_9aa2d4e4886b440b,payment,pay_5cd36ba8ebd443ed,cust_ed680780abce4c8b,payment.authorized,999,INR,2026-08-26T06:07:59.788527,{}
+evt_8512843c839a4611,payment,pay_5cd36ba8ebd443ed,cust_ed680780abce4c8b,payment.captured,999,INR,2026-08-26T06:08:01.788527,{}
+evt_9c8033e95f2944a1,payment,pay_f2175565ce9748ea,cust_d276bb31e5994b2d,payment.created,4999,INR,2026-08-26T06:23:03.788527,{}
+evt_cc879110dcbb4672,payment,pay_f2175565ce9748ea,cust_d276bb31e5994b2d,payment.failed,4999,INR,2026-08-26T06:23:31.788527,"{""reason"": ""bank_timeout""}"
+evt_1f7f255d5b33409b,payment,pay_46414a8582964a06,cust_387fbf70c22f42ab,payment.created,499,INR,2026-08-26T06:36:40.788527,{}
+evt_9315009649934384,payment,pay_46414a8582964a06,cust_387fbf70c22f42ab,payment.failed,499,INR,2026-08-26T06:37:20.788527,"{""reason"": ""invalid_payment_method""}"
+evt_4c9a6f7cccc74136,payment,pay_e8a5e3fc6d60491c,cust_648d41a9227e4e6f,payment.created,499,INR,2026-08-26T06:48:51.788527,{}
+evt_40ec99ee802e41d6,payment,pay_e8a5e3fc6d60491c,cust_648d41a9227e4e6f,payment.failed,499,INR,2026-08-26T06:49:25.788527,"{""reason"": ""expired_card""}"
+evt_c950d7fdaf0b4602,checkout,chk_6f4a7ad5867c43c7,cust_a6be107d98f843c8,checkout.created,9999,INR,2026-08-26T07:26:32.788527,{}
+evt_2a39536d6f374f3c,checkout,chk_6f4a7ad5867c43c7,cust_a6be107d98f843c8,checkout.abandoned,9999,INR,2026-08-26T07:42:32.788527,{}
+evt_e9fc5d528f1642f8,checkout,chk_4da523fd2b4e457d,cust_504b3cc5cc474e1d,checkout.created,999,INR,2026-08-26T09:23:04.788527,{}
+evt_64f130d550d24f21,checkout,chk_4da523fd2b4e457d,cust_504b3cc5cc474e1d,checkout.abandoned,999,INR,2026-08-26T09:52:04.788527,{}
+evt_f26c59e92b9e4123,payment,pay_7162304e43bd4a95,cust_220d7011457a486b,payment.created,999,INR,2026-08-26T10:57:10.788527,{}
+evt_d4ea4b1bd707453c,payment,pay_7162304e43bd4a95,cust_220d7011457a486b,payment.authorized,999,INR,2026-08-26T10:57:18.788527,{}
+evt_e2d23f251b76415d,payment,pay_7162304e43bd4a95,cust_220d7011457a486b,payment.captured,999,INR,2026-08-26T10:57:21.788527,{}
+evt_7d58e7c49760473a,subscription,sub_75629f21f3b74b5c,cust_af5996552ee245bc,subscription.pending,4999,INR,2026-08-26T12:10:04.788527,"{""reason"": ""invalid_payment_method""}"
+evt_73c47faf88204494,payment,pay_68f38f05a8f44377,cust_9a8b95596e58437d,payment.created,2499,INR,2026-08-26T13:13:00.788527,{}
+evt_55e276d1f7bf40fa,payment,pay_68f38f05a8f44377,cust_9a8b95596e58437d,payment.failed,2499,INR,2026-08-26T13:13:53.788527,"{""reason"": ""insufficient_funds""}"
+evt_cc45948f60f9484b,checkout,chk_8546c5489ad146b4,cust_220d7011457a486b,checkout.created,999,INR,2026-08-26T14:12:08.788527,{}
+evt_304169e30dd640a8,checkout,chk_8546c5489ad146b4,cust_220d7011457a486b,checkout.completed,999,INR,2026-08-26T14:13:59.788527,{}
+evt_c4fe1bd24c434e70,checkout,chk_5552ed047c3c4f8e,cust_b0e11c2c6045489a,checkout.created,2499,INR,2026-08-26T15:31:25.788527,{}
+evt_a536897d4f244d2b,checkout,chk_5552ed047c3c4f8e,cust_b0e11c2c6045489a,checkout.abandoned,2499,INR,2026-08-26T15:57:25.788527,{}
+evt_d156f9d8906a4f44,payment,pay_7be450b062304921,cust_6867fb43c0e649fc,payment.created,2499,INR,2026-08-26T17:08:36.788527,{}
+evt_f4cee68b2f914da6,payment,pay_7be450b062304921,cust_6867fb43c0e649fc,payment.authorized,2499,INR,2026-08-26T17:08:46.788527,{}
+evt_87521871c0ee4ceb,payment,pay_7be450b062304921,cust_6867fb43c0e649fc,payment.captured,2499,INR,2026-08-26T17:08:49.788527,{}
+evt_220abc13adbd431c,payment,pay_b8a9d77b27884421,cust_8df3ca8d8b7f4a77,payment.created,2499,INR,2026-08-26T17:40:30.788527,{}
+evt_40468172214846ad,payment,pay_b8a9d77b27884421,cust_8df3ca8d8b7f4a77,payment.authorized,2499,INR,2026-08-26T17:40:36.788527,{}
+evt_c757569c25a74c2d,payment,pay_b8a9d77b27884421,cust_8df3ca8d8b7f4a77,payment.captured,2499,INR,2026-08-26T17:40:37.788527,{}
+evt_c47a416e888e48e1,payment,pay_f942c4e18abd4c11,cust_5af36493f4bd47eb,payment.created,19999,INR,2026-08-26T20:46:05.788527,{}
+evt_6e6c6d98821146b2,payment,pay_f942c4e18abd4c11,cust_5af36493f4bd47eb,payment.authorized,19999,INR,2026-08-26T20:46:13.788527,{}
+evt_06b5269d7f074826,payment,pay_f942c4e18abd4c11,cust_5af36493f4bd47eb,payment.captured,19999,INR,2026-08-26T20:46:14.788527,{}
+evt_f3f968afd0664de0,checkout,chk_0686eb54ced6439b,cust_ea0115a30b1748f1,checkout.created,19999,INR,2026-08-26T21:00:31.788527,{}
+evt_37994de4dbeb45b7,checkout,chk_0686eb54ced6439b,cust_ea0115a30b1748f1,checkout.completed,19999,INR,2026-08-26T21:02:03.788527,{}
+evt_21f86503b2734f19,checkout,chk_fa0759ef46a246ac,cust_a57d798bed6a4db9,checkout.created,1499,INR,2026-08-26T21:46:00.788527,{}
+evt_b8e7b5841bb4496b,checkout,chk_fa0759ef46a246ac,cust_a57d798bed6a4db9,checkout.completed,1499,INR,2026-08-26T21:46:52.788527,{}
+evt_3441c380dad94e0d,checkout,chk_eda878747acf4500,cust_1710a94bf83644ed,checkout.created,499,INR,2026-08-26T22:14:18.788527,{}
+evt_61b41aced177417b,checkout,chk_eda878747acf4500,cust_1710a94bf83644ed,checkout.completed,499,INR,2026-08-26T22:15:07.788527,{}
+evt_9c4028fe2ed24199,payment,pay_9df152d7a5d14184,cust_3d23e97218914b18,payment.created,999,INR,2026-08-26T23:10:11.788527,{}
+evt_f278d0ee13bd4d8b,payment,pay_9df152d7a5d14184,cust_3d23e97218914b18,payment.authorized,999,INR,2026-08-26T23:10:18.788527,{}
+evt_7a6f4307f9694782,payment,pay_9df152d7a5d14184,cust_3d23e97218914b18,payment.captured,999,INR,2026-08-26T23:10:23.788527,{}
+evt_405ba91dd32d4162,payment,pay_92b0414f05794258,cust_9e01e9cf05b74b45,payment.created,1499,INR,2026-08-26T23:26:49.788527,{}
+evt_84d74a8aa67b4ec4,payment,pay_92b0414f05794258,cust_9e01e9cf05b74b45,payment.authorized,1499,INR,2026-08-26T23:26:56.788527,{}
+evt_6bfca99618904606,payment,pay_92b0414f05794258,cust_9e01e9cf05b74b45,payment.captured,1499,INR,2026-08-26T23:26:58.788527,{}
+evt_982ae51553a54b47,payment,pay_6e9c1dbcc7014f92,cust_ea3eede4f0be4e60,payment.created,499,INR,2026-08-27T01:26:18.788527,{}
+evt_2b6f5ca296514c10,payment,pay_6e9c1dbcc7014f92,cust_ea3eede4f0be4e60,payment.authorized,499,INR,2026-08-27T01:26:27.788527,{}
+evt_2e504a7dbce2474b,payment,pay_6e9c1dbcc7014f92,cust_ea3eede4f0be4e60,payment.captured,499,INR,2026-08-27T01:26:28.788527,{}
+evt_35ecd7c603eb40e7,subscription,sub_844f59cf82064b20,cust_3e86430a38564acc,subscription.pending,4999,INR,2026-08-27T04:18:02.788527,"{""reason"": ""expired_card""}"
+evt_9eb87433245f4886,payment,pay_684fad4f3839456f,cust_163f2a427d0948cc,payment.created,1499,INR,2026-08-27T05:44:44.788527,{}
+evt_f0ec508af019439e,payment,pay_684fad4f3839456f,cust_163f2a427d0948cc,payment.failed,1499,INR,2026-08-27T05:45:36.788527,"{""reason"": ""card_declined""}"
+evt_b6cbe2fd395a4688,payment,pay_f9dcb1c6e2f24b76,cust_887b0a10a8fa47c6,payment.created,1499,INR,2026-08-27T07:54:09.788527,{}
+evt_5dd7c7c870364ab8,payment,pay_f9dcb1c6e2f24b76,cust_887b0a10a8fa47c6,payment.authorized,1499,INR,2026-08-27T07:54:18.788527,{}
+evt_52ce5858e49d4966,payment,pay_f9dcb1c6e2f24b76,cust_887b0a10a8fa47c6,payment.captured,1499,INR,2026-08-27T07:54:22.788527,{}
+evt_4a2b7f2c6c2e4861,checkout,chk_3e47539208b04954,cust_4889ef6ccd83460e,checkout.created,19999,INR,2026-08-27T08:31:47.788527,{}
+evt_76d043e112b04f2b,checkout,chk_3e47539208b04954,cust_4889ef6ccd83460e,checkout.completed,19999,INR,2026-08-27T08:32:19.788527,{}
+evt_635785b8545c4058,payment,pay_f984d42262fb4fce,cust_ecf7873a02614df3,payment.created,499,INR,2026-08-27T08:49:05.788527,{}
+evt_5f48e67cb684402f,payment,pay_f984d42262fb4fce,cust_ecf7873a02614df3,payment.authorized,499,INR,2026-08-27T08:49:10.788527,{}
+evt_6fd84baec56948fc,payment,pay_f984d42262fb4fce,cust_ecf7873a02614df3,payment.captured,499,INR,2026-08-27T08:49:13.788527,{}
+evt_24d32cdf6ceb493a,payment,pay_b171a50e5b1349c9,cust_36a8af9bcfc0495b,payment.created,2499,INR,2026-08-27T10:03:41.788527,{}
+evt_498332467b994fac,payment,pay_b171a50e5b1349c9,cust_36a8af9bcfc0495b,payment.authorized,2499,INR,2026-08-27T10:03:47.788527,{}
+evt_1f5c01a64cea4770,payment,pay_b171a50e5b1349c9,cust_36a8af9bcfc0495b,payment.captured,2499,INR,2026-08-27T10:03:52.788527,{}
+evt_62977ddd17514046,payment,pay_29487a21bae84f58,cust_220d7011457a486b,payment.created,2499,INR,2026-08-27T10:58:12.788527,{}
+evt_e93d37f23b294c30,payment,pay_29487a21bae84f58,cust_220d7011457a486b,payment.authorized,2499,INR,2026-08-27T10:58:21.788527,{}
+evt_64fe8caf3bdb4533,payment,pay_29487a21bae84f58,cust_220d7011457a486b,payment.captured,2499,INR,2026-08-27T10:58:25.788527,{}
+evt_95ca7083c3e84863,payment,pay_c7576e12dc65496c,cust_dfa0ee62fdc14137,payment.created,2499,INR,2026-08-27T11:44:00.788527,{}
+evt_6dd2b98836eb4052,payment,pay_c7576e12dc65496c,cust_dfa0ee62fdc14137,payment.authorized,2499,INR,2026-08-27T11:44:07.788527,{}
+evt_9998348f39714408,payment,pay_c7576e12dc65496c,cust_dfa0ee62fdc14137,payment.captured,2499,INR,2026-08-27T11:44:12.788527,{}
+evt_dd459ac2ecb843de,payment,pay_fdca3c04b5504d96,cust_ad67e7949c084dfd,payment.created,1499,INR,2026-08-27T14:30:38.788527,{}
+evt_bb34efcbf3554a13,payment,pay_fdca3c04b5504d96,cust_ad67e7949c084dfd,payment.failed,1499,INR,2026-08-27T14:31:07.788527,"{""reason"": ""expired_card""}"
+evt_af482a3ef82142c0,payment,pay_fc8171ecca944739,cust_ea576ff1540448d8,payment.created,1499,INR,2026-08-27T16:31:06.788527,{}
+evt_6cfdd9fae7614f05,payment,pay_fc8171ecca944739,cust_ea576ff1540448d8,payment.failed,1499,INR,2026-08-27T16:31:46.788527,"{""reason"": ""bank_timeout""}"
+evt_5566fef4f3a340be,payment,pay_07938a6421f44e3b,cust_36de0ceebe7141ae,payment.created,999,INR,2026-08-27T17:04:41.788527,{}
+evt_4b88ad69f43b4d16,payment,pay_07938a6421f44e3b,cust_36de0ceebe7141ae,payment.authorized,999,INR,2026-08-27T17:04:46.788527,{}
+evt_7087cb803ddc40f3,payment,pay_07938a6421f44e3b,cust_36de0ceebe7141ae,payment.captured,999,INR,2026-08-27T17:04:50.788527,{}
+evt_8079186846ee4472,payment,pay_39125fa97fbf41d4,cust_648d41a9227e4e6f,payment.created,999,INR,2026-08-27T18:04:33.788527,{}
+evt_6da88cc55a9d4f7f,payment,pay_39125fa97fbf41d4,cust_648d41a9227e4e6f,payment.failed,999,INR,2026-08-27T18:05:33.788527,"{""reason"": ""gateway_failure""}"
+evt_bb65144fbb6e4c03,checkout,chk_f520c3f80d7a4cf5,cust_c9edfc47f4094f36,checkout.created,9999,INR,2026-08-27T19:40:56.788527,{}
+evt_021092f308d542fc,checkout,chk_f520c3f80d7a4cf5,cust_c9edfc47f4094f36,checkout.abandoned,9999,INR,2026-08-27T19:47:56.788527,{}
+evt_81c777b0bc5647c7,checkout,chk_932bd65900904dcc,cust_6867fb43c0e649fc,checkout.created,9999,INR,2026-08-27T20:26:31.788527,{}
+evt_fd64ae429019451b,checkout,chk_932bd65900904dcc,cust_6867fb43c0e649fc,checkout.completed,9999,INR,2026-08-27T20:27:12.788527,{}
+evt_f2c457efcb014385,payment,pay_ae67ddaf20084617,cust_97afc4425b8845d4,payment.created,1499,INR,2026-08-27T21:43:45.788527,{}
+evt_ab74424584204fe2,payment,pay_ae67ddaf20084617,cust_97afc4425b8845d4,payment.authorized,1499,INR,2026-08-27T21:43:47.788527,{}
+evt_2e006140db2d4477,payment,pay_ae67ddaf20084617,cust_97afc4425b8845d4,payment.captured,1499,INR,2026-08-27T21:43:48.788527,{}
+evt_c0d404079cc5492d,payment,pay_dc7e2abada7f4616,cust_826f3e6850d743de,payment.created,1499,INR,2026-08-27T23:20:48.788527,{}
+evt_cff49c60da154f8c,payment,pay_dc7e2abada7f4616,cust_826f3e6850d743de,payment.failed,1499,INR,2026-08-27T23:21:29.788527,"{""reason"": ""suspected_fraud""}"
+evt_a2bc60e025ea4656,subscription,sub_f9ea5ce4fc204cdd,cust_c2aceec8199a4c1d,subscription.created,499,INR,2026-08-28T00:23:46.788527,"{""plan"": ""plan_basic""}"
+evt_c4ab40f1c4f549d3,payment,pay_5414b68351f7495d,cust_9d2630da49044414,payment.created,2499,INR,2026-08-28T01:43:27.788527,{}
+evt_8077ef46d7ed4948,payment,pay_5414b68351f7495d,cust_9d2630da49044414,payment.failed,2499,INR,2026-08-28T01:43:41.788527,"{""reason"": ""insufficient_funds""}"
+evt_a37dbc5eede449f6,payment,pay_7dfa4f1e986b4e90,cust_180b1bd629c54988,payment.created,4999,INR,2026-08-28T05:56:22.788527,{}
+evt_6992bc056829465e,payment,pay_7dfa4f1e986b4e90,cust_180b1bd629c54988,payment.failed,4999,INR,2026-08-28T05:56:54.788527,"{""reason"": ""account_closed""}"
+evt_49b5fd67a8264c24,payment,pay_94aa928d6c80484f,cust_4fe4f79fd2d0458c,payment.created,499,INR,2026-08-28T06:42:27.788527,{}
+evt_1b7f81895e3f43a7,payment,pay_94aa928d6c80484f,cust_4fe4f79fd2d0458c,payment.authorized,499,INR,2026-08-28T06:42:30.788527,{}
+evt_b8d8e4126ca54a14,payment,pay_94aa928d6c80484f,cust_4fe4f79fd2d0458c,payment.captured,499,INR,2026-08-28T06:42:33.788527,{}
+evt_1bc15ba226b04678,payment,pay_114dbe97ae394e5e,cust_bdae09b0e0e448b0,payment.created,999,INR,2026-08-28T07:05:51.788527,{}
+evt_8217067c127f467f,payment,pay_114dbe97ae394e5e,cust_bdae09b0e0e448b0,payment.authorized,999,INR,2026-08-28T07:05:59.788527,{}
+evt_50dce6b8015a49c6,payment,pay_114dbe97ae394e5e,cust_bdae09b0e0e448b0,payment.captured,999,INR,2026-08-28T07:06:04.788527,{}
+evt_f7c832a57b13406c,checkout,chk_e11cc165740146dd,cust_d29ae75ab38a4062,checkout.created,499,INR,2026-08-28T07:27:38.788527,{}
+evt_97584d9fd091487c,checkout,chk_e11cc165740146dd,cust_d29ae75ab38a4062,checkout.completed,499,INR,2026-08-28T07:28:41.788527,{}
+evt_884a9db9cbc1499e,checkout,chk_ce20594e6b684f09,cust_33f6d655132e42eb,checkout.created,2499,INR,2026-08-28T09:46:40.788527,{}
+evt_3d88dccc3b994024,checkout,chk_ce20594e6b684f09,cust_33f6d655132e42eb,checkout.abandoned,2499,INR,2026-08-28T09:59:40.788527,{}
+evt_24d8256f65f4461f,checkout,chk_67eec4625a414f4e,cust_4c6ee929a92f4cff,checkout.created,499,INR,2026-08-28T12:43:12.788527,{}
+evt_be4184ddcf594336,checkout,chk_67eec4625a414f4e,cust_4c6ee929a92f4cff,checkout.abandoned,499,INR,2026-08-28T13:10:12.788527,{}
+evt_10d9e57578b7411d,payment,pay_c69724a056be4ed8,cust_783cfaccb48b428f,payment.created,1499,INR,2026-08-28T13:15:05.788527,{}
+evt_4f35689b521640cc,payment,pay_c69724a056be4ed8,cust_783cfaccb48b428f,payment.authorized,1499,INR,2026-08-28T13:15:09.788527,{}
+evt_825507a445694231,payment,pay_c69724a056be4ed8,cust_783cfaccb48b428f,payment.captured,1499,INR,2026-08-28T13:15:12.788527,{}
+evt_9595259894e6497d,payment,pay_f87b9a403b89467f,cust_220d7011457a486b,payment.created,1499,INR,2026-08-28T14:59:01.788527,{}
+evt_9c78bc055eee4380,payment,pay_f87b9a403b89467f,cust_220d7011457a486b,payment.authorized,1499,INR,2026-08-28T14:59:03.788527,{}
+evt_f8c1cd84cf3b486d,payment,pay_f87b9a403b89467f,cust_220d7011457a486b,payment.captured,1499,INR,2026-08-28T14:59:07.788527,{}
+evt_a5616b1c2eed4c96,payment,pay_555565bf3e9344c0,cust_f2eca39219844f23,payment.created,1499,INR,2026-08-28T15:48:06.788527,{}
+evt_01a48b451afc4b5d,payment,pay_555565bf3e9344c0,cust_f2eca39219844f23,payment.authorized,1499,INR,2026-08-28T15:48:16.788527,{}
+evt_18e70a4092464586,payment,pay_555565bf3e9344c0,cust_f2eca39219844f23,payment.captured,1499,INR,2026-08-28T15:48:19.788527,{}
+evt_0aafe08784ba4cf8,checkout,chk_fa8e1da508af4128,cust_e21b04e4e9654e21,checkout.created,999,INR,2026-08-28T18:19:11.788527,{}
+evt_e923fb10de90416a,checkout,chk_fa8e1da508af4128,cust_e21b04e4e9654e21,checkout.abandoned,999,INR,2026-08-28T18:26:11.788527,{}
+evt_49bc55d11bb74aff,payment,pay_d0abbd35f3c744e4,cust_e0e0dd5c13ed4e86,payment.created,1499,INR,2026-08-28T19:14:59.788527,{}
+evt_518770003ce74410,payment,pay_d0abbd35f3c744e4,cust_e0e0dd5c13ed4e86,payment.authorized,1499,INR,2026-08-28T19:15:02.788527,{}
+evt_faaa5fdefadb4997,payment,pay_d0abbd35f3c744e4,cust_e0e0dd5c13ed4e86,payment.captured,1499,INR,2026-08-28T19:15:03.788527,{}
+evt_60f69d40f2dd455b,subscription,sub_6d9ed5b60c0840b9,cust_f4fa33d4c771491c,subscription.pending,499,INR,2026-08-28T20:20:57.788527,"{""reason"": ""expired_card""}"
+evt_8ae97c6bf52d4c41,payment,pay_06a80f368cab438d,cust_f93c546713c44edb,payment.created,999,INR,2026-08-29T05:05:43.788527,{}
+evt_5bf1a2320df44389,payment,pay_06a80f368cab438d,cust_f93c546713c44edb,payment.authorized,999,INR,2026-08-29T05:05:47.788527,{}
+evt_e1f2313df6764ba4,payment,pay_06a80f368cab438d,cust_f93c546713c44edb,payment.captured,999,INR,2026-08-29T05:05:51.788527,{}
+evt_7364feefa9264aa1,checkout,chk_33c3bd5396614ecc,cust_72cd4993fdb9498b,checkout.created,9999,INR,2026-08-29T05:17:35.788527,{}
+evt_d48fd4bd1d894eb7,checkout,chk_33c3bd5396614ecc,cust_72cd4993fdb9498b,checkout.abandoned,9999,INR,2026-08-29T05:39:35.788527,{}
+evt_381cd7970e5e4c5f,checkout,chk_2134a0304ddb41bd,cust_ea712f4dcfe94f6a,checkout.created,9999,INR,2026-08-29T05:53:28.788527,{}
+evt_b71335fde2244017,checkout,chk_2134a0304ddb41bd,cust_ea712f4dcfe94f6a,checkout.completed,9999,INR,2026-08-29T05:55:07.788527,{}
+evt_eda06e7479ae483d,payment,pay_4395d2caf3af4aff,cust_6867fb43c0e649fc,payment.created,2499,INR,2026-08-29T08:25:54.788527,{}
+evt_da188fdc7d3544de,payment,pay_4395d2caf3af4aff,cust_6867fb43c0e649fc,payment.authorized,2499,INR,2026-08-29T08:25:59.788527,{}
+evt_3273b1314e5c4cec,payment,pay_4395d2caf3af4aff,cust_6867fb43c0e649fc,payment.captured,2499,INR,2026-08-29T08:26:02.788527,{}
+evt_92dc39863a15474f,payment,pay_9ecd857ec76a48ae,cust_e9380b4930274338,payment.created,9999,INR,2026-08-29T09:00:05.788527,{}
+evt_0ea5ebefe3c54eed,payment,pay_9ecd857ec76a48ae,cust_e9380b4930274338,payment.authorized,9999,INR,2026-08-29T09:00:15.788527,{}
+evt_871537684c5c4a6e,payment,pay_9ecd857ec76a48ae,cust_e9380b4930274338,payment.captured,9999,INR,2026-08-29T09:00:18.788527,{}
+evt_59bb0c7c8ff74bf8,payment,pay_b168fc109e204a0a,cust_82559b82a8b240bb,payment.created,9999,INR,2026-08-29T09:57:05.788527,{}
+evt_6f86083077ec4434,payment,pay_b168fc109e204a0a,cust_82559b82a8b240bb,payment.failed,9999,INR,2026-08-29T09:57:48.788527,"{""reason"": ""expired_card""}"
+evt_f63cb39ced6e4165,subscription,sub_b87f533b8378461f,cust_17d5cf7732f74583,subscription.pending,499,INR,2026-08-29T10:42:53.788527,"{""reason"": ""gateway_failure""}"
+evt_87008cd2ded3472e,checkout,chk_dfb36edc370147fe,cust_8f18554e5d0d4022,checkout.created,999,INR,2026-08-29T11:22:37.788527,{}
+evt_14e5f7a3731b428e,checkout,chk_dfb36edc370147fe,cust_8f18554e5d0d4022,checkout.completed,999,INR,2026-08-29T11:23:18.788527,{}
+evt_826cf7ab4e5f4c82,payment,pay_7a1776b1067c45f0,cust_4889ef6ccd83460e,payment.created,2499,INR,2026-08-29T13:02:35.788527,{}
+evt_c4eeb9a51e424a21,payment,pay_7a1776b1067c45f0,cust_4889ef6ccd83460e,payment.authorized,2499,INR,2026-08-29T13:02:40.788527,{}
+evt_b96932f24c464f5f,payment,pay_7a1776b1067c45f0,cust_4889ef6ccd83460e,payment.captured,2499,INR,2026-08-29T13:02:44.788527,{}
+evt_1049f16cd2884411,checkout,chk_1ab39e92e5e04054,cust_3b31c5d6b965456f,checkout.created,1499,INR,2026-08-29T14:02:03.788527,{}
+evt_6ef3a3d239ef40ff,checkout,chk_1ab39e92e5e04054,cust_3b31c5d6b965456f,checkout.completed,1499,INR,2026-08-29T14:03:02.788527,{}
+evt_df3813c6103748fa,subscription,sub_714eab75aa3c4465,cust_4a98abc09c464fbc,subscription.pending,4999,INR,2026-08-29T14:22:47.788527,"{""reason"": ""expired_card""}"
+evt_7ae9c98627c84e1d,subscription,sub_27d921dd92a54bea,cust_996d47dc3a1a4c1a,subscription.created,1499,INR,2026-08-29T14:29:51.788527,"{""plan"": ""plan_pro""}"
+evt_01ed9dfd5baf4989,payment,pay_9c1239f8e4984238,cust_af5996552ee245bc,payment.created,999,INR,2026-08-29T16:30:30.788527,{}
+evt_397e6cf222b04b27,payment,pay_9c1239f8e4984238,cust_af5996552ee245bc,payment.authorized,999,INR,2026-08-29T16:30:39.788527,{}
+evt_e119dc428ea546a4,payment,pay_9c1239f8e4984238,cust_af5996552ee245bc,payment.captured,999,INR,2026-08-29T16:30:44.788527,{}
+evt_999f3a3031454e89,payment,pay_798e406b05b940cb,cust_3436a29073f646a0,payment.created,499,INR,2026-08-29T17:00:09.788527,{}
+evt_3b231af6048f4ce5,payment,pay_798e406b05b940cb,cust_3436a29073f646a0,payment.authorized,499,INR,2026-08-29T17:00:19.788527,{}
+evt_3185e9e22d4942f4,payment,pay_798e406b05b940cb,cust_3436a29073f646a0,payment.captured,499,INR,2026-08-29T17:00:24.788527,{}
+evt_624caefbd62b46aa,payment,pay_04b039e3cbc44c88,cust_c9edfc47f4094f36,payment.created,2499,INR,2026-08-29T17:05:01.788527,{}
+evt_c2b63266bdb8457e,payment,pay_04b039e3cbc44c88,cust_c9edfc47f4094f36,payment.authorized,2499,INR,2026-08-29T17:05:05.788527,{}
+evt_f9fa094e00964f2a,payment,pay_04b039e3cbc44c88,cust_c9edfc47f4094f36,payment.captured,2499,INR,2026-08-29T17:05:10.788527,{}
+evt_c27ff79ca5c84992,subscription,sub_291f353a6a4747c5,cust_cc243c590f6e44bc,subscription.pending,499,INR,2026-08-29T18:28:42.788527,"{""reason"": ""bank_timeout""}"
+evt_1ef0630c155144d9,payment,pay_3b6540ea2ca64754,cust_bd55c64489c24550,payment.created,1499,INR,2026-08-29T21:53:54.788527,{}
+evt_1b319fa72b11482e,payment,pay_3b6540ea2ca64754,cust_bd55c64489c24550,payment.authorized,1499,INR,2026-08-29T21:54:01.788527,{}
+evt_0daae8f60dff49cf,payment,pay_3b6540ea2ca64754,cust_bd55c64489c24550,payment.captured,1499,INR,2026-08-29T21:54:04.788527,{}
+evt_12cc3c0b04264fbd,checkout,chk_aa15b455481e4e1e,cust_8f6fbc99d10a4e7a,checkout.created,2499,INR,2026-08-29T22:57:56.788527,{}
+evt_aaaaaca149794425,checkout,chk_aa15b455481e4e1e,cust_8f6fbc99d10a4e7a,checkout.abandoned,2499,INR,2026-08-29T23:14:56.788527,{}
+evt_e7ebf807336841b3,payment,pay_c50b4a0865be48c8,cust_1a840cb83d274b59,payment.created,1499,INR,2026-08-29T23:32:24.788527,{}
+evt_638b4155b60142ce,payment,pay_c50b4a0865be48c8,cust_1a840cb83d274b59,payment.failed,1499,INR,2026-08-29T23:33:10.788527,"{""reason"": ""insufficient_funds""}"
+evt_9304d2d0cb9d4ba1,payment,pay_aa3de0ea4541445a,cust_6867fb43c0e649fc,payment.created,499,INR,2026-08-30T00:44:10.788527,{}
+evt_dde8fb14f9e34b33,payment,pay_aa3de0ea4541445a,cust_6867fb43c0e649fc,payment.authorized,499,INR,2026-08-30T00:44:16.788527,{}
+evt_36b89556a0e74b15,payment,pay_aa3de0ea4541445a,cust_6867fb43c0e649fc,payment.captured,499,INR,2026-08-30T00:44:19.788527,{}
+evt_802622e483a94353,checkout,chk_daaf65192e034a87,cust_bd55c64489c24550,checkout.created,19999,INR,2026-08-30T00:48:38.788527,{}
+evt_3fd026fa058b424a,checkout,chk_daaf65192e034a87,cust_bd55c64489c24550,checkout.completed,19999,INR,2026-08-30T00:50:31.788527,{}
+evt_79fb95cc47144282,checkout,chk_e758b19a33a049bf,cust_33f6d655132e42eb,checkout.created,4999,INR,2026-08-30T01:43:27.788527,{}
+evt_64377babd7604d2b,checkout,chk_e758b19a33a049bf,cust_33f6d655132e42eb,checkout.abandoned,4999,INR,2026-08-30T02:12:27.788527,{}
+evt_f09b8c76af3d4371,payment,pay_fb59674e83c348f6,cust_952f30d066ab43cf,payment.created,2499,INR,2026-08-30T02:50:50.788527,{}
+evt_a3fc74a7781943a3,payment,pay_fb59674e83c348f6,cust_952f30d066ab43cf,payment.authorized,2499,INR,2026-08-30T02:50:53.788527,{}
+evt_bc139890aa464caf,payment,pay_fb59674e83c348f6,cust_952f30d066ab43cf,payment.captured,2499,INR,2026-08-30T02:50:55.788527,{}
+evt_49686cecb58d4f6e,payment,pay_57ad37dd118b4b73,cust_cc243c590f6e44bc,payment.created,1499,INR,2026-08-30T03:20:55.788527,{}
+evt_a1b190d24d354f2b,payment,pay_57ad37dd118b4b73,cust_cc243c590f6e44bc,payment.authorized,1499,INR,2026-08-30T03:21:01.788527,{}
+evt_0bbc866a62934046,payment,pay_57ad37dd118b4b73,cust_cc243c590f6e44bc,payment.captured,1499,INR,2026-08-30T03:21:05.788527,{}
+evt_416341876cc44bbd,payment,pay_dfb34e2bddae4507,cust_8f6fbc99d10a4e7a,payment.created,2499,INR,2026-08-30T04:03:20.788527,{}
+evt_d348d4c3551041c2,payment,pay_dfb34e2bddae4507,cust_8f6fbc99d10a4e7a,payment.authorized,2499,INR,2026-08-30T04:03:22.788527,{}
+evt_b2f98eb020304571,payment,pay_dfb34e2bddae4507,cust_8f6fbc99d10a4e7a,payment.captured,2499,INR,2026-08-30T04:03:24.788527,{}
+evt_1f335444954b4d40,payment,pay_9ecff38c0d6b4d3e,cust_6867fb43c0e649fc,payment.created,499,INR,2026-08-30T04:36:10.788527,{}
+evt_d2c414d473034fdc,payment,pay_9ecff38c0d6b4d3e,cust_6867fb43c0e649fc,payment.failed,499,INR,2026-08-30T04:36:39.788527,"{""reason"": ""card_declined""}"
+evt_d109b664142d42fb,payment,pay_87c2cd5e0f344f43,cust_e3452a1e8a8b45e6,payment.created,9999,INR,2026-08-30T04:47:55.788527,{}
+evt_9f6eef60e8b14266,payment,pay_87c2cd5e0f344f43,cust_e3452a1e8a8b45e6,payment.authorized,9999,INR,2026-08-30T04:47:58.788527,{}
+evt_77ea3355ea0b47bb,payment,pay_87c2cd5e0f344f43,cust_e3452a1e8a8b45e6,payment.captured,9999,INR,2026-08-30T04:48:01.788527,{}
+evt_e7efe154463a4561,payment,pay_0f4082db42c04191,cust_1a840cb83d274b59,payment.created,2499,INR,2026-08-30T05:36:10.788527,{}
+evt_3e5e471b532f4aba,payment,pay_0f4082db42c04191,cust_1a840cb83d274b59,payment.authorized,2499,INR,2026-08-30T05:36:20.788527,{}
+evt_3e3be13905e4444a,payment,pay_0f4082db42c04191,cust_1a840cb83d274b59,payment.captured,2499,INR,2026-08-30T05:36:25.788527,{}
+evt_cbd97530a17848cc,checkout,chk_919e1efdcf6b4f84,cust_e36f4ff2aaeb4ed2,checkout.created,19999,INR,2026-08-30T07:37:25.788527,{}
+evt_c312baa2d6114206,checkout,chk_919e1efdcf6b4f84,cust_e36f4ff2aaeb4ed2,checkout.completed,19999,INR,2026-08-30T07:39:22.788527,{}
+evt_54a2dabff5664196,subscription,sub_6ea5b4ba47fb4af9,cust_504b3cc5cc474e1d,subscription.created,4999,INR,2026-08-30T09:36:32.788527,"{""plan"": ""plan_business""}"
+evt_cd81447a98ed4b5d,checkout,chk_e8eec729f7054ee1,cust_50ef51410b964f89,checkout.created,9999,INR,2026-08-30T11:35:07.788527,{}
+evt_4d053a0486134d22,checkout,chk_e8eec729f7054ee1,cust_50ef51410b964f89,checkout.completed,9999,INR,2026-08-30T11:37:00.788527,{}
+evt_56f4e652b98d4f11,checkout,chk_079d895697c642ce,cust_43efba693da04c56,checkout.created,19999,INR,2026-08-30T11:44:32.788527,{}
+evt_84af9d9748104990,checkout,chk_079d895697c642ce,cust_43efba693da04c56,checkout.completed,19999,INR,2026-08-30T11:45:55.788527,{}
+evt_6e892d057a9842c2,payment,pay_1497bacdc9b5483a,cust_180b1bd629c54988,payment.created,9999,INR,2026-08-30T12:09:29.788527,{}
+evt_041292ebe31d42af,payment,pay_1497bacdc9b5483a,cust_180b1bd629c54988,payment.authorized,9999,INR,2026-08-30T12:09:35.788527,{}
+evt_10f49622e7be4233,payment,pay_1497bacdc9b5483a,cust_180b1bd629c54988,payment.captured,9999,INR,2026-08-30T12:09:36.788527,{}
+evt_248654b9c7ef4bfe,checkout,chk_1b53c264b7e045ed,cust_796de13166be4243,checkout.created,1499,INR,2026-08-30T12:10:51.788527,{}
+evt_c7b912f4b29c46b2,checkout,chk_1b53c264b7e045ed,cust_796de13166be4243,checkout.completed,1499,INR,2026-08-30T12:12:21.788527,{}
+evt_55276d7c1faf4340,payment,pay_036364bb1881461a,cust_2f3315fc8a3c42a5,payment.created,499,INR,2026-08-30T12:46:39.788527,{}
+evt_8ae9ecff3a8043fd,payment,pay_036364bb1881461a,cust_2f3315fc8a3c42a5,payment.authorized,499,INR,2026-08-30T12:46:48.788527,{}
+evt_b2db4fcf149046a1,payment,pay_036364bb1881461a,cust_2f3315fc8a3c42a5,payment.captured,499,INR,2026-08-30T12:46:51.788527,{}
+evt_3d0a2c4b3b944ce5,checkout,chk_e988d388a13640fa,cust_c5a7a49d0f944889,checkout.created,999,INR,2026-08-30T13:18:44.788527,{}
+evt_c5b3c5ac3e0b4697,checkout,chk_e988d388a13640fa,cust_c5a7a49d0f944889,checkout.abandoned,999,INR,2026-08-30T13:29:44.788527,{}
+evt_a468964bd8934958,payment,pay_a0fe31815a6c4467,cust_8df3ca8d8b7f4a77,payment.created,2499,INR,2026-08-30T13:41:03.788527,{}
+evt_09aca42effa446b0,payment,pay_a0fe31815a6c4467,cust_8df3ca8d8b7f4a77,payment.authorized,2499,INR,2026-08-30T13:41:12.788527,{}
+evt_14f17e730b0e4d3a,payment,pay_a0fe31815a6c4467,cust_8df3ca8d8b7f4a77,payment.captured,2499,INR,2026-08-30T13:41:17.788527,{}
+evt_80fb8a562a1c4ac4,subscription,sub_6e56e1cef70b415f,cust_648d41a9227e4e6f,subscription.pending,499,INR,2026-08-30T13:53:34.788527,"{""reason"": ""invalid_payment_method""}"
+evt_143321c51fd94ffb,payment,pay_aaa277cd19254fa2,cust_2d27e3977a0a4974,payment.created,499,INR,2026-08-30T14:54:22.788527,{}
+evt_f50877e4e39a4037,payment,pay_aaa277cd19254fa2,cust_2d27e3977a0a4974,payment.failed,499,INR,2026-08-30T14:55:09.788527,"{""reason"": ""card_declined""}"
+evt_49d2b876cf7e4dd9,payment,pay_af36f5969c8244bb,cust_8ab27c13c1794b4a,payment.created,2499,INR,2026-08-30T16:26:40.788527,{}
+evt_26e6a70c41a34acb,payment,pay_af36f5969c8244bb,cust_8ab27c13c1794b4a,payment.authorized,2499,INR,2026-08-30T16:26:47.788527,{}
+evt_757c3526042b4add,payment,pay_af36f5969c8244bb,cust_8ab27c13c1794b4a,payment.captured,2499,INR,2026-08-30T16:26:50.788527,{}
+evt_71187a1663c144ae,payment,pay_1b708495c9244f83,cust_4a98abc09c464fbc,payment.created,1499,INR,2026-08-30T16:47:55.788527,{}
+evt_88ce9cd99f484f9b,payment,pay_1b708495c9244f83,cust_4a98abc09c464fbc,payment.authorized,1499,INR,2026-08-30T16:48:03.788527,{}
+evt_5ff299c8d42a4062,payment,pay_1b708495c9244f83,cust_4a98abc09c464fbc,payment.captured,1499,INR,2026-08-30T16:48:08.788527,{}
+evt_49f6bd1693874972,subscription,sub_6042ca0fd07f4fa9,cust_59faf58c22924d8a,subscription.pending,499,INR,2026-08-30T20:10:34.788527,"{""reason"": ""invalid_payment_method""}"
+evt_d20e118c748f45c1,payment,pay_cb9a31a8e54f411c,cust_6867fb43c0e649fc,payment.created,2499,INR,2026-08-30T20:48:17.788527,{}
+evt_6b36172fac3b46b3,payment,pay_cb9a31a8e54f411c,cust_6867fb43c0e649fc,payment.failed,2499,INR,2026-08-30T20:48:51.788527,"{""reason"": ""insufficient_funds""}"
+evt_cd52c3d301724648,payment,pay_9d367fdc177446b5,cust_9e01e9cf05b74b45,payment.created,499,INR,2026-08-30T21:48:43.788527,{}
+evt_4200ccad5295479b,payment,pay_9d367fdc177446b5,cust_9e01e9cf05b74b45,payment.authorized,499,INR,2026-08-30T21:48:50.788527,{}
+evt_bdded3e9a113429b,payment,pay_9d367fdc177446b5,cust_9e01e9cf05b74b45,payment.captured,499,INR,2026-08-30T21:48:52.788527,{}
+evt_8dd80b7cfed34b7d,checkout,chk_152d6fd99f474457,cust_f123cf018da540ce,checkout.created,4999,INR,2026-08-31T00:49:49.788527,{}
+evt_b829b655c40e45c4,checkout,chk_152d6fd99f474457,cust_f123cf018da540ce,checkout.abandoned,4999,INR,2026-08-31T01:04:49.788527,{}
+evt_c891433a3e2b490e,checkout,chk_52d4596b0d4843d1,cust_9f1283c56ea44250,checkout.created,4999,INR,2026-08-31T01:51:37.788527,{}
+evt_acb3f5d5f48c48f2,checkout,chk_52d4596b0d4843d1,cust_9f1283c56ea44250,checkout.completed,4999,INR,2026-08-31T01:52:26.788527,{}
+evt_de3c5afa08e348eb,payment,pay_96a2933c845a4648,cust_2d0bc3dc82554e21,payment.created,999,INR,2026-08-31T01:52:38.788527,{}
+evt_4457195c9f9a49f8,payment,pay_96a2933c845a4648,cust_2d0bc3dc82554e21,payment.authorized,999,INR,2026-08-31T01:52:42.788527,{}
+evt_304f3f7f0eef4fd7,payment,pay_96a2933c845a4648,cust_2d0bc3dc82554e21,payment.captured,999,INR,2026-08-31T01:52:46.788527,{}
+evt_ac4e812dc6e44a24,payment,pay_23d4ba4b79634101,cust_68dd48ba801e4276,payment.created,499,INR,2026-08-31T02:44:48.788527,{}
+evt_c0221754dff94844,payment,pay_23d4ba4b79634101,cust_68dd48ba801e4276,payment.authorized,499,INR,2026-08-31T02:44:57.788527,{}
+evt_6d36dd41f6074967,payment,pay_23d4ba4b79634101,cust_68dd48ba801e4276,payment.captured,499,INR,2026-08-31T02:45:00.788527,{}
+evt_f60b81c093244c28,checkout,chk_49372ca7a0754925,cust_c2aceec8199a4c1d,checkout.created,499,INR,2026-08-31T03:38:13.788527,{}
+evt_67bbddde28c64b88,checkout,chk_3c415db5e30b4071,cust_f1e582cebef24c61,checkout.created,9999,INR,2026-08-31T03:49:38.788527,{}
+evt_2a0d3a427e9e427c,checkout,chk_3c415db5e30b4071,cust_f1e582cebef24c61,checkout.completed,9999,INR,2026-08-31T03:50:50.788527,{}
+evt_2daa1f5980bd4292,checkout,chk_49372ca7a0754925,cust_c2aceec8199a4c1d,checkout.abandoned,499,INR,2026-08-31T03:51:13.788527,{}
+evt_74dbd00577194b19,payment,pay_78629aee285540c9,cust_ca45983cfc524d10,payment.created,499,INR,2026-08-31T04:10:51.788527,{}
+evt_a1ec3d4592cb49f7,payment,pay_78629aee285540c9,cust_ca45983cfc524d10,payment.authorized,499,INR,2026-08-31T04:10:57.788527,{}
+evt_8911f9c29f994c30,payment,pay_78629aee285540c9,cust_ca45983cfc524d10,payment.captured,499,INR,2026-08-31T04:10:58.788527,{}
+evt_b1bcd1d4a77c4773,payment,pay_b2849c62a31843a1,cust_996d47dc3a1a4c1a,payment.created,2499,INR,2026-08-31T08:03:14.788527,{}
+evt_56312e0c27d84f64,payment,pay_b2849c62a31843a1,cust_996d47dc3a1a4c1a,payment.authorized,2499,INR,2026-08-31T08:03:21.788527,{}
+evt_751db7783d7246bd,payment,pay_b2849c62a31843a1,cust_996d47dc3a1a4c1a,payment.captured,2499,INR,2026-08-31T08:03:25.788527,{}
+evt_18acde8aa5784472,payment,pay_7dee65ff30cb4a6f,cust_59faf58c22924d8a,payment.created,2499,INR,2026-08-31T10:09:54.788527,{}
+evt_19eb155ab56746d0,payment,pay_7dee65ff30cb4a6f,cust_59faf58c22924d8a,payment.authorized,2499,INR,2026-08-31T10:10:01.788527,{}
+evt_d8b0e101d8934e98,payment,pay_7dee65ff30cb4a6f,cust_59faf58c22924d8a,payment.captured,2499,INR,2026-08-31T10:10:02.788527,{}
+evt_6596e22c483b4474,payment,pay_93cafe8a7e8048c2,cust_d6c7a14f6f31444f,payment.created,2499,INR,2026-08-31T11:18:19.788527,{}
+evt_460835f84a77449c,payment,pay_93cafe8a7e8048c2,cust_d6c7a14f6f31444f,payment.authorized,2499,INR,2026-08-31T11:18:26.788527,{}
+evt_adfd1175f9fe4194,payment,pay_93cafe8a7e8048c2,cust_d6c7a14f6f31444f,payment.captured,2499,INR,2026-08-31T11:18:27.788527,{}
+evt_9d4c3ce934a1409a,checkout,chk_698396d97c504f49,cust_f81c174802634e2b,checkout.created,19999,INR,2026-08-31T11:20:21.788527,{}
+evt_e351615d8e464dc6,checkout,chk_698396d97c504f49,cust_f81c174802634e2b,checkout.completed,19999,INR,2026-08-31T11:20:58.788527,{}
+evt_ddbeec7e171c4928,checkout,chk_f445c697e7324b82,cust_f2eca39219844f23,checkout.created,19999,INR,2026-08-31T11:29:05.788527,{}
+evt_581307137f3a4e3f,payment,pay_ca5615c8dcf84577,cust_00180c8cc6e741c5,payment.created,2499,INR,2026-08-31T11:35:00.788527,{}
+evt_67d19852d422468f,payment,pay_ca5615c8dcf84577,cust_00180c8cc6e741c5,payment.failed,2499,INR,2026-08-31T11:35:22.788527,"{""reason"": ""card_declined""}"
+evt_7f34f60bb5734751,checkout,chk_f445c697e7324b82,cust_f2eca39219844f23,checkout.abandoned,19999,INR,2026-08-31T11:55:05.788527,{}
+evt_29df7fc137d5458e,payment,pay_9ad113d17b1e4b87,cust_79c2a6caef3444a2,payment.created,499,INR,2026-08-31T13:45:30.788527,{}
+evt_be8355f7c3c64d59,payment,pay_9ad113d17b1e4b87,cust_79c2a6caef3444a2,payment.failed,499,INR,2026-08-31T13:46:21.788527,"{""reason"": ""expired_card""}"
+evt_25d980ef26f24b1c,payment,pay_30ad524159af479e,cust_1a840cb83d274b59,payment.created,499,INR,2026-08-31T16:05:30.788527,{}
+evt_69d9e19b46bd4449,payment,pay_30ad524159af479e,cust_1a840cb83d274b59,payment.failed,499,INR,2026-08-31T16:05:42.788527,"{""reason"": ""card_declined""}"
+evt_5c2ebeb0728749b3,payment,pay_2061edc907e242e0,cust_e0e0dd5c13ed4e86,payment.created,999,INR,2026-08-31T18:14:58.788527,{}
+evt_89b08495351d48b1,payment,pay_2061edc907e242e0,cust_e0e0dd5c13ed4e86,payment.authorized,999,INR,2026-08-31T18:15:00.788527,{}
+evt_497bbbdc3bf349e3,payment,pay_2061edc907e242e0,cust_e0e0dd5c13ed4e86,payment.captured,999,INR,2026-08-31T18:15:04.788527,{}
+evt_8fabf040266243d2,payment,pay_be6b558d4d644bf8,cust_1a287bda79bd4b5b,payment.created,499,INR,2026-08-31T18:47:10.788527,{}
+evt_d543f5a1999b42d2,payment,pay_be6b558d4d644bf8,cust_1a287bda79bd4b5b,payment.failed,499,INR,2026-08-31T18:47:40.788527,"{""reason"": ""insufficient_funds""}"
+evt_acdede659c744ca8,payment,pay_82c0c3ca38184c91,cust_1a840cb83d274b59,payment.created,2499,INR,2026-08-31T18:54:34.788527,{}
+evt_277326cf33884163,payment,pay_82c0c3ca38184c91,cust_1a840cb83d274b59,payment.failed,2499,INR,2026-08-31T18:55:12.788527,"{""reason"": ""card_declined""}"
+evt_0ec01baa76074f43,checkout,chk_142283a3aee144c7,cust_dedb88e4246f450a,checkout.created,19999,INR,2026-08-31T21:43:31.788527,{}
+evt_5bbb5832e39a45c7,checkout,chk_142283a3aee144c7,cust_dedb88e4246f450a,checkout.abandoned,19999,INR,2026-08-31T22:11:31.788527,{}
+evt_0baf0c055e924d62,payment,pay_31373d46da804377,cust_dedb88e4246f450a,payment.created,4999,INR,2026-08-31T22:41:53.788527,{}
+evt_c48132c2d4734da5,payment,pay_31373d46da804377,cust_dedb88e4246f450a,payment.failed,4999,INR,2026-08-31T22:42:26.788527,"{""reason"": ""network_error""}"
+evt_8640442a73b043a6,checkout,chk_02a966bd6cc646f6,cust_b27bf293d1fd476f,checkout.created,2499,INR,2026-08-31T22:57:14.788527,{}
+evt_cb42ed36bda04ead,checkout,chk_02a966bd6cc646f6,cust_b27bf293d1fd476f,checkout.completed,2499,INR,2026-08-31T22:57:45.788527,{}
+evt_59886d7e9f6d49d4,payment,pay_b240602d2fea462b,cust_3fc0d32b4b1547f3,payment.created,9999,INR,2026-08-31T23:12:02.788527,{}
+evt_c192ce0fdf4b4616,payment,pay_b240602d2fea462b,cust_3fc0d32b4b1547f3,payment.authorized,9999,INR,2026-08-31T23:12:10.788527,{}
+evt_b00eb53d64df45b4,payment,pay_b240602d2fea462b,cust_3fc0d32b4b1547f3,payment.captured,9999,INR,2026-08-31T23:12:14.788527,{}
+evt_c26c08a55f5f49cc,checkout,chk_22d503f53612424d,cust_44f813952f2d440d,checkout.created,19999,INR,2026-08-31T23:26:10.788527,{}
+evt_1ac267ea0e624f4c,checkout,chk_22d503f53612424d,cust_44f813952f2d440d,checkout.abandoned,19999,INR,2026-08-31T23:56:10.788527,{}
+evt_1d7bcf370b45498c,payment,pay_e5e30e469fcc4c28,cust_3e86430a38564acc,payment.created,2499,INR,2026-09-01T00:33:12.788527,{}
+evt_aae959a3538a40c5,payment,pay_e5e30e469fcc4c28,cust_3e86430a38564acc,payment.authorized,2499,INR,2026-09-01T00:33:14.788527,{}
+evt_59c2af27336c44c1,payment,pay_e5e30e469fcc4c28,cust_3e86430a38564acc,payment.captured,2499,INR,2026-09-01T00:33:17.788527,{}
+evt_95e0e410721042a0,payment,pay_61039639dc394cf2,cust_d06f46d540b54ac3,payment.created,9999,INR,2026-09-01T02:06:09.788527,{}
+evt_1ef9990ac3e341de,payment,pay_61039639dc394cf2,cust_d06f46d540b54ac3,payment.failed,9999,INR,2026-09-01T02:06:57.788527,"{""reason"": ""account_closed""}"
+evt_b8cf82cdb0c34f36,subscription,sub_bb6a93f1cd694f74,cust_c2aceec8199a4c1d,subscription.created,499,INR,2026-09-01T02:26:25.788527,"{""plan"": ""plan_basic""}"
+evt_36930ad38d3e4b1b,subscription,sub_2fee7222e6614743,cust_c2aceec8199a4c1d,subscription.created,1499,INR,2026-09-01T03:51:31.788527,"{""plan"": ""plan_pro""}"
+evt_e8233001951b4b13,payment,pay_e610b61d145a42d1,cust_8df3ca8d8b7f4a77,payment.created,2499,INR,2026-09-01T04:06:37.788527,{}
+evt_3ef30acf3e79455d,payment,pay_e610b61d145a42d1,cust_8df3ca8d8b7f4a77,payment.failed,2499,INR,2026-09-01T04:07:31.788527,"{""reason"": ""insufficient_funds""}"
+evt_f35b51bb5d0f4bf6,payment,pay_c4e50b056c664ac0,cust_220d7011457a486b,payment.created,999,INR,2026-09-01T05:58:58.788527,{}
+evt_c00e54a6708a4af1,payment,pay_c4e50b056c664ac0,cust_220d7011457a486b,payment.authorized,999,INR,2026-09-01T05:59:03.788527,{}
+evt_24a688afc887425e,payment,pay_c4e50b056c664ac0,cust_220d7011457a486b,payment.captured,999,INR,2026-09-01T05:59:06.788527,{}
+evt_56fb49e2516e42a1,checkout,chk_74784f8e1f424175,cust_8f6fbc99d10a4e7a,checkout.created,999,INR,2026-09-01T07:15:54.788527,{}
+evt_cd2d47d2e1334b8c,checkout,chk_74784f8e1f424175,cust_8f6fbc99d10a4e7a,checkout.completed,999,INR,2026-09-01T07:17:13.788527,{}
+evt_dbec0925e29946f1,payment,pay_07e92906a1774620,cust_996d47dc3a1a4c1a,payment.created,499,INR,2026-09-01T07:41:29.788527,{}
+evt_bb4e7853b4a24967,payment,pay_07e92906a1774620,cust_996d47dc3a1a4c1a,payment.failed,499,INR,2026-09-01T07:42:28.788527,"{""reason"": ""network_error""}"
+evt_2ada710a2b6348fc,subscription,sub_2fee7222e6614743,cust_c2aceec8199a4c1d,subscription.pending,1499,INR,2026-09-01T09:38:56.788527,"{""reason"": ""gateway_failure""}"
+evt_269bb23a1908419d,subscription,sub_330eef904d5c453c,cust_c2aceec8199a4c1d,subscription.created,1499,INR,2026-09-01T09:51:15.788527,"{""plan"": ""plan_pro""}"
+evt_ae8d68e5422048a8,subscription,sub_b87f533b8378461f,cust_17d5cf7732f74583,subscription.halted,499,INR,2026-09-01T10:42:53.788527,{}
+evt_6f079adb64f6452b,payment,pay_1d573aad11fe43eb,cust_796de13166be4243,payment.created,2499,INR,2026-09-01T11:41:47.788527,{}
+evt_144d93df29a14ddd,payment,pay_1d573aad11fe43eb,cust_796de13166be4243,payment.authorized,2499,INR,2026-09-01T11:41:54.788527,{}
+evt_b5fbac05372f4d81,payment,pay_1d573aad11fe43eb,cust_796de13166be4243,payment.captured,2499,INR,2026-09-01T11:41:55.788527,{}
+evt_2ef660bee62047c9,payment,pay_e74330371eed456e,cust_9e74577acef04bea,payment.created,2499,INR,2026-09-01T12:01:57.788527,{}
+evt_b565a38f384944f8,payment,pay_e74330371eed456e,cust_9e74577acef04bea,payment.authorized,2499,INR,2026-09-01T12:01:59.788527,{}
+evt_4b67692306084a92,payment,pay_e74330371eed456e,cust_9e74577acef04bea,payment.captured,2499,INR,2026-09-01T12:02:00.788527,{}
+evt_f51aac7f9df34415,subscription,sub_1d2a10c770ca4a69,cust_c9edfc47f4094f36,subscription.created,499,INR,2026-09-01T13:51:38.788527,"{""plan"": ""plan_basic""}"
+evt_7916f793aaff4602,subscription,sub_714eab75aa3c4465,cust_4a98abc09c464fbc,subscription.halted,4999,INR,2026-09-01T14:22:47.788527,{}
+evt_4006e92289124f00,payment,pay_6ad11e5263634f3d,cust_ca45983cfc524d10,payment.created,499,INR,2026-09-01T14:29:45.788527,{}
+evt_0c071919131f4c31,payment,pay_6ad11e5263634f3d,cust_ca45983cfc524d10,payment.failed,499,INR,2026-09-01T14:29:59.788527,"{""reason"": ""insufficient_funds""}"
+evt_7fadd123ffb74be3,checkout,chk_c94b2a2e830b442a,cust_3d23e97218914b18,checkout.created,499,INR,2026-09-01T15:02:10.788527,{}
+evt_b97263c5d2764402,checkout,chk_c94b2a2e830b442a,cust_3d23e97218914b18,checkout.completed,499,INR,2026-09-01T15:03:04.788527,{}
+evt_2faf9daf9fb94b4c,subscription,sub_1d2a10c770ca4a69,cust_c9edfc47f4094f36,subscription.pending,499,INR,2026-09-01T15:43:51.788527,"{""reason"": ""expired_card""}"
+evt_be6232b834154aa5,payment,pay_0482a7038ef94ff5,cust_f75d32bf52ec4cf5,payment.created,499,INR,2026-09-01T16:51:18.788527,{}
+evt_24f397879abb42df,payment,pay_0482a7038ef94ff5,cust_f75d32bf52ec4cf5,payment.authorized,499,INR,2026-09-01T16:51:28.788527,{}
+evt_717812bd3f1d4a9f,payment,pay_0482a7038ef94ff5,cust_f75d32bf52ec4cf5,payment.captured,499,INR,2026-09-01T16:51:30.788527,{}
+evt_b17b73b58bee46a1,checkout,chk_6cb2edfd16be4047,cust_ed680780abce4c8b,checkout.created,1499,INR,2026-09-01T17:36:09.788527,{}
+evt_ee6204e94ef54484,checkout,chk_6cb2edfd16be4047,cust_ed680780abce4c8b,checkout.completed,1499,INR,2026-09-01T17:37:46.788527,{}
+evt_f1713f0e895e4660,subscription,sub_291f353a6a4747c5,cust_cc243c590f6e44bc,subscription.halted,499,INR,2026-09-01T18:28:42.788527,{}
+evt_b37639a210ef4f47,payment,pay_c6f3de49996e4dca,cust_f123cf018da540ce,payment.created,1499,INR,2026-09-01T19:20:03.788527,{}
+evt_c55cccefc30d4291,payment,pay_c6f3de49996e4dca,cust_f123cf018da540ce,payment.authorized,1499,INR,2026-09-01T19:20:09.788527,{}
+evt_2ea197a9f86543e5,payment,pay_c6f3de49996e4dca,cust_f123cf018da540ce,payment.captured,1499,INR,2026-09-01T19:20:12.788527,{}
+evt_9553bc4650e64a19,payment,pay_7dda69f9778e47c5,cust_887b0a10a8fa47c6,payment.created,2499,INR,2026-09-01T19:29:21.788527,{}
+evt_3a8109e39a9341ba,payment,pay_7dda69f9778e47c5,cust_887b0a10a8fa47c6,payment.authorized,2499,INR,2026-09-01T19:29:24.788527,{}
+evt_18e0978b99be426d,payment,pay_7dda69f9778e47c5,cust_887b0a10a8fa47c6,payment.captured,2499,INR,2026-09-01T19:29:27.788527,{}
+evt_7a55eecbec7d47ef,subscription,sub_6e56e1cef70b415f,cust_648d41a9227e4e6f,subscription.halted,499,INR,2026-09-01T20:13:26.799089,{}
+evt_4ada523981c9412b,subscription,sub_6042ca0fd07f4fa9,cust_59faf58c22924d8a,subscription.halted,499,INR,2026-09-01T20:13:26.799669,{}

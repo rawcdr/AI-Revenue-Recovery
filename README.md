@@ -40,3 +40,16 @@ pytest
 ## Documentation
 
 * [Phase 0 Scope Document](docs/PHASE_0.md)
+* [Phase 1 Dataset Document](docs/PHASE_1.md)
+
+## Synthetic Dataset (Phase 1)
+
+To generate the synthetic workload:
+```bash
+python scripts/generate_dataset.py
+```
+
+To validate the generated dataset:
+```bash
+python scripts/validate_dataset.py
+```
