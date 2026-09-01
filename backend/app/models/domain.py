@@ -61,3 +61,21 @@ class Event(Base):
     timestamp = Column(String)
     metadata_ = Column("metadata", String)  # Using metadata_ since metadata is reserved in SQLAlchemy
     received_at = Column(String)
+
+class RecoveryCandidate(Base):
+    __tablename__ = "recovery_candidates"
+    
+    candidate_id = Column(String, primary_key=True, index=True)
+    entity_type = Column(String)
+    entity_id = Column(String, index=True, unique=True)
+    customer_id = Column(String, index=True)
+    candidate_type = Column(String)
+    state = Column(String)
+    amount = Column(Float)
+    currency = Column(String)
+    retry_count = Column(Integer)
+    priority_score = Column(Float)
+    severity = Column(String)
+    detection_reason = Column(String)
+    detected_at = Column(String)
+    status = Column(String, index=True)

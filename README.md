@@ -42,14 +42,21 @@ pytest
 * [Phase 0 Scope Document](docs/PHASE_0.md)
 * [Phase 1 Dataset Document](docs/PHASE_1.md)
 
-## Synthetic Dataset (Phase 1)
+## Phase Data
 
-To generate the synthetic workload:
+To generate the synthetic dataset and seed the SQLite database:
 ```bash
-python scripts/generate_dataset.py
+python scripts/seed_database.py --reset
 ```
 
-To validate the generated dataset:
+To run dataset assertions:
 ```bash
 python scripts/validate_dataset.py
+```
+
+## Run Detection Engine (Phase 3)
+
+The deterministic detection engine builds the queue and calculates revenue at risk:
+```bash
+python scripts/run_detection.py
 ```

@@ -21,7 +21,6 @@ def override_get_db():
     finally:
         db.close()
 
-app.dependency_overrides[get_db] = override_get_db
 client = TestClient(app)
 
 @pytest.fixture(autouse=True)
@@ -42,7 +41,12 @@ def setup_db():
     
     db.commit()
     db.close()
+    
+    app.dependency_overrides[get_db] = override_get_db
+    
     yield
+    
+    app.dependency_overrides.clear()
     Base.metadata.drop_all(bind=engine)
     engine.dispose()
     import os
@@ -147,6 +151,9 @@ def test_recovery_queue_and_metrics():
         "event": "subscription.pending",
         "payload": {"subscription": {"entity": {"id": "sub_001", "mrr_value": 49900}}}
     })
+    
+    # Run detection manually to build active candidates list
+    client.post("/detection/run")
     
     q_resp = client.get("/recovery/queue")
     assert q_resp.status_code == 200
