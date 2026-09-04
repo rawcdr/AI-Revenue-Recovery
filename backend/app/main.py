@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from backend.app.api import health, webhooks, events, recovery, metrics, detection
+from backend.app.api import health, webhooks, events, recovery, metrics, detection, intelligence
 from backend.app.db.database import engine, Base
 from backend.app.models import domain
 
@@ -14,3 +14,4 @@ app.include_router(events.router)
 app.include_router(recovery.router)
 app.include_router(metrics.router)
 app.include_router(detection.router)
+app.include_router(intelligence.router)

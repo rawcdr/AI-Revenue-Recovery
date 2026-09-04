@@ -30,11 +30,10 @@ Only:
 1. Maximum 3 automated retries for an individual payment/recovery flow.
 2. Do not retry known unrecoverable cases.
 3. Do not automatically retry customer-disputed transactions.
-4. Escalate low-confidence or policy-sensitive cases.
+4. Escalate policy-sensitive cases.
 5. Never modify the amount being recovered.
-6. LLM output is only a recommendation.
-7. Deterministic policy logic decides whether an action is allowed.
-8. Every eventual action must be auditable.
+6. Deterministic policy logic decides whether an action is allowed.
+7. Every eventual action must be auditable.
 9. Automation must have explicit stopping rules.
 
 ### Out of scope for the initial implementation
@@ -58,7 +57,7 @@ Phase 0 does NOT implement:
 * Synthetic dataset generation
 * Payment/subscription schemas
 * Razorpay webhook processing
-* LLM diagnosis
+* AI diagnosis
 * Recovery execution
 * Policy engine
 * Dashboard

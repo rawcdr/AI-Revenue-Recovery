@@ -79,3 +79,21 @@ class RecoveryCandidate(Base):
     detection_reason = Column(String)
     detected_at = Column(String)
     status = Column(String, index=True)
+
+class RecoveryPrediction(Base):
+    __tablename__ = "recovery_predictions"
+    
+    prediction_id = Column(String, primary_key=True, index=True)
+    candidate_id = Column(String, index=True)
+    model_version = Column(String)
+    feature_version = Column(String)
+    
+    retry_probability = Column(Float)
+    payment_update_probability = Column(Float)
+    escalation_probability = Column(Float)
+    
+    recommended_action = Column(String)
+    expected_recovery_value = Column(Float)
+    explanation = Column(String)
+    
+    created_at = Column(String)

@@ -6,3 +6,7 @@ pytest
 httpx
 faker
 sqlalchemy
+scikit-learn
+pandas
+joblib
+pydantic-settings
