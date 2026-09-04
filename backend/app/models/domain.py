@@ -97,3 +97,28 @@ class RecoveryPrediction(Base):
     explanation = Column(String)
     
     created_at = Column(String)
+
+class RecoveryAction(Base):
+    __tablename__ = "recovery_actions"
+    
+    action_id = Column(String, primary_key=True, index=True)
+    candidate_id = Column(String, index=True)
+    action_type = Column(String)  # RETRY, PAYMENT_UPDATE, ESCALATE
+    status = Column(String, index=True)  # PENDING, VALIDATING, APPROVED, EXECUTING, SUCCEEDED, FAILED, BLOCKED
+    idempotency_key = Column(String, unique=True, index=True)
+    attempt_number = Column(Integer)
+    reason = Column(String)
+    result = Column(String, nullable=True)
+    created_at = Column(String)
+    completed_at = Column(String, nullable=True)
+
+class RecoveryOutcome(Base):
+    __tablename__ = "recovery_outcomes"
+    
+    outcome_id = Column(String, primary_key=True, index=True)
+    action_id = Column(String, index=True)
+    candidate_id = Column(String, index=True)
+    outcome = Column(String)  # RECOVERED, NOT_RECOVERED, BLOCKED, ESCALATED
+    recovered_amount = Column(Float)
+    failure_reason = Column(String, nullable=True)
+    created_at = Column(String)
