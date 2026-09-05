@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from backend.app.api import health, webhooks, events, recovery, metrics, detection, intelligence
 from backend.app.db.database import engine, Base
-from backend.app.models import domain
 
 # Create database tables
 Base.metadata.create_all(bind=engine)

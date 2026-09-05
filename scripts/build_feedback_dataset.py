@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from backend.app.db.database import SessionLocal, Base, engine
-from backend.app.models.domain import RecoveryCandidate, RecoveryPrediction, RecoveryAction, RecoveryOutcome, RecoveryFeedback
+from backend.app.models.domain import RecoveryPrediction, RecoveryAction, RecoveryOutcome, RecoveryFeedback
 
 def build_feedback():
     # Ensure tables exist

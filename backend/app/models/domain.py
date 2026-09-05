@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, Integer, Float, Boolean, DateTime
+from sqlalchemy import Column, String, Integer, Float
 from backend.app.db.database import Base
 
 class Customer(Base):

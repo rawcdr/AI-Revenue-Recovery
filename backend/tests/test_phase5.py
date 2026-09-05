@@ -77,7 +77,7 @@ def test_successful_execution_and_idempotency():
     assert data["status"] == "SUCCEEDED"
     assert data["result"] == "SUCCESS"
     
-    action_id = data["action_id"]
+    data["action_id"]
     
     # Idempotency test: duplicate execution must return 409 Conflict
     resp2 = client.post("/recovery/cndt_1/execute")

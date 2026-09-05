@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 from backend.app.main import app
 from backend.app.db.database import Base, get_db
 from backend.app.models.domain import Payment, Subscription, Customer, RecoveryCandidate
-from backend.app.services.detection import run_detection, get_priority_score, get_severity
+from backend.app.services.detection import run_detection, get_priority_score
 
 SQLALCHEMY_DATABASE_URL = "sqlite:///./test3.db"
 

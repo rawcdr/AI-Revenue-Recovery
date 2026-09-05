@@ -1,4 +1,4 @@
-from typing import Dict, Any, Tuple
+from typing import Dict, Tuple
 
 def score_predictions(amount: float, probabilities: Dict[str, float]) -> Tuple[str, float]:
     """

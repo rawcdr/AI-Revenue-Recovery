@@ -9,7 +9,7 @@ def health_check():
         "service": "revenue-recovery-agent"
     }
 
-from fastapi import Depends, HTTPException
+from fastapi import Depends
 from sqlalchemy.orm import Session
 from backend.app.db.database import get_db
 from backend.app.models.domain import ModelRegistry, RecoveryCandidate

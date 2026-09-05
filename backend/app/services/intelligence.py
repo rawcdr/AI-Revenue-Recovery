@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from fastapi import HTTPException
 
 from backend.app.core.config import settings
-from backend.app.models.domain import RecoveryCandidate, RecoveryPrediction, Payment, Subscription, Customer
+from backend.app.models.domain import RecoveryCandidate, RecoveryPrediction, Payment, Customer
 from backend.app.intelligence.predictor import RecoveryPredictor
 from backend.app.intelligence.scoring import score_predictions
 from backend.app.intelligence.explainability import generate_explanation

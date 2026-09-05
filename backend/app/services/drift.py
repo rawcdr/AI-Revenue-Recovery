@@ -1,6 +1,5 @@
 from sqlalchemy.orm import Session
-from sqlalchemy import func
-from backend.app.models.domain import RecoveryFeedback, ModelRegistry
+from backend.app.models.domain import RecoveryFeedback
 
 def calculate_drift_and_retraining(db: Session, version: str):
     """

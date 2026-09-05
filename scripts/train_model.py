@@ -4,7 +4,7 @@ from sklearn.model_selection import GroupShuffleSplit
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.calibration import CalibratedClassifierCV
-from sklearn.metrics import roc_auc_score, brier_score_loss, classification_report
+from sklearn.metrics import roc_auc_score, brier_score_loss
 import warnings
 
 # Suppress sklearn warnings for cleaner output

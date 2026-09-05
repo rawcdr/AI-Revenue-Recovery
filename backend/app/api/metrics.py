@@ -1,6 +1,5 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from sqlalchemy import func
 from backend.app.db.database import get_db
 from backend.app.models.domain import RecoveryCandidate
 

@@ -7,8 +7,7 @@ from sqlalchemy.orm import sessionmaker
 from backend.app.main import app
 from backend.app.db.database import Base, get_db
 from backend.app.models.domain import (
-    Customer, Payment, RecoveryCandidate, RecoveryPrediction, 
-    RecoveryAction, RecoveryOutcome, RecoveryFeedback, ModelRegistry
+    RecoveryFeedback, ModelRegistry
 )
 
 SQLALCHEMY_DATABASE_URL = "sqlite:///./test6.db"

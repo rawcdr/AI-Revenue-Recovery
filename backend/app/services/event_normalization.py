@@ -1,6 +1,5 @@
 import uuid
 from datetime import datetime
-import json
 from backend.app.schemas.schemas import WebhookPayload, NormalizedEvent
 
 def normalize_razorpay_event(payload: WebhookPayload) -> NormalizedEvent:

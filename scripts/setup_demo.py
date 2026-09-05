@@ -5,8 +5,8 @@ import subprocess
 # Add project root to PYTHONPATH
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from backend.app.db.database import SessionLocal, engine, Base
-from backend.app.models.domain import ModelRegistry, Payment, Customer, RecoveryCandidate
+from backend.app.db.database import SessionLocal
+from backend.app.models.domain import ModelRegistry, Payment, RecoveryCandidate
 from backend.app.services.registry import promote_model
 
 def run_command(cmd_list, desc):
