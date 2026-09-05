@@ -4,7 +4,6 @@ An intelligent, closed-loop payment recovery system that identifies revenue at r
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.110.0-009688.svg)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.4.1.svg)
 ![SQLite](https://img.shields.io/badge/SQLite-Database-blue.svg)
 ![Tests](https://img.shields.io/badge/Tests-37%20Passed-brightgreen.svg)
 
@@ -28,44 +27,35 @@ Failed payments and halted subscriptions lead to massive involuntary churn. Howe
 
 A naive recovery system might brute-force retry every failure. This is expensive, alienates customers, and triggers fraud flags at the issuing bank. An intelligent system must answer: *"Given this specific failed payment context, what should we do next?"*
 
-Possible actions:
-- **RETRY** (e.g., for a network failure or temporary funds issue)
-- **PAYMENT_UPDATE** (e.g., prompting the user for a new card if expired)
-- **ESCALATE** (e.g., suspending the service and alerting a human for fraud)
+**Possible Actions:**
+- **RETRY:** For network failures or temporary funds issues.
+- **PAYMENT_UPDATE:** Prompting the user for a new card if expired.
+- **ESCALATE:** Suspending the service and alerting a human for fraud.
 
-The objective is to **maximize expected recoverable revenue while strictly respecting business safety constraints**.
+**Objective:** Maximize expected recoverable revenue while strictly respecting business safety constraints.
 
 ## 2. What I Built
 
-This project is a complete, end-to-end recovery lifecycle system. It moves beyond a standalone ML model to orchestrate the entire decision flow.
-
-The system includes:
+A complete, end-to-end recovery lifecycle system orchestrating the entire decision flow:
 - **Event Ingestion & Normalization:** Capturing synthetic webhook events.
 - **Candidate Detection:** Identifying active failures and calculating revenue at risk.
 - **Feature Engineering:** Extracting inference-time context (without outcome leakage).
 - **Custom ML Recovery Intelligence:** Predicting success probabilities for various actions.
-- **Deterministic Policy Engine:** Overriding or approving ML recommendations based on hard business rules (e.g., never retry fraud).
-- **Bounded Orchestration:** Safely managing the state machine transitions (PENDING → EXECUTING).
+- **Deterministic Policy Engine:** Overriding ML recommendations based on hard business rules.
+- **Bounded Orchestration:** Safely managing state machine transitions (PENDING → EXECUTING).
 - **Simulated Execution:** Deterministically returning a success or failure outcome.
 - **Outcome Recording & Feedback:** Closing the loop to build historical ledgers.
 - **Evaluation & Model Registry:** Monitoring for drift and managing manual model promotion.
-- **Dashboard:** A visual overview of active candidates and recovery metrics.
+- **Dashboard:** Visual overview of active candidates and recovery metrics.
 
 ## 3. Target
 
-The core intelligence target is predicting:
+The core intelligence targets predicting:
+`P(success | candidate context, action)` for `RETRY`, `PAYMENT_UPDATE`, and `ESCALATE`.
 
-`P(success | candidate context, action)`
-
-for:
-- `RETRY`
-- `PAYMENT_UPDATE`
-- `ESCALATE`
-
-The system then selects the action that maximizes **Expected Recovery Value**:
-`Expected Recovery Value = payment_amount × probability of successful recovery`
-
-*Crucially, the ML model only recommends. A deterministic safety policy can override the ML recommendation to block unsafe actions.*
+- The system selects the action that maximizes **Expected Recovery Value**:
+  `Expected Recovery Value = payment_amount × probability of successful recovery`
+- **Crucially:** The ML model only recommends. A deterministic safety policy can override the ML recommendation to block unsafe actions.
 
 ## 4. System Flow
 
@@ -99,10 +89,10 @@ Model Evaluation
 Model Registry / Drift Monitoring
 ```
 
-- **Events to Detection:** Webhooks arrive and are persisted. The system scans for unresolved failures.
-- **Intelligence to Policy:** Features are fed to the local ML model. It outputs probabilities. The highest expected value action is proposed. The Policy Engine reviews it.
-- **Policy to Execution:** If approved, the orchestrator triggers the Simulator. The simulator returns a deterministic outcome.
-- **Outcome to Feedback:** The attempt is logged chronologically to evaluate drift and train future models.
+- **Detection:** Webhooks arrive, persist, and are scanned for unresolved failures.
+- **Intelligence to Policy:** Features feed the ML model, generating probabilities. The highest expected value action is proposed and reviewed by the Policy Engine.
+- **Execution:** If approved, the orchestrator triggers the deterministic Simulator.
+- **Feedback:** The attempt is logged chronologically to evaluate drift and train future models.
 
 ## 5. Architecture
 
@@ -124,52 +114,37 @@ Model Registry / Drift Monitoring
 
 ## 6. Custom ML Intelligence
 
-This system deliberately **does not** rely on external LLMs or APIs for its recovery intelligence. 
+The system uses a custom local tabular ML engine trained on 20,000 synthetic scenarios, strictly avoiding external LLMs/APIs.
 
-Instead, it uses a custom local tabular ML engine trained on 20,000 synthetic scenarios. 
-
-- **Data Separation:** Implements strict customer-level train/validation/test separation (`GroupShuffleSplit`) to prevent behavioral leakage.
-- **Algorithms:** Compares a `LogisticRegression` baseline against a `RandomForestClassifier`.
-- **Calibration:** Uses `CalibratedClassifierCV` (Isotonic/Sigmoid) to ensure predictions are true probabilities.
-- **Evaluation Metrics:** Evaluated on ROC-AUC and Brier Score (measured purely on synthetic data).
-- **Persistence:** Models are serialized using `joblib` (`models/recovery_intelligence.joblib`) for sub-millisecond local inference.
+- **Data Separation:** Strict customer-level train/validation/test separation (`GroupShuffleSplit`) prevents behavioral leakage.
+- **Algorithms:** Evaluates a `LogisticRegression` baseline against a `RandomForestClassifier`.
+- **Calibration:** `CalibratedClassifierCV` (Isotonic/Sigmoid) ensures true probabilities.
+- **Evaluation Metrics:** ROC-AUC and Brier Score (measured purely on synthetic data).
+- **Persistence:** Models serialized using `joblib` (`models/recovery_intelligence.joblib`) for sub-millisecond local inference.
 
 ## 7. Features Used
 
-The ML model predicts based on inference-time features explicitly designed to prevent target leakage.
+Inference-time features are explicitly designed to prevent target leakage.
 
-**Payment Context:**
-- `amount` (standardized)
-- `payment_method` (e.g., card, UPI)
-- `error_code` (e.g., network_error, expired_card)
-- `retry_count`
-
-**Customer History:**
-- `customer_segment`
-- `hist_payment_count`
-- `hist_success_rate`
-
-**Temporal/Contextual Features:**
-- `hour`
-- `day_of_week`
+- **Payment Context:** `amount` (standardized), `payment_method` (e.g., card, UPI), `error_code` (e.g., network_error, expired_card), `retry_count`
+- **Customer History:** `customer_segment`, `hist_payment_count`, `hist_success_rate`
+- **Temporal/Contextual:** `hour`, `day_of_week`
 
 ## 8. Recovery Policy & Safety
 
-The policy engine is the final authority. It is designed around the principle: **The model recommends; the policy decides.**
+The policy engine is the final authority: **The model recommends; the policy decides.**
 
-Key constraints:
+**Key constraints:**
 - **Maximum Retries:** Capped at 3 attempts per payment.
-- **Idempotency:** HTTP 409 enforcement prevents accidental duplicate executions of the same attempt.
+- **Idempotency:** HTTP 409 enforcement prevents accidental duplicate executions.
 - **Simulated-Only Execution:** `PAYMENT_EXECUTION_MODE` is strictly locked to `Literal["SIMULATED"]`.
-- **Manual Promotion:** Models can only be promoted from `VALIDATED` to `ACTIVE` by explicit manual script. No autonomous rollouts.
+- **Manual Promotion:** Models can only be promoted to `ACTIVE` by explicit manual script.
 
 **Hard Blocks:**
-The policy engine intercepts and permanently blocks autonomous retries for:
+Autonomous retries are permanently intercepted and blocked for:
 - `suspected_fraud`
 - `customer_dispute`
 - `account_closed`
-
-This ensures that even if a model misbehaves or evaluates a high expected value on a large transaction, policy safety prevents execution.
 
 ## 9. Demo Scenarios
 
@@ -183,7 +158,7 @@ The demo provides reproducible, deterministic simulations of the recovery flow:
 
 ## 10. Dashboard
 
-The frontend (`frontend/index.html`) is a lightweight browser dashboard that displays:
+The frontend (`frontend/index.html`) is a lightweight browser dashboard displaying:
 - Total Revenue at Risk (Synthetic INR)
 - Active Candidate details
 - Real-time action distributions
@@ -192,9 +167,10 @@ The frontend (`frontend/index.html`) is a lightweight browser dashboard that dis
 
 ## 11. Data
 
-The dataset consists of generated synthetic Razorpay-like events. It contains tables for Customers, Payments, Subscriptions, and Payment Events. 
-
-The initial demo seed is generated deterministically to ensure a reproducible evaluation environment. **No real customer or payment data is included in this repository.**
+The dataset consists of generated synthetic Razorpay-like events.
+- **Tables:** Customers, Payments, Subscriptions, and Payment Events. 
+- **Demo Seed:** Generated deterministically for a reproducible evaluation environment. 
+- **Note:** No real customer or payment data is included.
 
 ## 12. Tech Stack
 
@@ -264,16 +240,16 @@ uvicorn backend.app.main:app --reload
 ```
 
 **Access Points:**
-- Dashboard: Open `frontend/index.html` in your browser.
-- Swagger API Docs: http://127.0.0.1:8000/docs
-- Health Check: `GET http://127.0.0.1:8000/health`
-- Readiness: `GET http://127.0.0.1:8000/ready`
+- **Dashboard:** Open `frontend/index.html` in your browser.
+- **Swagger API Docs:** http://127.0.0.1:8000/docs
+- **Health Check:** `GET http://127.0.0.1:8000/health`
+- **Readiness:** `GET http://127.0.0.1:8000/ready`
 
 ## 15. Demo Walkthrough
 
 To easily demonstrate the system's capabilities:
 
-1. Run `python scripts/setup_demo.py` to seed the database and register the active model. Note the **Candidate IDs** printed in the terminal for Scenarios A, B, and C.
+1. Run `python scripts/setup_demo.py` to seed the database and register the active model. Note the **Candidate IDs** printed for Scenarios A, B, and C.
 2. Open `frontend/index.html` to review the current active Revenue at Risk.
 3. Open the Swagger UI at http://127.0.0.1:8000/docs.
 4. Execute **Scenario A**: Use `POST /recovery/{candidate_id}/execute` with the Scenario A ID. The system will retry the network error successfully.
@@ -298,7 +274,7 @@ The FastAPI backend exposes the following primary router groups:
 
 The repository contains a robust suite of integration and unit tests covering every layer of the architecture.
 
-Currently, **37 tests are passing**. Coverage ensures:
+**Currently, 37 tests are passing. Coverage ensures:**
 - Webhook normalization and idempotency.
 - Feature extraction and leakage prevention.
 - Policy engine constraints (e.g., maximum retries).
@@ -312,32 +288,7 @@ pytest backend/tests -v
 
 ## 18. Model Governance
 
-Model deployment is strictly controlled.
+Model deployment is strictly controlled:
 - A newly trained model is placed in a **VALIDATED** state.
 - It cannot make API predictions until explicitly promoted to **ACTIVE** via `scripts/promote_model.py`.
-- There is **no automatic production promotion**, and the system monitors dataset drift to generate manual retraining recommendations instead of autonomous retraining loops.
-
-## 19. Limitations
-
-- **Synthetic Context:** The database uses synthetic data and simulated execution. Real Razorpay gateway API calls are intentionally omitted.
-- **Persistence:** Relies on local SQLite for ease of demonstration, rather than a production-grade PostgreSQL cluster.
-- **Performance Translation:** The recovery probabilities and evaluation metrics reflect synthetic scenarios. They should not be interpreted as guaranteed business metrics in a live production environment.
-
-## 20. Future Improvements
-
-- Implementing production PostgreSQL persistence.
-- Integrating real Razorpay payment execution behind strict API key controls.
-- Enabling an asynchronous distributed task queue (e.g., Celery/Redis) for batch execution.
-- Advanced causal modeling (A/B testing) to determine uplift precisely.
-
-## 21. Why This Project?
-
-The most critical aspect of this repository is not simply the ML model. It is the integration of prediction into a governed, end-to-end decision system:
-
-`Prediction → Decision → Safety Policy → Execution → Outcome → Feedback → Evaluation`
-
-By bounding the ML intelligence with deterministic business constraints, this project demonstrates how AI can be safely deployed into high-risk, financially sensitive domains.
-
-## 22. Buildathon Note
-
-This project is a research-style demonstration created for the Razorpay Buildathon. It uses synthetic data and simulated payment execution. No real payments are processed, no real customer data is included, and no external LLM dependencies are required.
+- There is **no automatic production promotion**. The system monitors dataset drift to generate manual retraining recommendations instead of autonomous retraining loops.
