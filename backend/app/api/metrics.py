@@ -4,9 +4,13 @@ from sqlalchemy import func
 from backend.app.db.database import get_db
 from backend.app.models.domain import RecoveryCandidate
 
-router = APIRouter()
+router = APIRouter(tags=["Metrics & Feedback"])
 
-@router.get("/metrics/revenue-at-risk")
+@router.get(
+    "/metrics/revenue-at-risk",
+    summary="Get Revenue At Risk",
+    description="Calculates the total aggregate revenue tied to active Recovery Candidates."
+)
 def get_revenue_at_risk(db: Session = Depends(get_db)):
     active_candidates = db.query(RecoveryCandidate).filter(RecoveryCandidate.status == "ACTIVE").all()
     revenue_at_risk = sum(c.amount for c in active_candidates)
@@ -23,7 +27,11 @@ def get_revenue_at_risk(db: Session = Depends(get_db)):
 
 from backend.app.models.domain import RecoveryAction, RecoveryOutcome
 
-@router.get("/metrics/recovery")
+@router.get(
+    "/metrics/recovery",
+    summary="Get Recovery Action Metrics",
+    description="Computes action-level success, block, and failure rates from the simulated recovery actions."
+)
 def get_recovery_metrics(db: Session = Depends(get_db)):
     actions = db.query(RecoveryAction).all()
     outcomes = db.query(RecoveryOutcome).all()
@@ -74,7 +82,11 @@ def get_recovery_metrics(db: Session = Depends(get_db)):
 
 from backend.app.models.domain import RecoveryFeedback
 
-@router.get("/metrics/feedback")
+@router.get(
+    "/metrics/feedback",
+    summary="Get Machine Learning Feedback Metrics",
+    description="Aggregates end-to-end feedback loops, tracking action performance, prediction calibration buckets, and revenue-weighted recovery outcomes."
+)
 def get_feedback_metrics(db: Session = Depends(get_db)):
     feedbacks = db.query(RecoveryFeedback).all()
     
@@ -156,3 +168,25 @@ def get_feedback_metrics(db: Session = Depends(get_db)):
         "calibration": calibration,
         "revenue_metrics": revenue_metrics
     }
+
+@router.get(
+    "/metrics/recent-activity",
+    summary="Get Recent Activity",
+    description="Returns the 10 most recent recovery outcomes and their explanations."
+)
+def get_recent_activity(db: Session = Depends(get_db)):
+    from backend.app.models.domain import RecoveryPrediction
+    feedbacks = db.query(RecoveryFeedback).order_by(RecoveryFeedback.created_at.desc()).limit(10).all()
+    
+    activity = []
+    for f in feedbacks:
+        pred = db.query(RecoveryPrediction).filter_by(prediction_id=f.prediction_id).first()
+        activity.append({
+            "candidate_id": f.candidate_id,
+            "action": f.actual_action,
+            "result": f.actual_outcome,
+            "recovered_amount": f.recovered_amount,
+            "timestamp": f.created_at,
+            "explanation": pred.explanation if pred else "No explanation available"
+        })
+    return activity

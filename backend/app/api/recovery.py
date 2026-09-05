@@ -3,20 +3,32 @@ from sqlalchemy.orm import Session
 from backend.app.db.database import get_db
 from backend.app.services.recovery_queue import get_recovery_queue
 
-router = APIRouter()
+router = APIRouter(tags=["Recovery Execution"])
 
-@router.get("/recovery/queue")
+@router.get(
+    "/recovery/queue",
+    summary="Get Recovery Queue",
+    description="Retrieves a list of all active recovery candidates requiring intervention."
+)
 def read_recovery_queue(db: Session = Depends(get_db)):
     return get_recovery_queue(db)
 
 from backend.app.services.orchestrator import execute_candidate, run_recovery_batch
 from backend.app.models.domain import RecoveryAction
 
-@router.post("/recovery/execute")
+@router.post(
+    "/recovery/execute",
+    summary="Execute Batch Recovery",
+    description="Deterministically executes the recommended recovery action for all ACTIVE candidates."
+)
 def execute_batch(db: Session = Depends(get_db)):
     return run_recovery_batch(db)
 
-@router.post("/recovery/{candidate_id}/execute")
+@router.post(
+    "/recovery/{candidate_id}/execute",
+    summary="Execute Single Recovery Action",
+    description="Simulates the execution of a recovery action for a specific candidate. Respects policy bounds and idempotency."
+)
 def execute_single(candidate_id: str, db: Session = Depends(get_db)):
     action = execute_candidate(db, candidate_id)
     return {

@@ -31,6 +31,10 @@ def get_priority_score(amount: float, customer_segment: str, state_factor: float
         
     return amount * customer_factor * state_factor * retry_factor
 
+from backend.app.core.logger import get_logger
+
+logger = get_logger(__name__)
+
 def run_detection(db: Session):
     stats = {
         "new_candidates": 0,
@@ -81,6 +85,7 @@ def run_detection(db: Session):
                 )
                 db.add(new_cand)
                 stats["new_candidates"] += 1
+                logger.info(f"New candidate detected: {p.payment_id}", extra={"candidate_id": new_cand.candidate_id})
                 
         elif p.status == "captured" or p.status == "successful":
             existing = active_candidates.get(p.payment_id)
@@ -131,6 +136,7 @@ def run_detection(db: Session):
                 )
                 db.add(new_cand)
                 stats["new_candidates"] += 1
+                logger.info(f"New subscription candidate detected: {s.subscription_id}", extra={"candidate_id": new_cand.candidate_id})
         elif s.status == "active":
              existing = active_candidates.get(s.subscription_id)
              if existing:

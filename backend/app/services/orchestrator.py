@@ -8,6 +8,9 @@ from backend.app.models.domain import RecoveryCandidate, RecoveryPrediction, Rec
 from backend.app.services.intelligence import score_candidate
 from backend.app.services.policy import validate_action
 from backend.app.services.simulator import simulate_execution
+from backend.app.core.logger import get_logger
+
+logger = get_logger(__name__)
 
 def execute_candidate(db: Session, candidate_id: str):
     candidate = db.query(RecoveryCandidate).filter_by(candidate_id=candidate_id).first()
@@ -15,9 +18,7 @@ def execute_candidate(db: Session, candidate_id: str):
         raise HTTPException(status_code=404, detail="Candidate not found")
         
     if candidate.status != "ACTIVE":
-        last_action = db.query(RecoveryAction).filter_by(candidate_id=candidate_id).order_by(RecoveryAction.created_at.desc()).first()
-        if last_action:
-            return last_action
+        raise HTTPException(status_code=409, detail=f"Candidate {candidate_id} is not ACTIVE (current status: {candidate.status}). Cannot execute action.")
         
     # Phase 4 Integration: Get latest prediction
     prediction = db.query(RecoveryPrediction).filter_by(candidate_id=candidate.candidate_id).order_by(RecoveryPrediction.created_at.desc()).first()
@@ -33,7 +34,7 @@ def execute_candidate(db: Session, candidate_id: str):
     # Idempotency check
     existing_action = db.query(RecoveryAction).filter_by(idempotency_key=idempotency_key).first()
     if existing_action:
-        return existing_action
+        raise HTTPException(status_code=409, detail=f"Action for candidate {candidate_id} with key {idempotency_key} already exists.")
         
     # Create action record: PENDING
     action = RecoveryAction(
@@ -58,6 +59,15 @@ def execute_candidate(db: Session, candidate_id: str):
         action.completed_at = datetime.now().isoformat()
         db.commit()
         
+        logger.warning(
+            f"Action {action_type} for candidate {candidate.candidate_id} was BLOCKED by policy: {policy_reason}",
+            extra={
+                "candidate_id": candidate.candidate_id,
+                "action_type": action_type,
+                "status": "BLOCKED"
+            }
+        )
+        
         # Persist blocked outcome
         outcome = RecoveryOutcome(
             outcome_id=f"out_{uuid.uuid4().hex[:16]}",
@@ -80,15 +90,22 @@ def execute_candidate(db: Session, candidate_id: str):
     
     sim_result, recovered_amount = simulate_execution(db, candidate, action_type)
     
-    # State Transition: SUCCEEDED / FAILED
     if sim_result == "SUCCESS":
         action.status = "SUCCEEDED"
         action.result = "SUCCESS"
         candidate_outcome = "RECOVERED" if action_type != "ESCALATE" else "ESCALATED"
+        logger.info(
+            f"Action {action_type} SUCCEEDED. Outcome: {candidate_outcome}",
+            extra={"candidate_id": candidate.candidate_id, "action_type": action_type, "status": "SUCCEEDED"}
+        )
     else:
         action.status = "FAILED"
         action.result = "FAILED"
         candidate_outcome = "NOT_RECOVERED"
+        logger.error(
+            f"Action {action_type} FAILED.",
+            extra={"candidate_id": candidate.candidate_id, "action_type": action_type, "status": "FAILED"}
+        )
         
     action.completed_at = datetime.now().isoformat()
     
@@ -133,8 +150,16 @@ def run_recovery_batch(db: Session):
         if stats["processed"] >= settings.RECOVERY_MAX_BATCH:
             break
             
-        execute_candidate(db, c.candidate_id)
-        stats["processed"] += 1
-        stats["actions_created"] += 1
+        try:
+            execute_candidate(db, c.candidate_id)
+            stats["processed"] += 1
+            stats["actions_created"] += 1
+        except HTTPException as e:
+            if e.status_code == 409:
+                # Expected if candidate state changed or idempotency hit during batch
+                logger.info(f"Skipping candidate {c.candidate_id} during batch: {e.detail}")
+                stats["processed"] += 1
+            else:
+                raise
         
     return stats

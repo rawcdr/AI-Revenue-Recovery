@@ -6,9 +6,13 @@ from backend.app.services.intelligence import run_intelligence_batch, score_cand
 from backend.app.services.registry import list_models, get_model, get_active_model
 from backend.app.services.drift import calculate_drift_and_retraining
 
-router = APIRouter()
+router = APIRouter(tags=["Intelligence & ML"])
 
-@router.post("/intelligence/run")
+@router.post(
+    "/intelligence/run",
+    summary="Run Batch Intelligence",
+    description="Scores all active Recovery Candidates that do not yet have an intelligence prediction."
+)
 def api_run_intelligence(db: Session = Depends(get_db)):
     return run_intelligence_batch(db)
 
@@ -49,7 +53,11 @@ def api_get_performance(db: Session = Depends(get_db)):
     res = calculate_drift_and_retraining(db, active.model_version)
     return res
 
-@router.post("/intelligence/{candidate_id}")
+@router.post(
+    "/intelligence/{candidate_id}",
+    summary="Score Specific Candidate",
+    description="Forces a prediction generation for a specific Recovery Candidate using the currently ACTIVE model."
+)
 def api_score_specific(candidate_id: str, db: Session = Depends(get_db)):
     pred = score_candidate(db, candidate_id)
     return {
@@ -58,7 +66,11 @@ def api_score_specific(candidate_id: str, db: Session = Depends(get_db)):
         "expected_recovery_value": pred.expected_recovery_value
     }
 
-@router.get("/intelligence/{candidate_id}")
+@router.get(
+    "/intelligence/{candidate_id}",
+    summary="Get Candidate Prediction",
+    description="Retrieves the latest generated prediction, recommended action, and expected recovery value for a specific candidate."
+)
 def api_get_prediction(candidate_id: str, db: Session = Depends(get_db)):
     latest = db.query(RecoveryPrediction).filter_by(candidate_id=candidate_id).order_by(RecoveryPrediction.created_at.desc()).first()
     if not latest:

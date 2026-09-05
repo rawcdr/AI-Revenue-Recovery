@@ -79,11 +79,11 @@ def test_successful_execution_and_idempotency():
     
     action_id = data["action_id"]
     
-    # Idempotency test
+    # Idempotency test: duplicate execution must return 409 Conflict
     resp2 = client.post("/recovery/cndt_1/execute")
-    assert resp2.status_code == 200
+    assert resp2.status_code == 409
     data2 = resp2.json()
-    assert data2["action_id"] == action_id
+    assert "error" in data2
     
     # Candidate state should be updated
     db = TestingSessionLocal()
