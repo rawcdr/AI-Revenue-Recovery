@@ -122,3 +122,36 @@ class RecoveryOutcome(Base):
     recovered_amount = Column(Float)
     failure_reason = Column(String, nullable=True)
     created_at = Column(String)
+
+class RecoveryFeedback(Base):
+    __tablename__ = "recovery_feedback"
+    
+    feedback_id = Column(String, primary_key=True, index=True)
+    candidate_id = Column(String, index=True)
+    prediction_id = Column(String, index=True)
+    action_id = Column(String, index=True)
+    model_version = Column(String)
+    feature_version = Column(String)
+    recommended_action = Column(String)
+    recommended_probability = Column(Float)
+    expected_recovery_value = Column(Float)
+    actual_action = Column(String)
+    action_status = Column(String)
+    actual_outcome = Column(String)
+    recovered_amount = Column(Float)
+    created_at = Column(String)
+
+class ModelRegistry(Base):
+    __tablename__ = "model_registry"
+    
+    version_id = Column(String, primary_key=True, index=True)
+    model_version = Column(String, unique=True, index=True)
+    model_type = Column(String)
+    feature_version = Column(String)
+    training_dataset_version = Column(String)
+    training_timestamp = Column(String)
+    validation_roc_auc = Column(Float, nullable=True)
+    validation_brier = Column(Float, nullable=True)
+    test_roc_auc = Column(Float, nullable=True)
+    test_brier = Column(Float, nullable=True)
+    status = Column(String)  # TRAINED, VALIDATED, ACTIVE, RETIRED

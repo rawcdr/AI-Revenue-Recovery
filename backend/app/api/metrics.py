@@ -71,3 +71,88 @@ def get_recovery_metrics(db: Session = Depends(get_db)):
         "action_success_rate": action_success_rate,
         "recovery_amount_by_action_type": revenue_by_action
     }
+
+from backend.app.models.domain import RecoveryFeedback
+
+@router.get("/metrics/feedback")
+def get_feedback_metrics(db: Session = Depends(get_db)):
+    feedbacks = db.query(RecoveryFeedback).all()
+    
+    # 1. Action Performance
+    action_metrics = {}
+    for action in ["RETRY", "PAYMENT_UPDATE", "ESCALATE"]:
+        fbs = [f for f in feedbacks if f.actual_action == action]
+        if not fbs:
+            continue
+        successes = sum(1 for f in fbs if f.action_status == "SUCCEEDED")
+        recovered = sum(1 for f in fbs if f.actual_outcome == "RECOVERED")
+        revenue = sum(f.recovered_amount for f in fbs if f.actual_outcome == "RECOVERED")
+        
+        action_metrics[action] = {
+            "count": len(fbs),
+            "successful_executions": successes,
+            "failed_executions": sum(1 for f in fbs if f.action_status == "FAILED"),
+            "recovered_count": recovered,
+            "not_recovered_count": sum(1 for f in fbs if f.actual_outcome == "NOT_RECOVERED"),
+            "recovery_rate": recovered / len(fbs) if len(fbs) > 0 else 0.0,
+            "revenue_recovered": revenue
+        }
+        
+    # 2. Calibration (buckets: 0-0.2, 0.2-0.4, 0.4-0.6, 0.6-0.8, 0.8-1.0)
+    buckets = {
+        "0.0-0.2": [], "0.2-0.4": [], "0.4-0.6": [], "0.6-0.8": [], "0.8-1.0": []
+    }
+    
+    for f in feedbacks:
+        p = f.recommended_probability
+        if p <= 0.2: buckets["0.0-0.2"].append(f)
+        elif p <= 0.4: buckets["0.2-0.4"].append(f)
+        elif p <= 0.6: buckets["0.4-0.6"].append(f)
+        elif p <= 0.8: buckets["0.6-0.8"].append(f)
+        else: buckets["0.8-1.0"].append(f)
+        
+    calibration = {}
+    for b_name, b_list in buckets.items():
+        if not b_list:
+            continue
+        avg_prob = sum(f.recommended_probability for f in b_list) / len(b_list)
+        rec_rate = sum(1 for f in b_list if f.actual_outcome == "RECOVERED") / len(b_list)
+        calibration[b_name] = {
+            "prediction_count": len(b_list),
+            "average_predicted_probability": avg_prob,
+            "actual_recovery_rate": rec_rate
+        }
+        
+    # 3. Revenue-weighted evaluation
+    revenue_metrics = {}
+    total_expected = sum(f.expected_recovery_value for f in feedbacks)
+    
+    # deduplicate by candidate to avoid double counting revenue recovered
+    recovered_candidates_amounts = {}
+    for f in feedbacks:
+        if f.actual_outcome == "RECOVERED":
+            recovered_candidates_amounts[f.candidate_id] = f.recovered_amount
+    total_realized = sum(recovered_candidates_amounts.values())
+    
+    # We estimate total revenue at risk by summing up unique candidates in the feedback
+    # Note: feedback represents completed decisions.
+    unique_candidates_risk = {}
+    for f in feedbacks:
+        # Reconstruct original risk by expected / prob, or simply amount if stored. We can estimate.
+        if f.recommended_probability > 0:
+            val = f.expected_recovery_value / f.recommended_probability
+            unique_candidates_risk[f.candidate_id] = val
+    total_risk = sum(unique_candidates_risk.values())
+    
+    revenue_metrics = {
+        "total_revenue_at_risk": total_risk,
+        "expected_recovery_value": total_expected,
+        "realized_recovery_value": total_realized,
+        "recovery_rate_by_value": (total_realized / total_risk) if total_risk > 0 else 0.0
+    }
+    
+    return {
+        "action_performance": action_metrics,
+        "calibration": calibration,
+        "revenue_metrics": revenue_metrics
+    }

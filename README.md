@@ -44,6 +44,10 @@ pytest
 
 ## Phase Data
 
+- [x] Phase 4: Custom Recovery Intelligence Engine (Scikit-Learn, Random Forest/Logistic Regression, Feature Engineering)
+- [x] Phase 5: Bounded Recovery Action Orchestrator (Deterministic State Machine, Safety Guardrails)
+- [x] Phase 6: Recovery Feedback, Model Evaluation, Drift Monitoring, and Explicit Promotions
+
 To generate the synthetic dataset and seed the SQLite database:
 ```bash
 python scripts/seed_database.py --reset

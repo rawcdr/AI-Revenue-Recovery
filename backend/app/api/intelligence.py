@@ -3,12 +3,51 @@ from sqlalchemy.orm import Session
 from backend.app.db.database import get_db
 from backend.app.models.domain import RecoveryPrediction
 from backend.app.services.intelligence import run_intelligence_batch, score_candidate
+from backend.app.services.registry import list_models, get_model, get_active_model
+from backend.app.services.drift import calculate_drift_and_retraining
 
 router = APIRouter()
 
 @router.post("/intelligence/run")
 def api_run_intelligence(db: Session = Depends(get_db)):
     return run_intelligence_batch(db)
+
+@router.get("/intelligence/models")
+def api_list_models(db: Session = Depends(get_db)):
+    models = list_models(db)
+    return [{
+        "version_id": m.version_id,
+        "model_version": m.model_version,
+        "status": m.status,
+        "training_timestamp": m.training_timestamp
+    } for m in models]
+
+@router.get("/intelligence/models/{version}")
+def api_get_model(version: str, db: Session = Depends(get_db)):
+    m = get_model(db, version)
+    return {
+        "version_id": m.version_id,
+        "model_version": m.model_version,
+        "status": m.status,
+        "validation_roc_auc": m.validation_roc_auc,
+        "test_roc_auc": m.test_roc_auc
+    }
+
+@router.get("/intelligence/drift")
+def api_get_drift(db: Session = Depends(get_db)):
+    active = get_active_model(db)
+    if not active:
+        return {"error": "No active model to check drift"}
+    return calculate_drift_and_retraining(db, active.model_version)
+
+@router.get("/intelligence/performance")
+def api_get_performance(db: Session = Depends(get_db)):
+    # Lightweight wrapper returning same drift check logic or a subset
+    active = get_active_model(db)
+    if not active:
+        return {"error": "No active model to check performance"}
+    res = calculate_drift_and_retraining(db, active.model_version)
+    return res
 
 @router.post("/intelligence/{candidate_id}")
 def api_score_specific(candidate_id: str, db: Session = Depends(get_db)):

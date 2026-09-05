@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Revenue Recovery Dashboard</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent-blue: #3b82f6;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --accent-yellow: #f59e0b;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.5;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 1rem;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .status-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            background-color: var(--card-bg);
+            border: 1px solid #334155;
+        }
+        
+        .status-badge.ok { color: var(--accent-green); border-color: var(--accent-green); }
+        .status-badge.warn { color: var(--accent-yellow); border-color: var(--accent-yellow); }
+        .status-badge.err { color: var(--accent-red); border-color: var(--accent-red); }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            border: 1px solid #334155;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            margin: 0 0 1rem 0;
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .metric {
+            font-size: 2.25rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .sub-metric {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #334155;
+        }
+
+        th {
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 0.875rem;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #334155;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 0.5rem;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: var(--accent-blue);
+        }
+        
+        #error-container {
+            display: none;
+            background-color: rgba(239, 68, 68, 0.1);
+            border: 1px solid var(--accent-red);
+            color: var(--accent-red);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="error-container"></div>
+
+    <div class="header">
+        <h1>AI Revenue Recovery</h1>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <div id="model-status" class="status-badge">Loading model...</div>
+            <div id="drift-status" class="status-badge">Loading drift...</div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Revenue At Risk</h3>
+            <p class="metric" id="rev-risk">₹0.00</p>
+            <p class="sub-metric">Total expected: <span id="rev-expected">₹0.00</span></p>
+        </div>
+        <div class="card">
+            <h3>Revenue Recovered</h3>
+            <p class="metric" id="rev-recovered" style="color: var(--accent-green)">₹0.00</p>
+            <div class="progress-bar">
+                <div id="rev-progress" class="progress-fill" style="width: 0%; background-color: var(--accent-green)"></div>
+            </div>
+            <p class="sub-metric">Recovery Rate (Value): <span id="rev-rate">0%</span></p>
+        </div>
+        <div class="card">
+            <h3>Action Success Rate</h3>
+            <p class="metric" id="action-rate">0%</p>
+            <p class="sub-metric">Based on completed feedback loops</p>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="card" style="grid-column: 1 / -1;">
+            <h3>Action Performance</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Action</th>
+                            <th>Count</th>
+                            <th>Successful</th>
+                            <th>Recovered</th>
+                            <th>Revenue</th>
+                            <th>Recovery Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody id="action-tbody">
+                        <tr><td colspan="6" style="text-align: center;">Loading...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="card" style="grid-column: 1 / -1;">
+            <h3>Model Calibration (Predicted vs Actual)</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Probability Bucket</th>
+                            <th>Predictions</th>
+                            <th>Avg Predicted Probability</th>
+                            <th>Actual Recovery Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calib-tbody">
+                        <tr><td colspan="4" style="text-align: center;">Loading...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8000';
+
+        async function fetchData() {
+            try {
+                // Fetch Drift & Model Info
+                const driftRes = await fetch(`${API_BASE}/intelligence/drift`);
+                if (driftRes.ok) {
+                    const drift = await driftRes.json();
+                    
+                    const driftBadge = document.getElementById('drift-status');
+                    driftBadge.textContent = drift.retraining_recommendation === 'RETRAIN_RECOMMENDED' 
+                        ? `⚠️ Retrain Recommended (${drift.drift_status})` 
+                        : `✓ Stable (${drift.drift_status})`;
+                    
+                    driftBadge.className = `status-badge ${drift.retraining_recommendation === 'RETRAIN_RECOMMENDED' ? 'err' : 'ok'}`;
+                }
+
+                const modelsRes = await fetch(`${API_BASE}/intelligence/models`);
+                if (modelsRes.ok) {
+                    const models = await modelsRes.json();
+                    const activeModel = models.find(m => m.status === 'ACTIVE');
+                    const modelBadge = document.getElementById('model-status');
+                    if (activeModel) {
+                        modelBadge.textContent = `Model: ${activeModel.model_version} (ACTIVE)`;
+                        modelBadge.className = 'status-badge ok';
+                    } else {
+                        modelBadge.textContent = 'No ACTIVE Model';
+                        modelBadge.className = 'status-badge err';
+                    }
+                }
+
+                // Fetch Feedback Metrics
+                const fbRes = await fetch(`${API_BASE}/metrics/feedback`);
+                if (fbRes.ok) {
+                    const fb = await fbRes.json();
+                    
+                    const rev = fb.revenue_metrics;
+                    document.getElementById('rev-risk').textContent = `₹${rev.total_revenue_at_risk.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
+                    document.getElementById('rev-expected').textContent = `₹${rev.expected_recovery_value.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
+                    document.getElementById('rev-recovered').textContent = `₹${rev.realized_recovery_value.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
+                    
+                    const ratePct = (rev.recovery_rate_by_value * 100).toFixed(1);
+                    document.getElementById('rev-rate').textContent = `${ratePct}%`;
+                    document.getElementById('rev-progress').style.width = `${Math.min(ratePct, 100)}%`;
+
+                    // Actions Table
+                    const actions = fb.action_performance;
+                    const actionTbody = document.getElementById('action-tbody');
+                    actionTbody.innerHTML = '';
+                    
+                    let totalCount = 0;
+                    let totalSuccess = 0;
+                    
+                    for (const [actionName, data] of Object.entries(actions)) {
+                        totalCount += data.count;
+                        totalSuccess += data.successful_executions;
+                        
+                        actionTbody.innerHTML += `
+                            <tr>
+                                <td><strong>${actionName}</strong></td>
+                                <td>${data.count}</td>
+                                <td>${data.successful_executions}</td>
+                                <td>${data.recovered_count}</td>
+                                <td>₹${data.revenue_recovered.toLocaleString()}</td>
+                                <td>${(data.recovery_rate * 100).toFixed(1)}%</td>
+                            </tr>
+                        `;
+                    }
+                    
+                    if (totalCount > 0) {
+                        document.getElementById('action-rate').textContent = `${((totalSuccess/totalCount)*100).toFixed(1)}%`;
+                    }
+
+                    // Calibration Table
+                    const calib = fb.calibration;
+                    const calibTbody = document.getElementById('calib-tbody');
+                    calibTbody.innerHTML = '';
+                    
+                    for (const [bucket, data] of Object.entries(calib)) {
+                        calibTbody.innerHTML += `
+                            <tr>
+                                <td>${bucket}</td>
+                                <td>${data.prediction_count}</td>
+                                <td>${(data.average_predicted_probability * 100).toFixed(1)}%</td>
+                                <td>${(data.actual_recovery_rate * 100).toFixed(1)}%</td>
+                            </tr>
+                        `;
+                    }
+                    if (Object.keys(calib).length === 0) {
+                        calibTbody.innerHTML = '<tr><td colspan="4" style="text-align: center;">No calibration data available.</td></tr>';
+                    }
+                }
+            } catch (err) {
+                console.error(err);
+                const errDiv = document.getElementById('error-container');
+                errDiv.style.display = 'block';
+                errDiv.textContent = 'Error connecting to backend API. Ensure FastAPI is running on http://localhost:8000';
+            }
+        }
+
+        // Fetch on load
+        fetchData();
+        // Refresh every 30s
+        setInterval(fetchData, 30000);
+    </script>
+</body>
+</html>
