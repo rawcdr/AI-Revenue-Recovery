@@ -7,7 +7,7 @@ Base.metadata.create_all(bind=engine)
 
 import uuid
 from fastapi import Request
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, FileResponse
 from fastapi.exceptions import RequestValidationError
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
@@ -56,3 +56,7 @@ app.include_router(detection.router, tags=["Candidate Detection"])
 app.include_router(intelligence.router, tags=["ML Intelligence"])
 app.include_router(recovery.router, tags=["Recovery Execution"])
 app.include_router(metrics.router, tags=["Metrics & Feedback"])
+
+@app.get("/", response_class=FileResponse, include_in_schema=False)
+async def serve_frontend():
+    return FileResponse("frontend/index.html")

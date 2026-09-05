@@ -234,7 +234,7 @@
     </div>
 
     <script>
-        const API_BASE = 'http://localhost:8000';
+        const API_BASE = '';
 
         async function fetchData() {
             try {
@@ -265,13 +265,20 @@
                     }
                 }
 
+                // Fetch Revenue At Risk specifically
+                const riskRes = await fetch(`${API_BASE}/metrics/revenue-at-risk`);
+                if (riskRes.ok) {
+                    const risk = await riskRes.json();
+                    document.getElementById('rev-risk').textContent = `₹${risk.revenue_at_risk.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
+                }
+
                 // Fetch Feedback Metrics
                 const fbRes = await fetch(`${API_BASE}/metrics/feedback`);
                 if (fbRes.ok) {
                     const fb = await fbRes.json();
                     
                     const rev = fb.revenue_metrics;
-                    document.getElementById('rev-risk').textContent = `₹${rev.total_revenue_at_risk.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
+
                     document.getElementById('rev-expected').textContent = `₹${rev.expected_recovery_value.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
                     document.getElementById('rev-recovered').textContent = `₹${rev.realized_recovery_value.toLocaleString(undefined, {minimumFractionDigits: 2})}`;
                     
@@ -353,7 +360,7 @@
                 console.error(err);
                 const errDiv = document.getElementById('error-container');
                 errDiv.style.display = 'block';
-                errDiv.textContent = 'Error connecting to backend API. Ensure FastAPI is running on http://localhost:8000';
+                errDiv.textContent = 'Error connecting to backend API. Ensure the application is running correctly.';
             }
         }
 

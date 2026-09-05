@@ -1,0 +1,66 @@
+warning: in the working copy of 'frontend/index.html', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/backend/app/main.py b/backend/app/main.py[m
+[1mindex 7a05954..e8774d4 100644[m
+[1m--- a/backend/app/main.py[m
+[1m+++ b/backend/app/main.py[m
+[36m@@ -7,7 +7,7 @@[m [mBase.metadata.create_all(bind=engine)[m
+ [m
+ import uuid[m
+ from fastapi import Request[m
+[31m-from fastapi.responses import JSONResponse[m
+[32m+[m[32mfrom fastapi.responses import JSONResponse, FileResponse[m
+ from fastapi.exceptions import RequestValidationError[m
+ from starlette.exceptions import HTTPException as StarletteHTTPException[m
+ [m
+[36m@@ -56,3 +56,7 @@[m [mapp.include_router(detection.router, tags=["Candidate Detection"])[m
+ app.include_router(intelligence.router, tags=["ML Intelligence"])[m
+ app.include_router(recovery.router, tags=["Recovery Execution"])[m
+ app.include_router(metrics.router, tags=["Metrics & Feedback"])[m
+[32m+[m
+[32m+[m[32m@app.get("/", response_class=FileResponse, include_in_schema=False)[m
+[32m+[m[32masync def serve_frontend():[m
+[32m+[m[32m    return FileResponse("frontend/index.html")[m
+[1mdiff --git a/frontend/index.html b/frontend/index.html[m
+[1mindex cdb92af..5992832 100644[m
+[1m--- a/frontend/index.html[m
+[1m+++ b/frontend/index.html[m
+[36m@@ -234,7 +234,7 @@[m
+     </div>[m
+ [m
+     <script>[m
+[31m-        const API_BASE = 'http://localhost:8000';[m
+[32m+[m[32m        const API_BASE = '';[m
+ [m
+         async function fetchData() {[m
+             try {[m
+[36m@@ -265,13 +265,20 @@[m
+                     }[m
+                 }[m
+ [m
+[32m+[m[32m                // Fetch Revenue At Risk specifically[m
+[32m+[m[32m                const riskRes = await fetch(`${API_BASE}/metrics/revenue-at-risk`);[m
+[32m+[m[32m                if (riskRes.ok) {[m
+[32m+[m[32m                    const risk = await riskRes.json();[m
+[32m+[m[32m                    document.getElementById('rev-risk').textContent = `₹${risk.revenue_at_risk.toLocaleString(undefined, {minimumFractionDigits: 2})}`;[m
+[32m+[m[32m                }[m
+[32m+[m
+                 // Fetch Feedback Metrics[m
+                 const fbRes = await fetch(`${API_BASE}/metrics/feedback`);[m
+                 if (fbRes.ok) {[m
+                     const fb = await fbRes.json();[m
+                     [m
+                     const rev = fb.revenue_metrics;[m
+[31m-                    document.getElementById('rev-risk').textContent = `₹${rev.total_revenue_at_risk.toLocaleString(undefined, {minimumFractionDigits: 2})}`;[m
+[32m+[m
+                     document.getElementById('rev-expected').textContent = `₹${rev.expected_recovery_value.toLocaleString(undefined, {minimumFractionDigits: 2})}`;[m
+                     document.getElementById('rev-recovered').textContent = `₹${rev.realized_recovery_value.toLocaleString(undefined, {minimumFractionDigits: 2})}`;[m
+                     [m
+[36m@@ -353,7 +360,7 @@[m
+                 console.error(err);[m
+                 const errDiv = document.getElementById('error-container');[m
+                 errDiv.style.display = 'block';[m
+[31m-                errDiv.textContent = 'Error connecting to backend API. Ensure FastAPI is running on http://localhost:8000';[m
+[32m+[m[32m                errDiv.textContent = 'Error connecting to backend API. Ensure the application is running correctly.';[m
+             }[m
+         }[m
+ [m
