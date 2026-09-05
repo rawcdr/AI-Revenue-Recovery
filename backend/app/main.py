@@ -50,10 +50,10 @@ async def global_exception_handler(request: Request, exc: Exception):
         content={"error": "INTERNAL_SERVER_ERROR", "message": "An unexpected error occurred."}
     )
 
-app.include_router(health.router)
-app.include_router(webhooks.router)
-app.include_router(events.router)
-app.include_router(recovery.router)
-app.include_router(metrics.router)
-app.include_router(detection.router)
-app.include_router(intelligence.router)
+app.include_router(health.router, tags=["Health & Readiness"])
+app.include_router(webhooks.router, tags=["Webhooks"])
+app.include_router(events.router, tags=["Events"])
+app.include_router(detection.router, tags=["Candidate Detection"])
+app.include_router(intelligence.router, tags=["ML Intelligence"])
+app.include_router(recovery.router, tags=["Recovery Execution"])
+app.include_router(metrics.router, tags=["Metrics & Feedback"])
